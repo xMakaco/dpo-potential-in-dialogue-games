@@ -56,3 +56,6 @@ data/
 # Notebooks
 .ipynb_checkpoints/
 *.ipynb
+refl-augm-sft/
+venv/
+env/
