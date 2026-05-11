@@ -1,0 +1,10 @@
+{
+  "title": "Game Room",
+  "html": [],
+  "css": {},
+  "scripts": {
+    "incoming-text": "display-text",
+    "submit-message": "send-message",
+    "document-ready": "https://raw.githubusercontent.com/clp-research/clemcore/refs/heads/main/clemcore/resources/slurk_api/task_room_layout.js"
+  }
+}

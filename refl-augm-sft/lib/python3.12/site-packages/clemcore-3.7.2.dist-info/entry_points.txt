@@ -1,0 +1,2 @@
+[console_scripts]
+clem = clemcore.cli:main

@@ -1,0 +1,2 @@
+[console_scripts]
+sparklines = sparklines.__main__:main
