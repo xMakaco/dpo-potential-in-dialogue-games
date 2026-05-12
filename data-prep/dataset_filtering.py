@@ -1,5 +1,6 @@
 import gzip
 import json
+from clemcore.clemgame import GameRegistry
 from datasets import load_dataset
 
 
@@ -17,13 +18,13 @@ def filter_failures(dataset):
             return round
 
 
-def inspect_failures(data, n=10):
+def inspect_failures(failures_data, n=10):
     """A function to inspect the retained failed rounds by selecting a specific number of those to print to console.
     count is set to 10 be default, can be modified as needed.
     """
-    print(f"Total failures: {len(data)}")
+    print(f"Total failures: {len(failures_data)}")
     print(f"\nFirst {n} records:")
-    print(json.dumps(data[:n], indent=2))
+    print(json.dumps(failures_data[:n], indent=2))
 
 
 def save_failures(failures_data, create_json=True):
@@ -38,6 +39,23 @@ def save_failures(failures_data, create_json=True):
             json.dump(failures_data, f, indent=2)
 
 
+def list_clem_games():
+    '''Function to list all the names of games from clembench. Will be moved to reasoning traces generation inference pipeline
+    '''
+    game_registry = GameRegistry.from_directories_and_cwd_files()
+    all_games = game_registry.get_name_specs()
+    for game in all_games:
+        game["game_name"]
+
+
+def split_by_game(failures_data):
+    '''Incomplete function to split the dataset at specific game names. Will be either completed or deleted if deemed unnecessary
+    '''
+    with open(failures_data, 'r') as f:
+        failures = failures_data
+        game_names = list_clem_games()
+
+
 def extract_failures(dataset, create_json=True, inspect_only=False, n=10):
     """Convenience wrapper for failure extraction"""
     failures = filter_failures(dataset)
@@ -49,8 +67,15 @@ def extract_failures(dataset, create_json=True, inspect_only=False, n=10):
 
     return failures
 
+
 def main():
-    print(extract_failures(dataset, create_jason=True, inspect_only=False, n=10))
+    print(
+        extract_failures(
+            dataset,
+            create_json=True,
+            inspect_only=False,
+            n=10))
+
 
 if __name__ == "__main__":
     main()
