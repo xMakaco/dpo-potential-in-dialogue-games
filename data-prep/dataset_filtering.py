@@ -11,11 +11,8 @@ dataset = load_dataset(
 
 
 def filter_failures(dataset):
-    """A function to load game rounds (conversations) from the playpen data HF dataset and filter out successful rounds.
-    """
-    for round in dataset:
-        if round["meta"]["outcome"] == "failure" or round["meta"]["outcome"] == "aborted":
-            return round
+    return [round for round in dataset
+            if round["meta"]["outcome"] in ["failure", "aborted"]]
 
 
 def inspect_failures(failures_data, n=10):
