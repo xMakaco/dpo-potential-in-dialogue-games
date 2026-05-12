@@ -59,3 +59,6 @@ data/
 refl-augm-sft/
 venv/
 env/
+
+# Dataset
+data-prep/failures_data.json
