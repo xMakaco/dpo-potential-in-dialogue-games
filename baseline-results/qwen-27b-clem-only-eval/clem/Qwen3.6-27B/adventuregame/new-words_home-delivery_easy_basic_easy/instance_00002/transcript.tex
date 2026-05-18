@@ -1,0 +1,881 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\centering \large Interaction Transcript for game `adventuregame', experiment `new{-}words\_home{-}delivery\_easy\_basic\_easy', episode 2 with Qwen3.6{-}27B.
+\vspace{24pt}
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+    \# & \multicolumn{2}{c}{Player} && \multicolumn{2}{c}{Game Master} \\
+    \hline
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are playing a text adventure game. I will describe what you can perceive in the game. You write the single action you want to take in the game starting with >. Only reply with an action.} \\
+\texttt{For example:} \\
+\texttt{> open cupboard} \\
+\\ 
+\texttt{In addition to common actions, you can inate. To inate is to remove or block an opening of something, and make its contents unavailable for use or interaction.} \\
+\\ 
+\texttt{Your goal for this game is: Put the mical on the pante, the mop on the pante and the broom on the pante.} \\
+\\ 
+\texttt{Once you have achieved your goal, write "> done" to end the game.} \\
+\\ 
+\texttt{You are in a bedroom now. There are a wardrobe, a bed, a book and a pillow. The wardrobe is closed. The book is on the floor. The pillow is on the bed. There is a passage to a hallway here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> go to hallway} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 0} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'go', 'exploration_info': {'action_epistemic': True, 'action_pragmatic': True, 'effective_epistemic_gain_facts': [['on', 'pottedplant1', 'hallway1floor1'], ['exit', 'hallway1', 'kitchen1'], ['exit', 'hallway1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'player1', 'hallway1'], ['exit', 'hallway1', 'broomcloset1']], 'effective_epistemic_gain_amount': 6, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'player1', 'hallway1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.20689655172413793, 'visited_rooms': ['hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.3333333333333333, 'known_goal_entities': [], 'known_goal_entities_ratio': 0.0}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are in a hallway now. There is a potted plant. The potted plant is on the floor. There are passages to a bedroom, a broom closet and a kitchen here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> go to broom closet} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 1} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'go', 'exploration_info': {'action_epistemic': True, 'action_pragmatic': True, 'effective_epistemic_gain_facts': [['at', 'broom1', 'broomcloset1'], ['on', 'mop1', 'broomcloset1floor1'], ['at', 'player1', 'broomcloset1'], ['exit', 'broomcloset1', 'hallway1'], ['on', 'broom1', 'broomcloset1floor1'], ['at', 'mop1', 'broomcloset1']], 'effective_epistemic_gain_amount': 6, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'broom1', 'broomcloset1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'player1', 'broomcloset1'], ['at', 'mop1', 'broomcloset1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.27586206896551724, 'visited_rooms': ['broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'broom1', 'broomcloset1'], ['at', 'mop1', 'broomcloset1']], 'known_goal_entities_ratio': 0.5}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are in a broom closet now. There are a mop and a broom. The mop is on the floor. The broom is on the floor. There is a passage to a hallway here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> take mop} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 2} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'take', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'broom1', 'broomcloset1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'player1', 'broomcloset1'], ['at', 'mop1', 'broomcloset1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.27586206896551724, 'visited_rooms': ['broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'broom1', 'broomcloset1'], ['at', 'mop1', 'broomcloset1']], 'known_goal_entities_ratio': 0.5}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You take the mop. In your inventory you have a mop.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> take broom} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 3} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'take', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'broom1', 'broomcloset1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'player1', 'broomcloset1'], ['at', 'mop1', 'broomcloset1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.27586206896551724, 'visited_rooms': ['broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'broom1', 'broomcloset1'], ['at', 'mop1', 'broomcloset1']], 'known_goal_entities_ratio': 0.5}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You take the broom. In your inventory you have a mop and a broom.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> go to hallway} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 4} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'go', 'exploration_info': {'action_epistemic': True, 'action_pragmatic': True, 'effective_epistemic_gain_facts': [['at', 'player1', 'hallway1'], ['at', 'broom1', 'hallway1'], ['at', 'mop1', 'hallway1']], 'effective_epistemic_gain_amount': 3, 'known_entities': [['at', 'broom1', 'hallway1'], ['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'player1', 'hallway1'], ['at', 'mop1', 'hallway1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.27586206896551724, 'visited_rooms': ['broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'broom1', 'hallway1'], ['at', 'mop1', 'hallway1']], 'known_goal_entities_ratio': 0.5}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are in a hallway now. There is a potted plant. The potted plant is on the floor. There are passages to a bedroom, a broom closet and a kitchen here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> go to kitchen} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 5} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'go', 'exploration_info': {'action_epistemic': True, 'action_pragmatic': True, 'effective_epistemic_gain_facts': [['exit', 'kitchen1', 'livingroom1'], ['at', 'mop1', 'kitchen1'], ['exit', 'kitchen1', 'hallway1'], ['at', 'mical1', 'kitchen1'], ['at', 'broom1', 'kitchen1'], ['closed', 'cupboard1'], ['on', 'mical1', 'kitchen1floor1'], ['exit', 'kitchen1', 'sness1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'kitchen1']], 'effective_epistemic_gain_amount': 11, 'known_entities': [['at', 'mop1', 'kitchen1'], ['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'mical1', 'kitchen1'], ['at', 'broom1', 'kitchen1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'kitchen1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'kitchen1'], ['at', 'mop1', 'kitchen1'], ['at', 'mical1', 'kitchen1']], 'known_goal_entities_ratio': 0.75}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are in a kitchen now. There are a mical, a cupboard and a counter. The mical is on the floor. The cupboard is closed. There are passages to a living room, a hallway and a sness here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> take mical} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 6} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'take', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mop1', 'kitchen1'], ['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'mical1', 'kitchen1'], ['at', 'broom1', 'kitchen1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'kitchen1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'kitchen1'], ['at', 'mop1', 'kitchen1'], ['at', 'mical1', 'kitchen1']], 'known_goal_entities_ratio': 0.75}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You take the mical. In your inventory you have a mical, a mop and a broom.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> go to hallway} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 7} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'go', 'exploration_info': {'action_epistemic': True, 'action_pragmatic': True, 'effective_epistemic_gain_facts': [['at', 'player1', 'hallway1'], ['at', 'broom1', 'hallway1'], ['at', 'mop1', 'hallway1'], ['at', 'mical1', 'hallway1']], 'effective_epistemic_gain_amount': 4, 'known_entities': [['at', 'broom1', 'hallway1'], ['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'player1', 'hallway1'], ['at', 'counter1', 'kitchen1'], ['at', 'mop1', 'hallway1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'book1', 'bedroom1'], ['at', 'mical1', 'hallway1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'hallway1'], ['at', 'mop1', 'hallway1'], ['at', 'mical1', 'hallway1']], 'known_goal_entities_ratio': 0.75}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are in a hallway now. There is a potted plant. The potted plant is on the floor. There are passages to a bedroom, a broom closet and a kitchen here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> go to bedroom} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 8} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'go', 'exploration_info': {'action_epistemic': True, 'action_pragmatic': True, 'effective_epistemic_gain_facts': [['at', 'player1', 'bedroom1'], ['at', 'broom1', 'bedroom1'], ['at', 'mop1', 'bedroom1'], ['at', 'mical1', 'bedroom1']], 'effective_epistemic_gain_amount': 4, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'mop1', 'bedroom1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'mical1', 'bedroom1'], ['at', 'broom1', 'bedroom1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'bedroom1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'bedroom1'], ['at', 'mop1', 'bedroom1'], ['at', 'mical1', 'bedroom1']], 'known_goal_entities_ratio': 0.75}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are in a bedroom now. There are a wardrobe, a bed, a book and a pillow. The wardrobe is closed. The book is on the floor. The pillow is on the bed. There is a passage to a hallway here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> inate wardrobe} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 9} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'close', 'failed_precon_predicate': {'predicate_tuple': ['open', 'wardrobe1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': False, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'mop1', 'bedroom1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'mical1', 'bedroom1'], ['at', 'broom1', 'bedroom1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'bedroom1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'bedroom1'], ['at', 'mop1', 'bedroom1'], ['at', 'mical1', 'bedroom1']], 'known_goal_entities_ratio': 0.75}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The wardrobe is not open.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> open wardrobe} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 10} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'open', 'exploration_info': {'action_epistemic': True, 'action_pragmatic': True, 'effective_epistemic_gain_facts': [['open', 'wardrobe1']], 'effective_epistemic_gain_amount': 1, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'mop1', 'bedroom1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'mical1', 'bedroom1'], ['at', 'broom1', 'bedroom1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'bedroom1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'bedroom1'], ['at', 'mop1', 'bedroom1'], ['at', 'mical1', 'bedroom1']], 'known_goal_entities_ratio': 0.75}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The wardrobe is now open. The wardrobe is empty.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> put mical on wardrobe} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 11} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'put', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'mop1', 'bedroom1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'mical1', 'bedroom1'], ['at', 'broom1', 'bedroom1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'bedroom1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'bedroom1'], ['at', 'mop1', 'bedroom1'], ['at', 'mical1', 'bedroom1']], 'known_goal_entities_ratio': 0.75}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You put the mical on the wardrobe.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> put mop on wardrobe} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 12} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'put', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'mop1', 'bedroom1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'mical1', 'bedroom1'], ['at', 'broom1', 'bedroom1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'bedroom1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'bedroom1'], ['at', 'mop1', 'bedroom1'], ['at', 'mical1', 'bedroom1']], 'known_goal_entities_ratio': 0.75}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You put the mop on the wardrobe.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> put broom on wardrobe} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 13} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'put', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'mop1', 'bedroom1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'mical1', 'bedroom1'], ['at', 'broom1', 'bedroom1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'bedroom1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'bedroom1'], ['at', 'mop1', 'bedroom1'], ['at', 'mical1', 'bedroom1']], 'known_goal_entities_ratio': 0.75}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You put the broom on the wardrobe.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> done} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 14} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'done', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'bed1', 'bedroom1'], ['at', 'pottedplant1', 'hallway1'], ['at', 'mop1', 'bedroom1'], ['at', 'wardrobe1', 'bedroom1'], ['at', 'pillow1', 'bedroom1'], ['at', 'mical1', 'bedroom1'], ['at', 'broom1', 'bedroom1'], ['at', 'counter1', 'kitchen1'], ['at', 'cupboard1', 'kitchen1'], ['at', 'player1', 'bedroom1'], ['at', 'book1', 'bedroom1']], 'known_entities_ratio': 0.3793103448275862, 'visited_rooms': ['kitchen1', 'broomcloset1', 'hallway1', 'bedroom1'], 'visited_rooms_ratio': 0.6666666666666666, 'known_goal_entities': [['at', 'broom1', 'bedroom1'], ['at', 'mop1', 'bedroom1'], ['at', 'mical1', 'bedroom1']], 'known_goal_entities_ratio': 0.75}, 'done_action': True}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Model produced DONE action at turn 14, end episode.} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'game_successfully_finished': False}
+            }
+        }
+    }
+    & & \\ \\
+
+\end{supertabular}
+}
+
+\end{document}

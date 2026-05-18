@@ -1,0 +1,1605 @@
+{
+  "meta": {
+    "game_name": "codenames",
+    "experiment_name": "unambiguous",
+    "game_id": 2,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 8,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 300
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "ClueGiver",
+      "model_name": "Qwen3.6-27B"
+    },
+    "Player 2": {
+      "game_role": "Guesser",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:45.212701",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "ordinance",
+                "vaudeville",
+                "seafood",
+                "peninsula",
+                "seminary",
+                "priestess",
+                "coleslaw",
+                "disruption",
+                "greed"
+              ],
+              "innocent": [
+                "vinegar",
+                "sundae",
+                "cocaine",
+                "equality",
+                "asteroid",
+                "propeller",
+                "bikini"
+              ],
+              "opponent": [
+                "catheter",
+                "oven",
+                "lacrosse",
+                "prom",
+                "teacher",
+                "commie",
+                "locksmith",
+                "stead"
+              ],
+              "assassin": [
+                "census"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:40:47.446377",
+        "action": {
+          "type": "send message",
+          "content": "Provide one single-word clue that relates to some of your team's words from the list below. You can choose to how many and to which words your clue relates to.\nThe goal is to have your partner guess all of your team's words based on the clues you give them, before the other team has uncovered all of theirs. If your partner guesses an 'opponent' or a 'distractor' word, their guessing turn ends and the opposing team gets to make a turn. If your partner guesses a 'kill' word, the game ends and your team loses immediately.\nThe more words your clue relates to, the quicker you can win the game, but the harder the associations may be to guess for your partner, so choose your clue word wisely. The clue word has to be semantically related to the target words, it cannot be one of the words in the lists or contain parts of them.\n\nAlways give your single-word clue and your comma-separated list of related target words in the following format and make your answers as short as possible, never include any other text than is required in this form:\n\nCLUE: <WORD>\nTARGETS: <TARGETS>\n\nYour team words are: ordinance, vaudeville, seafood, peninsula, seminary, priestess, coleslaw, disruption, greed.\nYour opponent's team words are: catheter, oven, lacrosse, prom, teacher, commie, locksmith, stead.\nDistractor words are: vinegar, sundae, cocaine, equality, asteroid, propeller, bikini.\nThe kill words are: census.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:47.446393",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: RELIGION\nTARGETS: seminary, priestess",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:47.446759",
+        "action": {
+          "type": "clue",
+          "content": "religion"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:47.446795",
+        "action": {
+          "type": "targets",
+          "content": [
+            "seminary",
+            "priestess"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:47.446822",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "seminary",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:47.446842",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "priestess",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:40:48.955710",
+        "action": {
+          "type": "send message",
+          "content": "Provide a comma-separated list of up to 2 words from the following list that best relate or are most closely associated with the word 'religion'. Always start your list of guess(es) with 'GUESS: ' and do not include any other text in your answer.\n\ncensus, bikini, vinegar, seafood, peninsula, greed, disruption, oven, locksmith, commie, catheter, sundae, propeller, asteroid, priestess, seminary, ordinance, stead, lacrosse, coleslaw, cocaine, equality, prom, vaudeville, teacher",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:48.955725",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: priestess, seminary",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:48.955839",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "priestess",
+            "seminary"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:48.955881",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "priestess",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:48.955906",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "priestess",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:48.955930",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "seminary",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:48.955949",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "seminary",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:48.956228",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "teacher",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:48.956258",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "ordinance",
+                "vaudeville",
+                "seafood",
+                "peninsula",
+                "coleslaw",
+                "disruption",
+                "greed"
+              ],
+              "innocent": [
+                "vinegar",
+                "sundae",
+                "cocaine",
+                "equality",
+                "asteroid",
+                "propeller",
+                "bikini"
+              ],
+              "opponent": [
+                "catheter",
+                "oven",
+                "lacrosse",
+                "prom",
+                "commie",
+                "locksmith",
+                "stead"
+              ],
+              "assassin": [
+                "census"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "priestess",
+                  "seminary"
+                ],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "teacher"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:40:51.020568",
+        "action": {
+          "type": "send message",
+          "content": "The words priestess, seminary were guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: ordinance, vaudeville, seafood, peninsula, coleslaw, disruption, greed.\nRemaining words for your opponent are: catheter, oven, lacrosse, prom, teacher, commie, locksmith, stead.\nRemaining distractor words are: vinegar, sundae, cocaine, equality, asteroid, propeller, bikini.\nRemaining kill words are: census.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:51.020584",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: FOOD\nTARGETS: seafood, coleslaw",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:51.020858",
+        "action": {
+          "type": "clue",
+          "content": "food"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:51.020893",
+        "action": {
+          "type": "targets",
+          "content": [
+            "seafood",
+            "coleslaw"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:51.020918",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "seafood",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:51.020939",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "coleslaw",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:40:52.351390",
+        "action": {
+          "type": "send message",
+          "content": "The words priestess, seminary were guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 2 words from the following list of words that best relate or are most closely associated with the word 'food'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\ncensus, bikini, vinegar, seafood, peninsula, greed, disruption, oven, locksmith, commie, catheter, sundae, propeller, asteroid, ordinance, stead, lacrosse, coleslaw, cocaine, equality, prom, vaudeville",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:52.351409",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: vinegar, seafood",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:52.351562",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "vinegar",
+            "seafood"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:52.351613",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "vinegar",
+            "assignment": "innocent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:52.351640",
+        "action": {
+          "type": "turn end after",
+          "content": "vinegar"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:52.351950",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "oven",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:52.351982",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "ordinance",
+                "vaudeville",
+                "seafood",
+                "peninsula",
+                "coleslaw",
+                "disruption",
+                "greed"
+              ],
+              "innocent": [
+                "sundae",
+                "cocaine",
+                "equality",
+                "asteroid",
+                "propeller",
+                "bikini"
+              ],
+              "opponent": [
+                "catheter",
+                "lacrosse",
+                "prom",
+                "commie",
+                "locksmith",
+                "stead"
+              ],
+              "assassin": [
+                "census"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "priestess",
+                  "seminary"
+                ],
+                "innocent": [
+                  "vinegar"
+                ],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "teacher",
+                  "oven"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:40:54.028461",
+        "action": {
+          "type": "send message",
+          "content": "The word vinegar was guessed but is an innocent word. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: ordinance, vaudeville, seafood, peninsula, coleslaw, disruption, greed.\nRemaining words for your opponent are: catheter, oven, lacrosse, prom, commie, locksmith, stead.\nRemaining distractor words are: sundae, cocaine, equality, asteroid, propeller, bikini.\nRemaining kill words are: census.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:54.028477",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: LAW\nTARGETS: ordinance",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:54.028700",
+        "action": {
+          "type": "clue",
+          "content": "law"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:54.028738",
+        "action": {
+          "type": "targets",
+          "content": [
+            "ordinance"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:54.028763",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "ordinance",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:40:55.173232",
+        "action": {
+          "type": "send message",
+          "content": "The word vinegar was guessed but is an innocent word. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'law'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\ncensus, bikini, seafood, peninsula, greed, disruption, locksmith, commie, catheter, sundae, propeller, asteroid, ordinance, stead, lacrosse, coleslaw, cocaine, equality, prom, vaudeville",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:55.173248",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: ordinance",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:55.173320",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "ordinance"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:55.173359",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "ordinance",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:55.173383",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "ordinance",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:55.173714",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "lacrosse",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:55.173744",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "vaudeville",
+                "seafood",
+                "peninsula",
+                "coleslaw",
+                "disruption",
+                "greed"
+              ],
+              "innocent": [
+                "sundae",
+                "cocaine",
+                "equality",
+                "asteroid",
+                "propeller",
+                "bikini"
+              ],
+              "opponent": [
+                "catheter",
+                "prom",
+                "commie",
+                "locksmith",
+                "stead"
+              ],
+              "assassin": [
+                "census"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "priestess",
+                  "seminary",
+                  "ordinance"
+                ],
+                "innocent": [
+                  "vinegar"
+                ],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "teacher",
+                  "oven",
+                  "lacrosse"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:40:57.125837",
+        "action": {
+          "type": "send message",
+          "content": "The word ordinance was guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: vaudeville, seafood, peninsula, coleslaw, disruption, greed.\nRemaining words for your opponent are: catheter, lacrosse, prom, commie, locksmith, stead.\nRemaining distractor words are: sundae, cocaine, equality, asteroid, propeller, bikini.\nRemaining kill words are: census.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:57.125853",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: SHOW\nTARGETS: vaudeville",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:57.126058",
+        "action": {
+          "type": "clue",
+          "content": "show"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:57.126093",
+        "action": {
+          "type": "targets",
+          "content": [
+            "vaudeville"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:57.126118",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "vaudeville",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:40:58.528827",
+        "action": {
+          "type": "send message",
+          "content": "The word ordinance was guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'show'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\ncensus, bikini, seafood, peninsula, greed, disruption, locksmith, commie, catheter, sundae, propeller, asteroid, stead, coleslaw, cocaine, equality, prom, vaudeville",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:58.528843",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: vaudeville",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:58.528915",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "vaudeville"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:58.528954",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "vaudeville",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:58.528977",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "vaudeville",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:58.529311",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "commie",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:40:58.529342",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "seafood",
+                "peninsula",
+                "coleslaw",
+                "disruption",
+                "greed"
+              ],
+              "innocent": [
+                "sundae",
+                "cocaine",
+                "equality",
+                "asteroid",
+                "propeller",
+                "bikini"
+              ],
+              "opponent": [
+                "catheter",
+                "prom",
+                "locksmith",
+                "stead"
+              ],
+              "assassin": [
+                "census"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "priestess",
+                  "seminary",
+                  "ordinance",
+                  "vaudeville"
+                ],
+                "innocent": [
+                  "vinegar"
+                ],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "teacher",
+                  "oven",
+                  "lacrosse",
+                  "commie"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:41:00.305138",
+        "action": {
+          "type": "send message",
+          "content": "The word vaudeville was guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: seafood, peninsula, coleslaw, disruption, greed.\nRemaining words for your opponent are: catheter, prom, commie, locksmith, stead.\nRemaining distractor words are: sundae, cocaine, equality, asteroid, propeller, bikini.\nRemaining kill words are: census.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:00.305155",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: LAND\nTARGETS: peninsula",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:00.305347",
+        "action": {
+          "type": "clue",
+          "content": "land"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:00.305384",
+        "action": {
+          "type": "targets",
+          "content": [
+            "peninsula"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:00.305409",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "peninsula",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:41:01.525029",
+        "action": {
+          "type": "send message",
+          "content": "The word vaudeville was guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'land'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\ncensus, bikini, seafood, peninsula, greed, disruption, locksmith, catheter, sundae, propeller, asteroid, stead, coleslaw, cocaine, equality, prom",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:01.525046",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: peninsula",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:01.525115",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "peninsula"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:01.525156",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "peninsula",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:01.525180",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "peninsula",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:01.525517",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "catheter",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:01.525547",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "seafood",
+                "coleslaw",
+                "disruption",
+                "greed"
+              ],
+              "innocent": [
+                "sundae",
+                "cocaine",
+                "equality",
+                "asteroid",
+                "propeller",
+                "bikini"
+              ],
+              "opponent": [
+                "prom",
+                "locksmith",
+                "stead"
+              ],
+              "assassin": [
+                "census"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "priestess",
+                  "seminary",
+                  "ordinance",
+                  "vaudeville",
+                  "peninsula"
+                ],
+                "innocent": [
+                  "vinegar"
+                ],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "teacher",
+                  "oven",
+                  "lacrosse",
+                  "commie",
+                  "catheter"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:41:03.568744",
+        "action": {
+          "type": "send message",
+          "content": "The word peninsula was guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: seafood, coleslaw, disruption, greed.\nRemaining words for your opponent are: catheter, prom, locksmith, stead.\nRemaining distractor words are: sundae, cocaine, equality, asteroid, propeller, bikini.\nRemaining kill words are: census.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:03.568760",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: CHAOS\nTARGETS: disruption",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:03.568941",
+        "action": {
+          "type": "clue",
+          "content": "chaos"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:03.568975",
+        "action": {
+          "type": "targets",
+          "content": [
+            "disruption"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:03.568999",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "disruption",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:41:04.823921",
+        "action": {
+          "type": "send message",
+          "content": "The word peninsula was guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'chaos'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\ncensus, bikini, seafood, greed, disruption, locksmith, sundae, propeller, asteroid, stead, coleslaw, cocaine, equality, prom",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:04.823938",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: disruption",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:04.824007",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "disruption"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:04.824047",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "disruption",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:04.824070",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "disruption",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:04.824422",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "prom",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:04.824452",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "seafood",
+                "coleslaw",
+                "greed"
+              ],
+              "innocent": [
+                "sundae",
+                "cocaine",
+                "equality",
+                "asteroid",
+                "propeller",
+                "bikini"
+              ],
+              "opponent": [
+                "locksmith",
+                "stead"
+              ],
+              "assassin": [
+                "census"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "priestess",
+                  "seminary",
+                  "ordinance",
+                  "vaudeville",
+                  "peninsula",
+                  "disruption"
+                ],
+                "innocent": [
+                  "vinegar"
+                ],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "teacher",
+                  "oven",
+                  "lacrosse",
+                  "commie",
+                  "catheter",
+                  "prom"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:41:07.248726",
+        "action": {
+          "type": "send message",
+          "content": "The word disruption was guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: seafood, coleslaw, greed.\nRemaining words for your opponent are: prom, locksmith, stead.\nRemaining distractor words are: sundae, cocaine, equality, asteroid, propeller, bikini.\nRemaining kill words are: census.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:07.248744",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: EAT\nTARGETS: seafood, coleslaw",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:07.249016",
+        "action": {
+          "type": "clue",
+          "content": "eat"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:07.249058",
+        "action": {
+          "type": "targets",
+          "content": [
+            "seafood",
+            "coleslaw"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:07.249086",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "seafood",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:07.249107",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "coleslaw",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:41:08.982298",
+        "action": {
+          "type": "send message",
+          "content": "The word disruption was guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 2 words from the following list of words that best relate or are most closely associated with the word 'eat'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\ncensus, bikini, seafood, greed, locksmith, sundae, propeller, asteroid, stead, coleslaw, cocaine, equality",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:08.982315",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: seafood, coleslaw",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:08.982452",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "seafood",
+            "coleslaw"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:08.982493",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "seafood",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:08.982516",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "seafood",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:08.982538",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "coleslaw",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:08.982557",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "coleslaw",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:08.982849",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "stead",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:08.982880",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "greed"
+              ],
+              "innocent": [
+                "sundae",
+                "cocaine",
+                "equality",
+                "asteroid",
+                "propeller",
+                "bikini"
+              ],
+              "opponent": [
+                "locksmith"
+              ],
+              "assassin": [
+                "census"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "priestess",
+                  "seminary",
+                  "ordinance",
+                  "vaudeville",
+                  "peninsula",
+                  "disruption",
+                  "seafood",
+                  "coleslaw"
+                ],
+                "innocent": [
+                  "vinegar"
+                ],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "teacher",
+                  "oven",
+                  "lacrosse",
+                  "commie",
+                  "catheter",
+                  "prom",
+                  "stead"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:41:11.021460",
+        "action": {
+          "type": "send message",
+          "content": "The words seafood, coleslaw were guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: greed.\nRemaining words for your opponent are: locksmith, stead.\nRemaining distractor words are: sundae, cocaine, equality, asteroid, propeller, bikini.\nRemaining kill words are: census.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:11.021476",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: GREED\nTARGETS: greed",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:41:11.021637",
+        "action": {
+          "type": "validation error",
+          "content": {
+            "player": "Cluegiver",
+            "type": "clue is morphologically related to word on the board",
+            "utterance": "CLUE: GREED\nTARGETS: greed",
+            "message": "Your clue 'greed' is morphologically similar to the word greed, please choose another clue word.",
+            "clue": "greed",
+            "similar_board_word": "greed"
+          }
+        }
+      }
+    ]
+  ],
+  "board end status": {
+    "hidden": {
+      "team": [
+        "greed"
+      ],
+      "innocent": [
+        "sundae",
+        "cocaine",
+        "equality",
+        "asteroid",
+        "propeller",
+        "bikini"
+      ],
+      "opponent": [
+        "locksmith"
+      ],
+      "assassin": [
+        "census"
+      ]
+    },
+    "revealed": {
+      "team": {
+        "team": [
+          "priestess",
+          "seminary",
+          "ordinance",
+          "vaudeville",
+          "peninsula",
+          "disruption",
+          "seafood",
+          "coleslaw"
+        ],
+        "innocent": [
+          "vinegar"
+        ],
+        "opponent": [],
+        "assassin": []
+      },
+      "opponent": {
+        "team": [],
+        "innocent": [],
+        "opponent": [
+          "teacher",
+          "oven",
+          "lacrosse",
+          "commie",
+          "catheter",
+          "prom",
+          "stead"
+        ],
+        "assassin": []
+      }
+    }
+  },
+  "Number of turns": 8,
+  "Aborted": true,
+  "Lose": false,
+  "Game ended through assassin": false,
+  "Request Count": 15,
+  "Parsed Request Count": 14,
+  "Violated Request Count": 1,
+  "Cluegiver engaged flags": {
+    "IGNORE RAMBLING": 0,
+    "IGNORE FALSE TARGETS OR GUESSES": 0,
+    "REPROMPT ON ERROR": 0,
+    "STRIP WORDS": 0,
+    "IGNORE NUMBER OF TARGETS": 0
+  },
+  "Guesser engaged flags": {
+    "IGNORE RAMBLING": 0,
+    "IGNORE FALSE TARGETS OR GUESSES": 0,
+    "REPROMPT ON ERROR": 0,
+    "STRIP WORDS": 0,
+    "IGNORE NUMBER OF TARGETS": 0
+  }
+}

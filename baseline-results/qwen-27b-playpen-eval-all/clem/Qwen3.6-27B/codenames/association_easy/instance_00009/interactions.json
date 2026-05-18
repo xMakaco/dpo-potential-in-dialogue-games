@@ -1,0 +1,1052 @@
+{
+  "meta": {
+    "game_name": "codenames",
+    "experiment_name": "association_easy",
+    "game_id": 9,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 4,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 300
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "ClueGiver",
+      "model_name": "Qwen3.6-27B"
+    },
+    "Player 2": {
+      "game_role": "Guesser",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:15.496722",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "wool",
+                "suede",
+                "satin",
+                "nuclear",
+                "alcohol",
+                "club",
+                "fleece",
+                "machete",
+                "bomb"
+              ],
+              "innocent": [
+                "wagon",
+                "century",
+                "hour",
+                "green",
+                "king",
+                "millisecond",
+                "suv"
+              ],
+              "opponent": [
+                "quartz",
+                "glacier",
+                "scotland",
+                "island",
+                "peru",
+                "opal",
+                "cliff",
+                "ocean"
+              ],
+              "assassin": [
+                "carbon"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:04:17.982229",
+        "action": {
+          "type": "send message",
+          "content": "Provide one single-word clue that relates to some of your team's words from the list below. You can choose to how many and to which words your clue relates to.\nThe goal is to have your partner guess all of your team's words based on the clues you give them, before the other team has uncovered all of theirs. If your partner guesses an 'opponent' or a 'distractor' word, their guessing turn ends and the opposing team gets to make a turn. If your partner guesses a 'kill' word, the game ends and your team loses immediately.\nThe more words your clue relates to, the quicker you can win the game, but the harder the associations may be to guess for your partner, so choose your clue word wisely. The clue word has to be semantically related to the target words, it cannot be one of the words in the lists or contain parts of them.\n\nAlways give your single-word clue and your comma-separated list of related target words in the following format and make your answers as short as possible, never include any other text than is required in this form:\n\nCLUE: <WORD>\nTARGETS: <TARGETS>\n\nYour team words are: wool, suede, satin, nuclear, alcohol, club, fleece, machete, bomb.\nYour opponent's team words are: quartz, glacier, scotland, island, peru, opal, cliff, ocean.\nDistractor words are: wagon, century, hour, green, king, millisecond, suv.\nThe kill words are: carbon.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:17.982246",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: FABRIC\nTARGETS: wool, suede, satin, fleece",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:17.982595",
+        "action": {
+          "type": "clue",
+          "content": "fabric"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:17.982634",
+        "action": {
+          "type": "targets",
+          "content": [
+            "wool",
+            "suede",
+            "satin",
+            "fleece"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:17.982663",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "wool",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:17.982684",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "suede",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:17.982702",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "satin",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:17.982720",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "fleece",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:04:19.898448",
+        "action": {
+          "type": "send message",
+          "content": "Provide a comma-separated list of up to 4 words from the following list that best relate or are most closely associated with the word 'fabric'. Always start your list of guess(es) with 'GUESS: ' and do not include any other text in your answer.\n\nsatin, club, opal, suede, hour, wool, fleece, king, green, bomb, ocean, island, millisecond, glacier, century, alcohol, wagon, suv, carbon, cliff, quartz, nuclear, machete, peru, scotland",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898473",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: satin, suede, wool, fleece",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898642",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "satin",
+            "suede",
+            "wool",
+            "fleece"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898701",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "satin",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898730",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "satin",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898752",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "suede",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898770",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "suede",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898789",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "wool",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898807",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "wool",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898826",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "fleece",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.898844",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "fleece",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.899833",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "scotland",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:19.899867",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "nuclear",
+                "alcohol",
+                "club",
+                "machete",
+                "bomb"
+              ],
+              "innocent": [
+                "wagon",
+                "century",
+                "hour",
+                "green",
+                "king",
+                "millisecond",
+                "suv"
+              ],
+              "opponent": [
+                "quartz",
+                "glacier",
+                "island",
+                "peru",
+                "opal",
+                "cliff",
+                "ocean"
+              ],
+              "assassin": [
+                "carbon"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "satin",
+                  "suede",
+                  "wool",
+                  "fleece"
+                ],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "scotland"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:04:22.026999",
+        "action": {
+          "type": "send message",
+          "content": "The words satin, suede, wool, fleece were guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: nuclear, alcohol, club, machete, bomb.\nRemaining words for your opponent are: quartz, glacier, scotland, island, peru, opal, cliff, ocean.\nRemaining distractor words are: wagon, century, hour, green, king, millisecond, suv.\nRemaining kill words are: carbon.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:22.027020",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: EXPLOSIVE\nTARGETS: nuclear, bomb",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:22.027316",
+        "action": {
+          "type": "clue",
+          "content": "explosive"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:22.027357",
+        "action": {
+          "type": "targets",
+          "content": [
+            "nuclear",
+            "bomb"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:22.027388",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "nuclear",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:22.027410",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "bomb",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:04:23.441836",
+        "action": {
+          "type": "send message",
+          "content": "The words satin, suede, wool, fleece were guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 2 words from the following list of words that best relate or are most closely associated with the word 'explosive'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\nclub, opal, hour, king, green, bomb, ocean, island, millisecond, glacier, century, alcohol, wagon, suv, carbon, cliff, quartz, nuclear, machete, peru",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:23.441856",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: bomb, nuclear",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:23.441983",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "bomb",
+            "nuclear"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:23.442045",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "bomb",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:23.442071",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "bomb",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:23.442092",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "nuclear",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:23.442110",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "nuclear",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:23.443127",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "cliff",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:23.443160",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "alcohol",
+                "club",
+                "machete"
+              ],
+              "innocent": [
+                "wagon",
+                "century",
+                "hour",
+                "green",
+                "king",
+                "millisecond",
+                "suv"
+              ],
+              "opponent": [
+                "quartz",
+                "glacier",
+                "island",
+                "peru",
+                "opal",
+                "ocean"
+              ],
+              "assassin": [
+                "carbon"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "satin",
+                  "suede",
+                  "wool",
+                  "fleece",
+                  "bomb",
+                  "nuclear"
+                ],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "scotland",
+                  "cliff"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:04:25.613815",
+        "action": {
+          "type": "send message",
+          "content": "The words bomb, nuclear were guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: alcohol, club, machete.\nRemaining words for your opponent are: quartz, glacier, island, peru, opal, cliff, ocean.\nRemaining distractor words are: wagon, century, hour, green, king, millisecond, suv.\nRemaining kill words are: carbon.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:25.613832",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: WEAPON\nTARGETS: club, machete",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:25.614089",
+        "action": {
+          "type": "clue",
+          "content": "weapon"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:25.614132",
+        "action": {
+          "type": "targets",
+          "content": [
+            "club",
+            "machete"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:25.614158",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "club",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:25.614179",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "machete",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:04:27.202647",
+        "action": {
+          "type": "send message",
+          "content": "The words bomb, nuclear were guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 2 words from the following list of words that best relate or are most closely associated with the word 'weapon'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\nclub, opal, hour, king, green, ocean, island, millisecond, glacier, century, alcohol, wagon, suv, carbon, quartz, machete, peru",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:27.202664",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: club, machete",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:27.202769",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "club",
+            "machete"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:27.202812",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "club",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:27.202835",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "club",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:27.202856",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "machete",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:27.202874",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "machete",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:27.203781",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "quartz",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:27.203813",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "alcohol"
+              ],
+              "innocent": [
+                "wagon",
+                "century",
+                "hour",
+                "green",
+                "king",
+                "millisecond",
+                "suv"
+              ],
+              "opponent": [
+                "glacier",
+                "island",
+                "peru",
+                "opal",
+                "ocean"
+              ],
+              "assassin": [
+                "carbon"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "satin",
+                  "suede",
+                  "wool",
+                  "fleece",
+                  "bomb",
+                  "nuclear",
+                  "club",
+                  "machete"
+                ],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "scotland",
+                  "cliff",
+                  "quartz"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:04:29.173028",
+        "action": {
+          "type": "send message",
+          "content": "The words club, machete were guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: alcohol.\nRemaining words for your opponent are: quartz, glacier, island, peru, opal, ocean.\nRemaining distractor words are: wagon, century, hour, green, king, millisecond, suv.\nRemaining kill words are: carbon.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:29.173043",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: DRINK\nTARGETS: alcohol",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:29.173224",
+        "action": {
+          "type": "clue",
+          "content": "drink"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:29.173260",
+        "action": {
+          "type": "targets",
+          "content": [
+            "alcohol"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:29.173285",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "alcohol",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:04:30.466742",
+        "action": {
+          "type": "send message",
+          "content": "The words club, machete were guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'drink'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\nopal, hour, king, green, ocean, island, millisecond, glacier, century, alcohol, wagon, suv, carbon, peru",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:30.466759",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: alcohol",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:30.466836",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "alcohol"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:30.466879",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "alcohol",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:30.466902",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "alcohol",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:04:30.467833",
+        "action": {
+          "type": "game end",
+          "content": "team has won"
+        }
+      }
+    ]
+  ],
+  "board end status": {
+    "hidden": {
+      "team": [],
+      "innocent": [
+        "wagon",
+        "century",
+        "hour",
+        "green",
+        "king",
+        "millisecond",
+        "suv"
+      ],
+      "opponent": [
+        "glacier",
+        "island",
+        "peru",
+        "opal",
+        "ocean"
+      ],
+      "assassin": [
+        "carbon"
+      ]
+    },
+    "revealed": {
+      "team": {
+        "team": [
+          "satin",
+          "suede",
+          "wool",
+          "fleece",
+          "bomb",
+          "nuclear",
+          "club",
+          "machete",
+          "alcohol"
+        ],
+        "innocent": [],
+        "opponent": [],
+        "assassin": []
+      },
+      "opponent": {
+        "team": [],
+        "innocent": [],
+        "opponent": [
+          "scotland",
+          "cliff",
+          "quartz"
+        ],
+        "assassin": []
+      }
+    }
+  },
+  "Number of turns": 5,
+  "Aborted": false,
+  "Lose": false,
+  "Game ended through assassin": false,
+  "Request Count": 8,
+  "Parsed Request Count": 8,
+  "Violated Request Count": 0,
+  "Cluegiver engaged flags": {
+    "IGNORE RAMBLING": 0,
+    "IGNORE FALSE TARGETS OR GUESSES": 0,
+    "REPROMPT ON ERROR": 0,
+    "STRIP WORDS": 0,
+    "IGNORE NUMBER OF TARGETS": 0
+  },
+  "Guesser engaged flags": {
+    "IGNORE RAMBLING": 0,
+    "IGNORE FALSE TARGETS OR GUESSES": 0,
+    "REPROMPT ON ERROR": 0,
+    "STRIP WORDS": 0,
+    "IGNORE NUMBER OF TARGETS": 0
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "game_name": "bbh",
+    "experiment_name": "date_understanding",
+    "game_id": 211,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 1,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 300
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "Answerer",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T13:43:29.432284",
+        "action": {
+          "type": "send message",
+          "content": "Infer the date from context.\n\nQ: Today is Christmas Eve of 1937. What is the date 10 days ago in MM/DD/YYYY?\nOptions:\n(A) 12/14/2026\n(B) 12/14/1950\n(C) 12/14/2007\n(D) 12/14/1937\n(E) 07/14/1938\n(F) 12/14/1988\nA: (D)\n\nQ: Tomorrow is 11/12/2019. What is the date one year ago from today in MM/DD/YYYY?\nOptions:\n(A) 09/04/2018\n(B) 11/11/2018\n(C) 08/25/2018\n(D) 11/02/2018\n(E) 11/04/2018\nA: (B)\n\nQ: Jane and John married on Jan 2, 1958. It is their 5-year anniversary today. What is the date tomorrow in MM/DD/YYYY?\nOptions:\n(A) 01/11/1961\n(B) 01/03/1963\n(C) 01/18/1961\n(D) 10/14/1960\n(E) 01/03/1982\n(F) 12/03/1960\nA: (B)\n\nQ: 2015 is coming in 36 hours. What is the date one year ago from today in MM/DD/YYYY?\nOptions:\n(A) 12/09/2013\n(B) 01/19/2014\n(C) 12/28/2013\n(D) 07/29/2013\n(E) 12/29/2013\n(F) 02/28/2014\nA:",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T13:43:29.432301",
+        "action": {
+          "type": "get message",
+          "content": "To determine the correct date, we need to break down the timeline step-by-step:\n\n1.  **Determine \"Today's\" date:**\n    The statement says \"2015 is coming in 36 hours.\" This implies that the start of the year 2015 (January 1, 2015) is 36 hours away from \"today.\"\n    *   36 hours = 24 hours + 12 hours = 1 day + 12 hours.\n    *   If we subtract 1 day from January 1, 2015, we get December 31, 2014.\n    *   If we subtract another 12 hours from December 31, 2014, we land on **December 30, 2014** (specifically, noon on Dec 30, 2014, assuming the new year starts at midnight).\n    *   So, \"Today\" is **December 30, 2014**.\n\n2.  **Calculate \"One year ago from today\":**\n    *   Today: December 30, 2014.\n    *   One year ago: December 30, 2013.\n\n3.  **Check the options:**\n    Let's look at the provided options to see",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T13:43:29.432332",
+        "action": {
+          "type": "metadata",
+          "content": "Target: (E)"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T13:43:29.432344",
+        "action": {
+          "type": "wrong answer",
+          "content": "game_result = LOSE"
+        }
+      }
+    ]
+  ],
+  "Aborted": 0,
+  "Lose": 1,
+  "Success": 0,
+  "Request Count": 1,
+  "Parsed Request Count": 1,
+  "Violated Request Count": 0
+}

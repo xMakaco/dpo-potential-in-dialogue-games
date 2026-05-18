@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "game_name": "ifeval",
+    "experiment_name": "ifeval",
+    "game_id": 112,
+    "player_name": "Player 1",
+    "game_role": "InstructionFollower",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 1,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T14:24:55.105888",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nWhat's a good way to ask Sonia out? Please reply with exactly 4 paragraphs and separate each paragraph with two new lines. Put double quotation marks around your entire response. The very first paragraph must start with the word \"weekend\".<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 1280,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nWhat's a good way to ask Sonia out? Please reply with exactly 4 paragraphs and separate each paragraph with two new lines. Put double quotation marks around your entire response. The very first paragraph must start with the word \"weekend\".<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n\"weekend plans are often the perfect low-pressure way to initiate a date, so consider suggesting a casual activity that you both might enjoy, such as visiting a local art gallery or trying a new coffee shop.\n\nIt is important to be direct yet respectful in your approach, clearly stating your interest in spending time together while giving her the space to respond comfortably without feeling cornered or pressured.\n\nChoose a moment when you are both relaxed and not distracted by other tasks, ensuring that the conversation flows naturally before you make your invitation, which helps to create a positive and genuine atmosphere.\n\nFinally, be prepared for any outcome with grace, understanding that her response is about her current situation and feelings, and maintaining your dignity and kindness regardless of the answer will leave a lasting positive impression.\"<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 14:24:36.791870",
+            "call_duration": "0:00:18.313960",
+            "response": "\"weekend plans are often the perfect low-pressure way to initiate a date, so consider suggesting a casual activity that you both might enjoy, such as visiting a local art gallery or trying a new coffee shop.\n\nIt is important to be direct yet respectful in your approach, clearly stating your interest in spending time together while giving her the space to respond comfortably without feeling cornered or pressured.\n\nChoose a moment when you are both relaxed and not distracted by other tasks, ensuring that the conversation flows naturally before you make your invitation, which helps to create a positive and genuine atmosphere.\n\nFinally, be prepared for any outcome with grace, understanding that her response is about her current situation and feelings, and maintaining your dignity and kindness regardless of the answer will leave a lasting positive impression.\"",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

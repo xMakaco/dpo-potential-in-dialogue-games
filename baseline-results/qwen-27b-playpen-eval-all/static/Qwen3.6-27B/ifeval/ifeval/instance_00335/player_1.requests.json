@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "game_name": "ifeval",
+    "experiment_name": "ifeval",
+    "game_id": 335,
+    "player_name": "Player 1",
+    "game_role": "InstructionFollower",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 1,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T14:40:33.014905",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nWrite a proposal for a research project on the impact of the liberian civil war on the country's economy. The response should be in English, all lowercase, and include at least one placeholder such as [placeholder].<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 1280,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nWrite a proposal for a research project on the impact of the liberian civil war on the country's economy. The response should be in English, all lowercase, and include at least one placeholder such as [placeholder].<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\ntitle: assessing the long-term economic repercussions of the liberian civil war\n\nabstract: this research project aims to comprehensively analyze the structural and systemic impacts of the liberian civil war on the nation's economic landscape. by examining data from the pre-war era through the post-conflict reconstruction phase, we intend to identify key factors that hindered growth and propose sustainable recovery strategies.\n\nobjectives:\n1. to quantify the loss of gdp and infrastructure during the conflict years.\n2. to evaluate the shift in labor markets and human capital development.\n3. to assess the role of international aid in stabilizing the economy.\n\nmethodology: the study will employ a mixed-methods approach, combining quantitative analysis of economic indicators with qualitative interviews of [placeholder] local business owners and government officials. this dual approach ensures a holistic understanding of both macroeconomic trends and micro-level experiences.\n\nsignificance: understanding these impacts is crucial for policymakers aiming to prevent future economic instability and to foster resilient development in post-conflict societies. the findings will contribute to broader academic discourse on conflict economics and provide actionable insights for development agencies operating in liberia.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 14:40:06.376384",
+            "call_duration": "0:00:26.638423",
+            "response": "title: assessing the long-term economic repercussions of the liberian civil war\n\nabstract: this research project aims to comprehensively analyze the structural and systemic impacts of the liberian civil war on the nation's economic landscape. by examining data from the pre-war era through the post-conflict reconstruction phase, we intend to identify key factors that hindered growth and propose sustainable recovery strategies.\n\nobjectives:\n1. to quantify the loss of gdp and infrastructure during the conflict years.\n2. to evaluate the shift in labor markets and human capital development.\n3. to assess the role of international aid in stabilizing the economy.\n\nmethodology: the study will employ a mixed-methods approach, combining quantitative analysis of economic indicators with qualitative interviews of [placeholder] local business owners and government officials. this dual approach ensures a holistic understanding of both macroeconomic trends and micro-level experiences.\n\nsignificance: understanding these impacts is crucial for policymakers aiming to prevent future economic instability and to foster resilient development in post-conflict societies. the findings will contribute to broader academic discourse on conflict economics and provide actionable insights for development agencies operating in liberia.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

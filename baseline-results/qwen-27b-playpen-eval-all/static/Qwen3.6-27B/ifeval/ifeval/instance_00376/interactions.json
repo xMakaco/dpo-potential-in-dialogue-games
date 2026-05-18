@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "game_name": "ifeval",
+    "experiment_name": "ifeval",
+    "game_id": 376,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 1,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 1280
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "InstructionFollower",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T14:41:20.292320",
+        "action": {
+          "type": "send message",
+          "content": "Write a funny poem for kids about a product that you would like to sell. The poem should have exactly 6 stanzas. Separated the stanzas using 3 asterisk markers: ***",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:41:20.292342",
+        "action": {
+          "type": "get message",
+          "content": "I have a gadget, shiny and new,\nIt’s the best invention that I ever knew.\nIt doesn’t need batteries, plugs, or wires,\nIt works on magic and silly desires.\nIt’s small enough to fit in your pocket,\nBut big enough to make your teacher look shocked.\n\n***\n\nIt’s called the \"Sock-Saver 3000,\"\nThe perfect gift for everyone.\nYou know that feeling, deep in your heart,\nWhen one sock vanishes, tearing you apart?\nThe dryer eats them, the cat hides them away,\nThis device brings them back to save the day.\n\n***\n\nJust press the button with a happy click,\nAnd watch the laundry do a magic trick.\nIt scans the floorboards, checks under the bed,\nAnd finds the missing sock, just like it said.\nNo more mismatched toes in the morning light,\nNo more wearing socks that don’t quite fit right.\n\n***\n\nIt works on lefts, it works on rights,\nIt works on stripes and polka dots and plights.\nIf your sock is lost in the great beyond,\nThis little box will bring it back, unbound.\nIt even finds the ones you thought were gone,\nSince before the dawn of the break of dawn.\n\n***\n\nBut wait! There’s more to this clever plan,\nIt’s the most useful tool in all the land.\nIt doesn’t just find socks, oh no, not true,\nIt finds your lost remote and your old shoe.\nIt finds your homework, your keys, your pen,\nIt finds the things you can’t find again.\n\n***\n\nSo buy one now, don’t wait a beat,\nMake your life complete and sweet.\nFor the price of a cookie or two,\nYou’ll get the Sock-Saver, me and you.\nNo more crying, no more fuss,\nJust happy feet and happy us!",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:41:20.292381",
+        "action": {
+          "type": "target",
+          "content": {
+            "length_constraints:number_paragraphs": {
+              "num_paragraphs": 6
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:41:20.292528",
+        "action": {
+          "type": "followed all instructions",
+          "content": "game_result = WIN"
+        }
+      }
+    ]
+  ],
+  "Aborted": 0,
+  "Lose": 0,
+  "Success": 1,
+  "Request Count": 1,
+  "Parsed Request Count": 1,
+  "Violated Request Count": 0
+}

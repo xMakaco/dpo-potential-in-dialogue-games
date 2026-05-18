@@ -1,0 +1,1926 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\centering \large Interaction Transcript for game `adventuregame', experiment `new{-}words\_created\_basic\_hard', episode 0 with Qwen3.6{-}27B.
+\vspace{24pt}
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+    \# & \multicolumn{2}{c}{Player} && \multicolumn{2}{c}{Game Master} \\
+    \hline
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are playing a text adventure game. I will describe what you can perceive in the game. You write the single action you want to take in the game starting with >. Only reply with an action.} \\
+\texttt{For example:} \\
+\texttt{> open cupboard} \\
+\\ 
+\texttt{In addition to common actions, you can mator, unbal, gatic, remic, ratic and proar.} \\
+\\ 
+\texttt{Your goal for this game is: Make the inat mateny, the diale unsust and the subst dented.} \\
+\\ 
+\texttt{Once you have achieved your goal, write "> done" to end the game.} \\
+\\ 
+\texttt{You are in a cally now. There are a pante, a sness, a inat, a mical, a subst and a eness. There is a passage to a unree here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> mator inat} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 0} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'mator', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'eness1', 'cally1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.4666666666666667, 'visited_rooms': ['cally1'], 'visited_rooms_ratio': 0.25, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The inat is now dented.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> unbal inat} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 1} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'unbal', 'failed_precon_predicate': {'predicate_tuple': ['unsust', 'inat1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'eness1', 'cally1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.4666666666666667, 'visited_rooms': ['cally1'], 'visited_rooms_ratio': 0.25, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The inat is not unsust.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> gatic inat} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 2} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'gatic', 'failed_precon_predicate': {'predicate_tuple': ['exper', 'inat1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'eness1', 'cally1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.4666666666666667, 'visited_rooms': ['cally1'], 'visited_rooms_ratio': 0.25, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The inat is not exper.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> remic inat} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 3} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'remic', 'failed_precon_predicate': {'predicate_tuple': ['stord', 'inat1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'eness1', 'cally1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.4666666666666667, 'visited_rooms': ['cally1'], 'visited_rooms_ratio': 0.25, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The inat is not stord.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> ratic inat} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 4} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'ratic', 'failed_precon_predicate': {'predicate_tuple': ['mateny', 'inat1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'eness1', 'cally1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.4666666666666667, 'visited_rooms': ['cally1'], 'visited_rooms_ratio': 0.25, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The inat is not mateny.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> proar inat} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 5} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'proar', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'eness1', 'cally1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.4666666666666667, 'visited_rooms': ['cally1'], 'visited_rooms_ratio': 0.25, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['mateny(inat1)'], 'turn_goal_score': 1}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The inat is now mateny.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> mator diale} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 6} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_not_accessible', 'arg': {'failed_action_type': 'mator', 'failed_precon_predicate': {'predicate_tuple': ['at', 'diale1', 'cally1'], 'fulfilled': False, 'precon_idx': 1}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'eness1', 'cally1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.4666666666666667, 'visited_rooms': ['cally1'], 'visited_rooms_ratio': 0.25, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You can't see a diale here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> go unree} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 7} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'go', 'exploration_info': {'action_epistemic': True, 'action_pragmatic': True, 'effective_epistemic_gain_facts': [['exit', 'unree1', 'cally1'], ['exit', 'unree1', 'iness1'], ['at', 'player1', 'unree1'], ['at', 'scont1', 'unree1'], ['at', 'decte1', 'unree1']], 'effective_epistemic_gain_amount': 5, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'unree1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are in a unree now. There are a scont and a decte. There are passages to a cally and a iness here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> mator decte} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 8} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'domain_trait_type_mismatch', 'arg': {'failed_action_type': 'mator', 'failed_parameter': 'decte'}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'unree1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The decte is not dented{-}able.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> unbal decte} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 9} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'unbal', 'failed_precon_predicate': {'predicate_tuple': ['unsust', 'decte1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'unree1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The decte is not unsust.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> gatic decte} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 10} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'gatic', 'failed_precon_predicate': {'predicate_tuple': ['exper', 'decte1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'unree1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The decte is not exper.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> remic decte} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 11} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'remic', 'failed_precon_predicate': {'predicate_tuple': ['stord', 'decte1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'unree1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The decte is not stord.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> ratic decte} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 12} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'ratic', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'unree1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The decte is now stord.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> proar decte} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 13} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'proar', 'failed_precon_predicate': {'predicate_tuple': ['aphoned', 'decte1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'unree1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The decte is not aphoned.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> go cally} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 14} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'go', 'exploration_info': {'action_epistemic': True, 'action_pragmatic': True, 'effective_epistemic_gain_facts': [['at', 'player1', 'cally1']], 'effective_epistemic_gain_amount': 1, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{You are in a cally now. There are a pante, a sness, a inat, a mical, a subst and a eness. There is a passage to a unree here.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> mator subst} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 15} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'mator', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 1}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The subst is now dented.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> unbal subst} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 16} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'unbal', 'failed_precon_predicate': {'predicate_tuple': ['unsust', 'subst1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['dented', 'subst1'], ['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The subst is not unsust.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> gatic subst} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 17} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'gatic', 'failed_precon_predicate': {'predicate_tuple': ['exper', 'subst1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['dented', 'subst1'], ['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The subst is not exper.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> remic subst} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 18} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'remic', 'failed_precon_predicate': {'predicate_tuple': ['stord', 'subst1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['dented', 'subst1'], ['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The subst is not stord.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> ratic subst} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 19} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'ratic', 'failed_precon_predicate': {'predicate_tuple': ['mateny', 'subst1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['dented', 'subst1'], ['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The subst is not mateny.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> proar subst} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 20} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'proar', 'failed_precon_predicate': {'predicate_tuple': ['aphoned', 'subst1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['dented', 'subst1'], ['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The subst is not aphoned.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> mator sness} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 21} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'domain_trait_type_mismatch', 'arg': {'failed_action_type': 'mator', 'failed_parameter': 'sness'}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['dented', 'subst1'], ['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The sness is not dented{-}able.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> unbal sness} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 22} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'entity_state_mismatch', 'arg': {'failed_action_type': 'unbal', 'failed_precon_predicate': {'predicate_tuple': ['unsust', 'sness1'], 'fulfilled': False, 'precon_idx': 2}}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['dented', 'subst1'], ['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The sness is not unsust.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> gatic sness} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 23} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'gatic', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The sness is now unsust.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> mator pante} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 24} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'domain_trait_type_mismatch', 'arg': {'failed_action_type': 'mator', 'failed_parameter': 'pante'}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['dented', 'subst1'], ['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The pante is not dented{-}able.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> unbal pante} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 25} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'unbal', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The pante is now exper.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> gatic pante} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 26} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'gatic', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The pante is now unsust.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> mator mical} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 27} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'mator', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The mical is now dented.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> unbal mical} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 28} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'unbal', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The mical is now exper.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> gatic mical} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 29} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'gatic', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The mical is now unsust.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> mator eness} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 30} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'phase': 'resolution', 'fail_type': 'domain_trait_type_mismatch', 'arg': {'failed_action_type': 'mator', 'failed_parameter': 'eness'}, 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': [['dented', 'subst1'], ['mateny', 'inat1']], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The eness is not dented{-}able.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> unbal eness} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 31} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'unbal', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The eness is now exper.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> gatic eness} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 32} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'gatic', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The eness is now unsust.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{> done} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Round: 33} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'action_type': 'done', 'exploration_info': {'action_epistemic': False, 'action_pragmatic': True, 'effective_epistemic_gain_amount': 0, 'known_entities': [['at', 'mical1', 'cally1'], ['at', 'subst1', 'cally1'], ['at', 'pante1', 'cally1'], ['at', 'inat1', 'cally1'], ['at', 'player1', 'cally1'], ['at', 'scont1', 'unree1'], ['at', 'eness1', 'cally1'], ['at', 'decte1', 'unree1'], ['at', 'sness1', 'cally1']], 'known_entities_ratio': 0.6, 'visited_rooms': ['cally1', 'unree1'], 'visited_rooms_ratio': 0.5, 'known_goal_entities': [['at', 'subst1', 'cally1'], ['at', 'inat1', 'cally1']], 'known_goal_entities_ratio': 0.6666666666666666}, 'done_action': True}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'turn_goal_score': 0}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{Model produced DONE action at turn 33, end episode.} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'goal_states_achieved': ['dented(subst1)', 'mateny(inat1)'], 'game_successfully_finished': False}
+            }
+        }
+    }
+    & & \\ \\
+
+\end{supertabular}
+}
+
+\end{document}

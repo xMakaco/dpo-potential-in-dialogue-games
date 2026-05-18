@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "game_name": "guesswhat",
+    "experiment_name": "Level_2",
+    "game_id": 9,
+    "player_name": "Player 2",
+    "game_role": "Answerer",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 6,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:31:32.262950",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: yes<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:31.319772",
+            "call_duration": "0:00:00.943124",
+            "response": "ANSWER: yes",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:31:36.309203",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: no<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:35.351506",
+            "call_duration": "0:00:00.957637",
+            "response": "ANSWER: no",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:31:39.603964",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: no<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:38.644844",
+            "call_duration": "0:00:00.959048",
+            "response": "ANSWER: no",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:31:42.371854",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large feline?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large feline?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: yes<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:41.393512",
+            "call_duration": "0:00:00.978285",
+            "response": "ANSWER: yes",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:31:44.928294",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large feline?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a Lion?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: Lion, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: Lion\n\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a large feline?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a Lion?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: yes<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:43.950597",
+            "call_duration": "0:00:00.977643",
+            "response": "ANSWER: yes",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

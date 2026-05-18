@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "game_name": "ifeval",
+    "experiment_name": "ifeval",
+    "game_id": 335,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 1,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 1280
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "InstructionFollower",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T14:40:33.014992",
+        "action": {
+          "type": "send message",
+          "content": "Write a proposal for a research project on the impact of the liberian civil war on the country's economy. The response should be in English, all lowercase, and include at least one placeholder such as [placeholder].",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:40:33.015013",
+        "action": {
+          "type": "get message",
+          "content": "title: assessing the long-term economic repercussions of the liberian civil war\n\nabstract: this research project aims to comprehensively analyze the structural and systemic impacts of the liberian civil war on the nation's economic landscape. by examining data from the pre-war era through the post-conflict reconstruction phase, we intend to identify key factors that hindered growth and propose sustainable recovery strategies.\n\nobjectives:\n1. to quantify the loss of gdp and infrastructure during the conflict years.\n2. to evaluate the shift in labor markets and human capital development.\n3. to assess the role of international aid in stabilizing the economy.\n\nmethodology: the study will employ a mixed-methods approach, combining quantitative analysis of economic indicators with qualitative interviews of [placeholder] local business owners and government officials. this dual approach ensures a holistic understanding of both macroeconomic trends and micro-level experiences.\n\nsignificance: understanding these impacts is crucial for policymakers aiming to prevent future economic instability and to foster resilient development in post-conflict societies. the findings will contribute to broader academic discourse on conflict economics and provide actionable insights for development agencies operating in liberia.",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:40:33.015039",
+        "action": {
+          "type": "target",
+          "content": {
+            "change_case:english_lowercase": {},
+            "detectable_content:number_placeholders": {
+              "num_placeholders": 1
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:40:33.023222",
+        "action": {
+          "type": "followed all instructions",
+          "content": "game_result = WIN"
+        }
+      }
+    ]
+  ],
+  "Aborted": 0,
+  "Lose": 0,
+  "Success": 1,
+  "Request Count": 1,
+  "Parsed Request Count": 1,
+  "Violated Request Count": 0
+}

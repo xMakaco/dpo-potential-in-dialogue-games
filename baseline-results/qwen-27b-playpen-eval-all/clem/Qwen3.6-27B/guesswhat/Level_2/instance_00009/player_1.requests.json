@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "game_name": "guesswhat",
+    "experiment_name": "Level_2",
+    "game_id": 9,
+    "player_name": "Player 1",
+    "game_role": "Guesser",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 6,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:02:20.228716",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word an animal?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:02:18.570876",
+            "call_duration": "0:00:01.657787",
+            "response": "QUESTION: Is the target word an animal?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:02:24.493622",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:02:21.304867",
+            "call_duration": "0:00:03.188693",
+            "response": "QUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:02:28.028150",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:02:25.552109",
+            "call_duration": "0:00:02.475963",
+            "response": "QUESTION: Is the target word a large herbivore with a long neck?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:02:30.985960",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word a large feline?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:02:29.079944",
+            "call_duration": "0:00:01.905959",
+            "response": "QUESTION: Is the target word a large feline?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:02:33.762549",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large feline?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large feline?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word a Lion?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:02:32.065277",
+            "call_duration": "0:00:01.697220",
+            "response": "QUESTION: Is the target word a Lion?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 5,
+      "call": {
+        "timestamp": "2026-05-17T12:02:36.117598",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large feline?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a Lion?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Beech', 'Willow', 'Cedar', 'Pine', 'Lion', 'Jaguar', 'Deer', 'Giraffe']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word an animal?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a mammal that lives in the wild and is known for its spots or stripes?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large herbivore with a long neck?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a large feline?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a Lion?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nGUESS: Lion<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:02:34.867289",
+            "call_duration": "0:00:01.250257",
+            "response": "GUESS: Lion",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

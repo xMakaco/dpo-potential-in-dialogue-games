@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <style>
+        /* This CSS is based on a stack overflow answer by Roko C. Buljan in https://stackoverflow.com/a/71155446 */ 
+
+* {margin: 0; box-sizing: border-box;}
+
+body {
+  background-color: rgb(157, 152, 150);
+}
+
+.top-info {
+	text-align: center;
+	font: 1.25rem/1.5 sans-serif;
+	display: flex;
+	flex-direction: column;
+	padding: 1.25em;
+	width: 80%;
+  max-width: 1200px;
+	margin: auto;
+	background: #3f3e3e;
+	color: #fff;
+}
+
+.chat {
+  --rad: 1.5rem;
+  --rad-sm: .3rem;
+  font: 1rem/1.5 sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+}
+
+.msg {
+  position: relative;
+  padding: .6rem 1.2rem;
+  margin-inline: 1rem;
+  margin-block: 2rem;
+}
+
+.game-round {
+  padding: 1.5rem 0 1.5rem 0;
+  background-color: #f0f8ff; /* light background for content */
+  position: relative; /* Important to position the badge */
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+/* Badge in top-right corner */
+.game-round::before {
+  content: "Round " attr(data-round);
+  position: absolute;
+  top: .35rem;
+  right: 1.5rem;
+  color: #c4c3c3;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* For fenced code/monospace blocks */
+pre {
+  background: #e0e0e0;
+  border-left: .2rem solid #f36d33;
+  border-radius: .2rem;
+  color: #666;
+  font-family: monospace;
+  line-height: 1.0;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  overflow: auto;
+  padding: 0.5rem 0.2rem;
+}/* This CSS is based on a stack overflow answer by Roko C. Buljan in https://stackoverflow.com/a/71155446 */
+/* Player colors are assigned according to number of players */
+
+.msg.player-gm {
+  border-radius: var(--rad-sm) var(--rad) var(--rad) var(--rad-sm);
+  color: #fff;
+  margin-right: 30%;
+}
+
+.msg.gm-player {
+  border-radius: var(--rad) var(--rad-sm) var(--rad-sm) var(--rad);
+  background: #c4c3c3;
+  color: #0c0c0c;
+  margin-left: 30%;
+}
+
+.msg.gm-gm {
+  border-radius: var(--rad-sm) var(--rad-sm) var(--rad-sm) var(--rad-sm);
+  background: #f1f1f1;
+  color: #373636;
+  margin-left: 50%;
+  margin-right: 10%;
+  font-size: 0.8rem;
+}
+
+.msg::before {
+  left: 1rem;
+  content: attr(speaker);
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 100%;
+  color: #888;
+  white-space: nowrap;
+}.msg.player-gm.p1 { background: darkseagreen; }
+
+    </style>
+</head>
+<body>
+
+<br/>
+
+<div class="top-info">
+    <p>Interaction Transcript for game 'ifeval', experiment 'ifeval', episode 469 with Qwen3.6-27B.</p>
+</div>
+
+<br/>
+
+<div class="chat">
+<div class="game-round" data-round="0">
+    <div speaker="GM (Game Master) to Player 1 (InstructionFollower)" class="msg gm-player p1" style="">
+        <p>Give me a 300+ word startup pitch for a company that provides a service that creates trusts for people online.</p>
+    </div>
+
+    <div speaker="Player 1 (InstructionFollower) to GM (Game Master)" class="msg player-gm p1" style="">
+        <p>**Pitch: TrustFlow – Democratizing Wealth Protection**<br/><br/>Imagine a world where protecting your family’s future isn’t reserved for the ultra-wealthy or those who can afford hourly rates of $400+ from estate planning attorneys. Today, that is the reality. For the average middle-class family, creating a trust is a daunting, expensive, and opaque process. The result? Millions of Americans die without proper estate plans, leading to costly probate proceedings, family disputes, and unintended tax consequences. This is the problem **TrustFlow** solves.<br/><br/>TrustFlow is a fintech platform that democratizes access to estate planning by providing an automated, secure, and legally robust online service for creating and managing revocable living trusts. We are not just a document generator; we are a comprehensive estate planning ecosystem. Our proprietary AI-driven engine guides users through a conversational interface, asking intuitive questions to understand their unique family dynamics, asset structures, and wishes. In under 30 minutes, TrustFlow generates customized, state-compliant legal documents that are reviewed by a network of licensed attorneys, ensuring validity and peace of mind.<br/><br/>Our value proposition is threefold: accessibility, affordability, and continuity. First, we lower the barrier to entry by offering a flat-fee subscription model that is a fraction of traditional legal costs. Second, we simplify the complex jargon of estate law into plain English, empowering users to make informed decisions. Third, and most importantly, we offer ongoing trust administration support. Unlike static PDFs from other competitors, TrustFlow provides a secure digital vault for asset titling, beneficiary updates, and integration with financial institutions, ensuring the trust remains active and effective as life changes.<br/><br/>The market opportunity is massive. With the Great Wealth Transfer underway, an estimated $84 trillion in assets will pass to the next generation in the coming decades. Yet, less than 20% of eligible households have a trust. TrustFlow targets the underserved middle and upper-middle class, a demographic that has significant assets but lacks the resources for bespoke legal counsel.<br/><br/>Our business model relies on a freemium acquisition strategy, converting users from free estate checkups to paid trust creation packages, followed by recurring revenue from annual maintenance and administration fees. We have already secured partnerships with three major regional banks to offer TrustFlow as a white-label service to their clients, validating our technology and market fit.<br/><br/>We are seeking seed funding to scale our marketing efforts, expand our legal network to all 50 states, and enhance our AI capabilities for complex asset integration. Join us in building TrustFlow, where protecting what matters most is simple, affordable, and accessible to everyone. Let’s ensure no family is left unprotected.</p>
+    </div>
+
+    <div speaker="Game Master: target" class="msg gm-gm" style="">
+        <p>{&#x27;length_constraints:number_words&#x27;: {&#x27;relation&#x27;: &#x27;at least&#x27;, &#x27;num_words&#x27;: 300}}</p>
+    </div>
+
+    <div speaker="Game Master: followed all instructions" class="msg gm-gm" style="">
+        <p>game_result = WIN</p>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

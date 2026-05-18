@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "game_name": "ifeval",
+    "experiment_name": "ifeval",
+    "game_id": 212,
+    "player_name": "Player 1",
+    "game_role": "InstructionFollower",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 1,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T14:33:37.338807",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nPlan a 12-day trip to Italy for professionals in finance, including Rome, Florence, and Venice. Make it in a format of a list with at least one placeholder, such as [address]. The response must be in English and all lowercase letters.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 1280,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nPlan a 12-day trip to Italy for professionals in finance, including Rome, Florence, and Venice. Make it in a format of a list with at least one placeholder, such as [address]. The response must be in English and all lowercase letters.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n1. day 1: arrive in rome, check into hotel at [address], and enjoy a welcome dinner.\n2. day 2: visit the colosseum and roman forum, followed by a networking lunch near the pantheon.\n3. day 3: explore vatican city, including st. peter's basilica and the vatican museums.\n4. day 4: take a high-speed train to florence, check into hotel, and walk around the historic center.\n5. day 5: visit the uffizi gallery and galleria dell'accademia to see michelangelo's david.\n6. day 6: day trip to sienna or san gimignano for wine tasting and team building.\n7. day 7: explore florence's financial district and visit the palazzo vecchio for historical context.\n8. day 8: travel to venice, check into hotel, and enjoy a gondola ride through the canals.\n9. day 9: visit st. mark's basilica and the doge's palace, followed by a business dinner in castello.\n10. day 10: explore murano and burano islands for glassmaking and lace traditions.\n11. day 11: free day for personal exploration or final business meetings at [address].\n12. day 12: depart from venice marco polo airport.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 14:33:03.515076",
+            "call_duration": "0:00:33.823633",
+            "response": "1. day 1: arrive in rome, check into hotel at [address], and enjoy a welcome dinner.\n2. day 2: visit the colosseum and roman forum, followed by a networking lunch near the pantheon.\n3. day 3: explore vatican city, including st. peter's basilica and the vatican museums.\n4. day 4: take a high-speed train to florence, check into hotel, and walk around the historic center.\n5. day 5: visit the uffizi gallery and galleria dell'accademia to see michelangelo's david.\n6. day 6: day trip to sienna or san gimignano for wine tasting and team building.\n7. day 7: explore florence's financial district and visit the palazzo vecchio for historical context.\n8. day 8: travel to venice, check into hotel, and enjoy a gondola ride through the canals.\n9. day 9: visit st. mark's basilica and the doge's palace, followed by a business dinner in castello.\n10. day 10: explore murano and burano islands for glassmaking and lace traditions.\n11. day 11: free day for personal exploration or final business meetings at [address].\n12. day 12: depart from venice marco polo airport.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}
