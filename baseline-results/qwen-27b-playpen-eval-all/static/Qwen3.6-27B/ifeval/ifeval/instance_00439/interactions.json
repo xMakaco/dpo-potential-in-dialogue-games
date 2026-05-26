@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "game_name": "ifeval",
+    "experiment_name": "ifeval",
+    "game_id": 439,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 1,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 1280
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "InstructionFollower",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T14:43:40.863737",
+        "action": {
+          "type": "send message",
+          "content": "Students are travelling to UCI for 3 days. Create a hilarious itinerary for them. Do not use the word 'university'. Your entire response should have exactly 4 paragraphs.  Separate paragraphs with the markdown divider: ***",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:43:40.863759",
+        "action": {
+          "type": "get message",
+          "content": "Day one begins with the sacred ritual of locating the campus, a task that requires more GPS recalculations than a lost tourist in Tokyo. Upon arrival, students will immediately engage in the high-stakes sport of \"Find the Nearest Coffee,\" treating every espresso machine like a holy relic. After caffeine-induced jitters subside, they will wander aimlessly through the orange groves, pretending to understand the agricultural significance of the fruit while secretly plotting their escape from the heat. The evening concludes with a solemn vow to never wear white again, as the dust of Irvine has already claimed its first victim.\n\n***\n\nOn day two, the group embarks on a quest to decipher the architectural maze, mistaking a modern art installation for a functional restroom and a sculpture garden for a parking lot. They will spend hours debating whether the squirrels are actually undercover professors testing their observational skills, leading to intense philosophical discussions under the shade of a palm tree. Lunch is a chaotic affair involving shared tacos and the universal language of \"who brought the hot sauce?\" followed by a nap session that defies the laws of physics, as students fall asleep standing up in the library lobby.\n\n***\n\nDay three is dedicated to the art of procrastination, where students attempt to write papers that are due next semester while pretending to study for exams that haven't been announced yet. They will explore the local food scene, consuming enough churros to power a small city, and then immediately regret it while trying to fit into their jeans. The afternoon involves a frantic search for the exit, only to realize they have been walking in circles around the same fountain for three hours, convinced it is a different one each time.\n\n***\n\nThe final hours are spent packing bags with the urgency of a heist movie, leaving behind half-eaten snacks and existential dread in the dorms. As they board the bus, they exchange solemn glances, knowing they have survived the Irvine Gauntlet and earned the right to complain about it for the rest of their lives. The journey home is marked by silence, broken only by the sound of stomachs growling and the collective realization that they forgot to charge their phones. They arrive home exhausted, sunburned, and strangely proud of their ability to navigate a place that actively resists being understood.",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:43:40.863800",
+        "action": {
+          "type": "target",
+          "content": {
+            "length_constraints:number_paragraphs": {
+              "num_paragraphs": 4
+            },
+            "keywords:forbidden_words": {
+              "forbidden_words": [
+                "university"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:43:40.864246",
+        "action": {
+          "type": "followed all instructions",
+          "content": "game_result = WIN"
+        }
+      }
+    ]
+  ],
+  "Aborted": 0,
+  "Lose": 0,
+  "Success": 1,
+  "Request Count": 1,
+  "Parsed Request Count": 1,
+  "Violated Request Count": 0
+}

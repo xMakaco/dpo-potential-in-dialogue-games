@@ -1,0 +1,72 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\centering \large Interaction Transcript for game `ifeval', experiment `ifeval', episode 255 with Qwen3.6{-}27B.
+\vspace{24pt}
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+    \# & \multicolumn{2}{c}{Player} && \multicolumn{2}{c}{Game Master} \\
+    \hline
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{what do you call an excluded scientist who is asked to stay home? Please finish your answer with a postscript starting with P.P.S} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{There isn't a specific, widely recognized scientific term for an "excluded scientist who is asked to stay home." The phrase sounds like it might be a riddle, a joke, or a reference to a specific fictional scenario or news event, but it does not correspond to a standard professional title or concept in the scientific community.} \\
+\\ 
+\texttt{If this is a riddle, it might be playing on words (e.g., "homeless scientist" or "stay{-}at{-}home researcher"), but without more context, it remains ambiguous. In professional contexts, scientists who are excluded from projects or institutions might be described as "disaffiliated," "suspended," or "non{-}participating," but none of these terms inherently imply being "asked to stay home."} \\
+\\ 
+\texttt{P.P.S. If you meant a different term or have a specific context in mind, feel free to clarify!} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'detectable_content:postscript': {'postscript_marker': 'P.P.S'}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{game\_result = WIN} \\
+            }
+        }
+    }
+    & & \\ \\
+
+\end{supertabular}
+}
+
+\end{document}

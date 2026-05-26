@@ -1,0 +1,1505 @@
+{
+  "meta": {
+    "game_name": "codenames",
+    "experiment_name": "risk_high",
+    "game_id": 9,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 7,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 300
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "ClueGiver",
+      "model_name": "Qwen3.6-27B"
+    },
+    "Player 2": {
+      "game_role": "Guesser",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:34.632181",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "round",
+                "time",
+                "racket",
+                "trunk",
+                "ketchup",
+                "millionaire",
+                "capital",
+                "circle",
+                "back"
+              ],
+              "innocent": [
+                "eagle",
+                "olympus",
+                "lion"
+              ],
+              "opponent": [
+                "worm",
+                "tooth",
+                "torch",
+                "board",
+                "spy",
+                "ground",
+                "card",
+                "watch"
+              ],
+              "assassin": [
+                "suit",
+                "paper",
+                "post",
+                "missile",
+                "pipe"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:38:36.640239",
+        "action": {
+          "type": "send message",
+          "content": "Provide one single-word clue that relates to some of your team's words from the list below. You can choose to how many and to which words your clue relates to.\nThe goal is to have your partner guess all of your team's words based on the clues you give them, before the other team has uncovered all of theirs. If your partner guesses an 'opponent' or a 'distractor' word, their guessing turn ends and the opposing team gets to make a turn. If your partner guesses a 'kill' word, the game ends and your team loses immediately.\nThe more words your clue relates to, the quicker you can win the game, but the harder the associations may be to guess for your partner, so choose your clue word wisely. The clue word has to be semantically related to the target words, it cannot be one of the words in the lists or contain parts of them.\n\nAlways give your single-word clue and your comma-separated list of related target words in the following format and make your answers as short as possible, never include any other text than is required in this form:\n\nCLUE: <WORD>\nTARGETS: <TARGETS>\n\nYour team words are: round, time, racket, trunk, ketchup, millionaire, capital, circle, back.\nYour opponent's team words are: worm, tooth, torch, board, spy, ground, card, watch.\nDistractor words are: eagle, olympus, lion.\nThe kill words are: suit, paper, post, missile, pipe.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:36.640257",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: BALL\nTARGETS: round, circle, racket",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:36.640548",
+        "action": {
+          "type": "clue",
+          "content": "ball"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:36.640585",
+        "action": {
+          "type": "targets",
+          "content": [
+            "round",
+            "circle",
+            "racket"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:36.640611",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "round",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:36.640633",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "circle",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:36.640652",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "racket",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:38:38.119357",
+        "action": {
+          "type": "send message",
+          "content": "Provide a comma-separated list of up to 3 words from the following list that best relate or are most closely associated with the word 'ball'. Always start your list of guess(es) with 'GUESS: ' and do not include any other text in your answer.\n\ntrunk, circle, olympus, lion, suit, missile, ground, card, eagle, board, post, racket, spy, ketchup, millionaire, paper, back, worm, pipe, capital, tooth, time, watch, round, torch",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.119373",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: round, circle, ground",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.119486",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "round",
+            "circle",
+            "ground"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.119529",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "round",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.119553",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "round",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.119576",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "circle",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.119595",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "circle",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.119615",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "ground",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.119634",
+        "action": {
+          "type": "turn end after",
+          "content": "ground"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.120609",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "card",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:38.120643",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "time",
+                "racket",
+                "trunk",
+                "ketchup",
+                "millionaire",
+                "capital",
+                "back"
+              ],
+              "innocent": [
+                "eagle",
+                "olympus",
+                "lion"
+              ],
+              "opponent": [
+                "worm",
+                "tooth",
+                "torch",
+                "board",
+                "spy",
+                "watch"
+              ],
+              "assassin": [
+                "suit",
+                "paper",
+                "post",
+                "missile",
+                "pipe"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "round",
+                  "circle"
+                ],
+                "innocent": [],
+                "opponent": [
+                  "ground"
+                ],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "card"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:38:39.946618",
+        "action": {
+          "type": "send message",
+          "content": "The words round, circle were guessed correctly. The word ground was guessed but is an opponent word. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: time, racket, trunk, ketchup, millionaire, capital, back.\nRemaining words for your opponent are: worm, tooth, torch, board, spy, card, watch.\nRemaining distractor words are: eagle, olympus, lion.\nRemaining kill words are: suit, paper, post, missile, pipe.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:39.946634",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: MONEY\nTARGETS: millionaire, capital",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:39.946895",
+        "action": {
+          "type": "clue",
+          "content": "money"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:39.946930",
+        "action": {
+          "type": "targets",
+          "content": [
+            "millionaire",
+            "capital"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:39.946955",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "millionaire",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:39.946976",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "capital",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:38:41.264182",
+        "action": {
+          "type": "send message",
+          "content": "The words round, circle were guessed correctly. The word ground was guessed but is an opponent word. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 2 words from the following list of words that best relate or are most closely associated with the word 'money'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\ntrunk, olympus, lion, suit, missile, eagle, board, post, racket, spy, ketchup, millionaire, paper, back, worm, pipe, capital, tooth, time, watch, torch",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:41.264198",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: millionaire, capital",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:41.264308",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "millionaire",
+            "capital"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:41.264349",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "millionaire",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:41.264372",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "millionaire",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:41.264394",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "capital",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:41.264412",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "capital",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:41.264670",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "worm",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:41.264699",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "time",
+                "racket",
+                "trunk",
+                "ketchup",
+                "back"
+              ],
+              "innocent": [
+                "eagle",
+                "olympus",
+                "lion"
+              ],
+              "opponent": [
+                "tooth",
+                "torch",
+                "board",
+                "spy",
+                "watch"
+              ],
+              "assassin": [
+                "suit",
+                "paper",
+                "post",
+                "missile",
+                "pipe"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "round",
+                  "circle",
+                  "millionaire",
+                  "capital"
+                ],
+                "innocent": [],
+                "opponent": [
+                  "ground"
+                ],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "card",
+                  "worm"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:38:43.245171",
+        "action": {
+          "type": "send message",
+          "content": "The words millionaire, capital were guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: time, racket, trunk, ketchup, back.\nRemaining words for your opponent are: worm, tooth, torch, board, spy, watch.\nRemaining distractor words are: eagle, olympus, lion.\nRemaining kill words are: suit, paper, post, missile, pipe.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:43.245190",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: REAR\nTARGETS: back, trunk",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:43.245479",
+        "action": {
+          "type": "clue",
+          "content": "rear"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:43.245522",
+        "action": {
+          "type": "targets",
+          "content": [
+            "back",
+            "trunk"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:43.245550",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "back",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:43.245571",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "trunk",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:38:44.600062",
+        "action": {
+          "type": "send message",
+          "content": "The words millionaire, capital were guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 2 words from the following list of words that best relate or are most closely associated with the word 'rear'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\ntrunk, olympus, lion, suit, missile, eagle, board, post, racket, spy, ketchup, paper, back, pipe, tooth, time, watch, torch",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:44.600078",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: back, trunk",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:44.600194",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "back",
+            "trunk"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:44.600234",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "back",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:44.600257",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "back",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:44.600278",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "trunk",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:44.600296",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "trunk",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:44.600586",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "tooth",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:44.600616",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "time",
+                "racket",
+                "ketchup"
+              ],
+              "innocent": [
+                "eagle",
+                "olympus",
+                "lion"
+              ],
+              "opponent": [
+                "torch",
+                "board",
+                "spy",
+                "watch"
+              ],
+              "assassin": [
+                "suit",
+                "paper",
+                "post",
+                "missile",
+                "pipe"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "round",
+                  "circle",
+                  "millionaire",
+                  "capital",
+                  "back",
+                  "trunk"
+                ],
+                "innocent": [],
+                "opponent": [
+                  "ground"
+                ],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "card",
+                  "worm",
+                  "tooth"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:38:46.415697",
+        "action": {
+          "type": "send message",
+          "content": "The words back, trunk were guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: time, racket, ketchup.\nRemaining words for your opponent are: tooth, torch, board, spy, watch.\nRemaining distractor words are: eagle, olympus, lion.\nRemaining kill words are: suit, paper, post, missile, pipe.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:46.415714",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: TENNIS\nTARGETS: racket",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:46.415891",
+        "action": {
+          "type": "clue",
+          "content": "tennis"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:46.415924",
+        "action": {
+          "type": "targets",
+          "content": [
+            "racket"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:46.415949",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "racket",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:38:47.586723",
+        "action": {
+          "type": "send message",
+          "content": "The words back, trunk were guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'tennis'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\nolympus, lion, suit, missile, eagle, board, post, racket, spy, ketchup, paper, pipe, time, watch, torch",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:47.586739",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: racket",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:47.586806",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "racket"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:47.586845",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "racket",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:47.586868",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "racket",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:47.587193",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "spy",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:47.587223",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "time",
+                "ketchup"
+              ],
+              "innocent": [
+                "eagle",
+                "olympus",
+                "lion"
+              ],
+              "opponent": [
+                "torch",
+                "board",
+                "watch"
+              ],
+              "assassin": [
+                "suit",
+                "paper",
+                "post",
+                "missile",
+                "pipe"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "round",
+                  "circle",
+                  "millionaire",
+                  "capital",
+                  "back",
+                  "trunk",
+                  "racket"
+                ],
+                "innocent": [],
+                "opponent": [
+                  "ground"
+                ],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "card",
+                  "worm",
+                  "tooth",
+                  "spy"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:38:49.344410",
+        "action": {
+          "type": "send message",
+          "content": "The word racket was guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: time, ketchup.\nRemaining words for your opponent are: torch, board, spy, watch.\nRemaining distractor words are: eagle, olympus, lion.\nRemaining kill words are: suit, paper, post, missile, pipe.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:49.344426",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: CLOCK\nTARGETS: time",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:49.344594",
+        "action": {
+          "type": "clue",
+          "content": "clock"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:49.344627",
+        "action": {
+          "type": "targets",
+          "content": [
+            "time"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:49.344651",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "time",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:38:50.558164",
+        "action": {
+          "type": "send message",
+          "content": "The word racket was guessed correctly. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'clock'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\nolympus, lion, suit, missile, eagle, board, post, ketchup, paper, pipe, time, watch, torch",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:50.558180",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: watch",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:50.558252",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "watch"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:50.558294",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "watch",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:50.558319",
+        "action": {
+          "type": "turn end after",
+          "content": "watch"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:50.558644",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "torch",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:50.558675",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "time",
+                "ketchup"
+              ],
+              "innocent": [
+                "eagle",
+                "olympus",
+                "lion"
+              ],
+              "opponent": [
+                "board"
+              ],
+              "assassin": [
+                "suit",
+                "paper",
+                "post",
+                "missile",
+                "pipe"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "round",
+                  "circle",
+                  "millionaire",
+                  "capital",
+                  "back",
+                  "trunk",
+                  "racket"
+                ],
+                "innocent": [],
+                "opponent": [
+                  "ground",
+                  "watch"
+                ],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "card",
+                  "worm",
+                  "tooth",
+                  "spy",
+                  "torch"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:38:52.361000",
+        "action": {
+          "type": "send message",
+          "content": "The word watch was guessed but is an opponent word. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: time, ketchup.\nRemaining words for your opponent are: torch, board.\nRemaining distractor words are: eagle, olympus, lion.\nRemaining kill words are: suit, paper, post, missile, pipe.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:52.361016",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: HOUR\nTARGETS: time",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:52.361175",
+        "action": {
+          "type": "clue",
+          "content": "hour"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:52.361209",
+        "action": {
+          "type": "targets",
+          "content": [
+            "time"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:52.361233",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "time",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:38:53.607468",
+        "action": {
+          "type": "send message",
+          "content": "The word watch was guessed but is an opponent word. Your turn ended there.\nNow provide another comma-separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'hour'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.\n\nolympus, lion, suit, missile, eagle, board, post, ketchup, paper, pipe, time",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:53.607484",
+        "action": {
+          "type": "get message",
+          "content": "GUESS: time",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:53.607552",
+        "action": {
+          "type": "guesses",
+          "content": [
+            "time"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:53.607591",
+        "action": {
+          "type": "team revealed",
+          "content": {
+            "word": "time",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:53.607614",
+        "action": {
+          "type": "target revealed",
+          "content": {
+            "word": "time",
+            "assignment": "team"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:53.607956",
+        "action": {
+          "type": "opponent revealed",
+          "content": {
+            "word": "board",
+            "assignment": "opponent"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:53.607987",
+        "action": {
+          "type": "board status",
+          "content": {
+            "hidden": {
+              "team": [
+                "ketchup"
+              ],
+              "innocent": [
+                "eagle",
+                "olympus",
+                "lion"
+              ],
+              "opponent": [],
+              "assassin": [
+                "suit",
+                "paper",
+                "post",
+                "missile",
+                "pipe"
+              ]
+            },
+            "revealed": {
+              "team": {
+                "team": [
+                  "round",
+                  "circle",
+                  "millionaire",
+                  "capital",
+                  "back",
+                  "trunk",
+                  "racket",
+                  "time"
+                ],
+                "innocent": [],
+                "opponent": [
+                  "ground",
+                  "watch"
+                ],
+                "assassin": []
+              },
+              "opponent": {
+                "team": [],
+                "innocent": [],
+                "opponent": [
+                  "card",
+                  "worm",
+                  "tooth",
+                  "spy",
+                  "torch",
+                  "board"
+                ],
+                "assassin": []
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:38:55.670260",
+        "action": {
+          "type": "send message",
+          "content": "The word time was guessed correctly. Your teammate's turn ended there.\nNow provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma-separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.\n\nYour remaining team words are: ketchup.\nRemaining words for your opponent are: board.\nRemaining distractor words are: eagle, olympus, lion.\nRemaining kill words are: suit, paper, post, missile, pipe.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:55.670276",
+        "action": {
+          "type": "get message",
+          "content": "CLUE: TOMATO\nTARGETS: ketchup",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:55.670424",
+        "action": {
+          "type": "clue",
+          "content": "tomato"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:55.670459",
+        "action": {
+          "type": "targets",
+          "content": [
+            "ketchup"
+          ]
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:55.670483",
+        "action": {
+          "type": "word targeted",
+          "content": {
+            "word": "ketchup",
+            "assignment": "team"
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:38:55.670806",
+        "action": {
+          "type": "game end",
+          "content": "opponent has won"
+        }
+      }
+    ]
+  ],
+  "board end status": {
+    "hidden": {
+      "team": [
+        "ketchup"
+      ],
+      "innocent": [
+        "eagle",
+        "olympus",
+        "lion"
+      ],
+      "opponent": [],
+      "assassin": [
+        "suit",
+        "paper",
+        "post",
+        "missile",
+        "pipe"
+      ]
+    },
+    "revealed": {
+      "team": {
+        "team": [
+          "round",
+          "circle",
+          "millionaire",
+          "capital",
+          "back",
+          "trunk",
+          "racket",
+          "time"
+        ],
+        "innocent": [],
+        "opponent": [
+          "ground",
+          "watch"
+        ],
+        "assassin": []
+      },
+      "opponent": {
+        "team": [],
+        "innocent": [],
+        "opponent": [
+          "card",
+          "worm",
+          "tooth",
+          "spy",
+          "torch",
+          "board"
+        ],
+        "assassin": []
+      }
+    }
+  },
+  "Number of turns": 7,
+  "Aborted": false,
+  "Lose": true,
+  "Game ended through assassin": false,
+  "Request Count": 13,
+  "Parsed Request Count": 13,
+  "Violated Request Count": 0,
+  "Cluegiver engaged flags": {
+    "IGNORE RAMBLING": 0,
+    "IGNORE FALSE TARGETS OR GUESSES": 0,
+    "REPROMPT ON ERROR": 0,
+    "STRIP WORDS": 0,
+    "IGNORE NUMBER OF TARGETS": 0
+  },
+  "Guesser engaged flags": {
+    "IGNORE RAMBLING": 0,
+    "IGNORE FALSE TARGETS OR GUESSES": 0,
+    "REPROMPT ON ERROR": 0,
+    "STRIP WORDS": 0,
+    "IGNORE NUMBER OF TARGETS": 0
+  }
+}

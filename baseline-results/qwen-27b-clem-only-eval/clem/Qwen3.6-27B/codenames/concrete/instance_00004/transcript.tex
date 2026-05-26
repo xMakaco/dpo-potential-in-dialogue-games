@@ -1,0 +1,605 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\centering \large Interaction Transcript for game `codenames', experiment `concrete', episode 4 with Qwen3.6{-}27B.
+\vspace{24pt}
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+    \# & $\;$A & \multicolumn{4}{c}{Game Master} & $\;\:$B\\
+    \hline
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['thermometer', 'bikini', 'ear', 'canister', 'armchair', 'island', 'videocassette', 'snowsuit', 'blackbird'], 'innocent': ['mirror', 'yacht', 'bird', 'footstool', 'rattlesnake', 'teapot', 'daffodil'], 'opponent': ['necktie', 'bulb', 'blender', 'walrus', 'burger', 'rafter', 'tail', 'spear'], 'assassin': ['escalator']}, 'revealed': {'team': {'team': [], 'innocent': [], 'opponent': [], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': [], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{Provide one single{-}word clue that relates to some of your team's words from the list below. You can choose to how many and to which words your clue relates to.} \\
+\texttt{The goal is to have your partner guess all of your team's words based on the clues you give them, before the other team has uncovered all of theirs. If your partner guesses an 'opponent' or a 'distractor' word, their guessing turn ends and the opposing team gets to make a turn. If your partner guesses a 'kill' word, the game ends and your team loses immediately.} \\
+\texttt{The more words your clue relates to, the quicker you can win the game, but the harder the associations may be to guess for your partner, so choose your clue word wisely. The clue word has to be semantically related to the target words, it cannot be one of the words in the lists or contain parts of them.} \\
+\\ 
+\texttt{Always give your single{-}word clue and your comma{-}separated list of related target words in the following format and make your answers as short as possible, never include any other text than is required in this form:} \\
+\\ 
+\texttt{CLUE: <WORD>} \\
+\texttt{TARGETS: <TARGETS>} \\
+\\ 
+\texttt{Your team words are: thermometer, bikini, ear, canister, armchair, island, videocassette, snowsuit, blackbird.} \\
+\texttt{Your opponent's team words are: necktie, bulb, blender, walrus, burger, rafter, tail, spear.} \\
+\texttt{Distractor words are: mirror, yacht, bird, footstool, rattlesnake, teapot, daffodil.} \\
+\texttt{The kill words are: escalator.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: WARM} \\
+\texttt{TARGETS: thermometer, bikini, snowsuit} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{warm} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['thermometer', 'bikini', 'snowsuit']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'thermometer', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'bikini', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'snowsuit', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{Provide a comma{-}separated list of up to 3 words from the following list that best relate or are most closely associated with the word 'warm'. Always start your list of guess(es) with 'GUESS: ' and do not include any other text in your answer.} \\
+\\ 
+\texttt{tail, necktie, blackbird, canister, escalator, ear, thermometer, yacht, bulb, mirror, island, rattlesnake, walrus, bird, blender, rafter, daffodil, footstool, videocassette, spear, snowsuit, teapot, armchair, bikini, burger} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: armchair, teapot, snowsuit} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['armchair', 'teapot', 'snowsuit']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'armchair', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'teapot', 'assignment': 'innocent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{teapot} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'tail', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['thermometer', 'bikini', 'ear', 'canister', 'island', 'videocassette', 'snowsuit', 'blackbird'], 'innocent': ['mirror', 'yacht', 'bird', 'footstool', 'rattlesnake', 'daffodil'], 'opponent': ['necktie', 'bulb', 'blender', 'walrus', 'burger', 'rafter', 'spear'], 'assassin': ['escalator']}, 'revealed': {'team': {'team': ['armchair'], 'innocent': ['teapot'], 'opponent': [], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['tail'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The word armchair was guessed correctly. The word teapot was guessed but is an innocent word. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: thermometer, bikini, ear, canister, island, videocassette, snowsuit, blackbird.} \\
+\texttt{Remaining words for your opponent are: necktie, bulb, blender, walrus, burger, rafter, tail, spear.} \\
+\texttt{Remaining distractor words are: mirror, yacht, bird, footstool, rattlesnake, daffodil.} \\
+\texttt{Remaining kill words are: escalator.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: BODY} \\
+\texttt{TARGETS: ear, bikini} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{body} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['ear', 'bikini']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'ear', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'bikini', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{The word armchair was guessed correctly. The word teapot was guessed but is an innocent word. Your turn ended there.} \\
+\texttt{Now provide another comma{-}separated list of at least 1 and up to 2 words from the following list of words that best relate or are most closely associated with the word 'body'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.} \\
+\\ 
+\texttt{necktie, blackbird, canister, escalator, ear, thermometer, yacht, bulb, mirror, island, rattlesnake, walrus, bird, blender, rafter, daffodil, footstool, videocassette, spear, snowsuit, bikini, burger} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: ear, bikini} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['ear', 'bikini']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'ear', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'ear', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'bikini', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'bikini', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'necktie', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['thermometer', 'canister', 'island', 'videocassette', 'snowsuit', 'blackbird'], 'innocent': ['mirror', 'yacht', 'bird', 'footstool', 'rattlesnake', 'daffodil'], 'opponent': ['bulb', 'blender', 'walrus', 'burger', 'rafter', 'spear'], 'assassin': ['escalator']}, 'revealed': {'team': {'team': ['armchair', 'ear', 'bikini'], 'innocent': ['teapot'], 'opponent': [], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['tail', 'necktie'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The words ear, bikini were guessed correctly. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: thermometer, canister, island, videocassette, snowsuit, blackbird.} \\
+\texttt{Remaining words for your opponent are: necktie, bulb, blender, walrus, burger, rafter, spear.} \\
+\texttt{Remaining distractor words are: mirror, yacht, bird, footstool, rattlesnake, daffodil.} \\
+\texttt{Remaining kill words are: escalator.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: COLD} \\
+\texttt{TARGETS: thermometer, snowsuit} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{cold} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['thermometer', 'snowsuit']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'thermometer', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'snowsuit', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{The words ear, bikini were guessed correctly. Your turn ended there.} \\
+\texttt{Now provide another comma{-}separated list of at least 1 and up to 2 words from the following list of words that best relate or are most closely associated with the word 'cold'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.} \\
+\\ 
+\texttt{blackbird, canister, escalator, thermometer, yacht, bulb, mirror, island, rattlesnake, walrus, bird, blender, rafter, daffodil, footstool, videocassette, spear, snowsuit, burger} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: snowsuit, thermometer} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['snowsuit', 'thermometer']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'snowsuit', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'snowsuit', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'thermometer', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'thermometer', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'rafter', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['canister', 'island', 'videocassette', 'blackbird'], 'innocent': ['mirror', 'yacht', 'bird', 'footstool', 'rattlesnake', 'daffodil'], 'opponent': ['bulb', 'blender', 'walrus', 'burger', 'spear'], 'assassin': ['escalator']}, 'revealed': {'team': {'team': ['armchair', 'ear', 'bikini', 'snowsuit', 'thermometer'], 'innocent': ['teapot'], 'opponent': [], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['tail', 'necktie', 'rafter'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The words snowsuit, thermometer were guessed correctly. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: canister, island, videocassette, blackbird.} \\
+\texttt{Remaining words for your opponent are: bulb, blender, walrus, burger, rafter, spear.} \\
+\texttt{Remaining distractor words are: mirror, yacht, bird, footstool, rattlesnake, daffodil.} \\
+\texttt{Remaining kill words are: escalator.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: BIRD} \\
+\texttt{TARGETS: blackbird} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'player': 'Cluegiver', 'type': 'clue is morphologically related to word on the board', 'utterance': 'CLUE: BIRD\nTARGETS: blackbird', 'message': "Your clue 'bird' is morphologically similar to the word bird, please choose another clue word.", 'clue': 'bird', 'similar_board_word': 'bird'}
+            }
+        }
+    }
+    & & \\ \\
+
+\end{supertabular}
+}
+
+\end{document}

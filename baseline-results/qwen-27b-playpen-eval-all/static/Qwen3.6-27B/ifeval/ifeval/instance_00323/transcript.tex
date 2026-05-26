@@ -1,0 +1,78 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\centering \large Interaction Transcript for game `ifeval', experiment `ifeval', episode 323 with Qwen3.6{-}27B.
+\vspace{24pt}
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+    \# & \multicolumn{2}{c}{Player} && \multicolumn{2}{c}{Game Master} \\
+    \hline
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{Write a cover letter for a job in Ventura that is funny and would be enjoyed by someone named Darius, wrap the entire response in double quotation marks.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{"Dear Darius,} \\
+\\ 
+\texttt{I am writing to you today because I heard you’re hiring in Ventura, and I possess the rare combination of skills required for this role: I can parallel park on the first try (a miracle in itself), I know which coffee shops have outlets that actually work, and I can pretend to understand surf slang without sounding like a tourist.} \\
+\\ 
+\texttt{You might be wondering, 'Why Darius?' Well, besides the fact that your name sounds like a character from a high{-}stakes heist movie who definitely knows how to get things done, I believe my chaotic energy would complement your team’s structured brilliance. I bring to the table a resume that is 40\% hard skills, 30\% soft skills, and 30\% just really hoping I don’t trip over my own feet during the interview.} \\
+\\ 
+\texttt{I am eager to bring my unique brand of enthusiasm to Ventura. I promise to work hard, laugh often, and never, ever ask if the beach is far away.} \\
+\\ 
+\texttt{Sincerely,} \\
+\\ 
+\texttt{The Candidate Who Definitely Read the Job Description"} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'startend:quotation': {}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{game\_result = WIN} \\
+            }
+        }
+    }
+    & & \\ \\
+
+\end{supertabular}
+}
+
+\end{document}

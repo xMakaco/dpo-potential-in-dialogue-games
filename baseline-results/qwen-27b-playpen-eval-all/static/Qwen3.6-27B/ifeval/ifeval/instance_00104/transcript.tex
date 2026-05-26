@@ -1,0 +1,81 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\centering \large Interaction Transcript for game `ifeval', experiment `ifeval', episode 104 with Qwen3.6{-}27B.
+\vspace{24pt}
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+    \# & \multicolumn{2}{c}{Player} && \multicolumn{2}{c}{Game Master} \\
+    \hline
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{Compose a poem that has the word "land" and "river". It should be about nature and love. Also, the word "forest" should appear at least 3 times, and be written in English, with all letters lowercased.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{beneath the whispering forest} \\
+\texttt{where roots hold fast to the land} \\
+\texttt{your hand finds mine, a quiet bond} \\
+\texttt{as seasons shift and change} \\
+\\ 
+\texttt{the river sings its ancient song} \\
+\texttt{through shadows deep within the forest} \\
+\texttt{we walk along the muddy bank} \\
+\texttt{where time dissolves and fades} \\
+\\ 
+\texttt{in this green heart of the forest} \\
+\texttt{love grows wild and free} \\
+\texttt{like vines that climb the old oak trees} \\
+\texttt{for you, and only you} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'keywords:frequency': {'relation': 'at least', 'keyword': 'forest', 'frequency': 3}, 'change_case:english_lowercase': {}, 'keywords:existence': {'keywords': ['land', 'river']}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{game\_result = WIN} \\
+            }
+        }
+    }
+    & & \\ \\
+
+\end{supertabular}
+}
+
+\end{document}

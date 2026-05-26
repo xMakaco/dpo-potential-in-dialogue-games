@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "game_name": "ifeval",
+    "experiment_name": "ifeval",
+    "game_id": 104,
+    "player_name": "Player 1",
+    "game_role": "InstructionFollower",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 1,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T14:24:36.699163",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nCompose a poem that has the word \"land\" and \"river\". It should be about nature and love. Also, the word \"forest\" should appear at least 3 times, and be written in English, with all letters lowercased.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 1280,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nCompose a poem that has the word \"land\" and \"river\". It should be about nature and love. Also, the word \"forest\" should appear at least 3 times, and be written in English, with all letters lowercased.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nbeneath the whispering forest\nwhere roots hold fast to the land\nyour hand finds mine, a quiet bond\nas seasons shift and change\n\nthe river sings its ancient song\nthrough shadows deep within the forest\nwe walk along the muddy bank\nwhere time dissolves and fades\n\nin this green heart of the forest\nlove grows wild and free\nlike vines that climb the old oak trees\nfor you, and only you<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 14:24:26.255893",
+            "call_duration": "0:00:10.443217",
+            "response": "beneath the whispering forest\nwhere roots hold fast to the land\nyour hand finds mine, a quiet bond\nas seasons shift and change\n\nthe river sings its ancient song\nthrough shadows deep within the forest\nwe walk along the muddy bank\nwhere time dissolves and fades\n\nin this green heart of the forest\nlove grows wild and free\nlike vines that climb the old oak trees\nfor you, and only you",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

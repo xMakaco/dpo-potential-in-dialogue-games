@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "game_name": "bbh",
+    "experiment_name": "web_of_lies",
+    "game_id": 226,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 1,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 300
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "Answerer",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T13:48:24.948291",
+        "action": {
+          "type": "send message",
+          "content": "Evaluate a random boolean function expressed as a word problem.\n\nQ: Question: Fidel tells the truth. Jerry says Fidel tells the truth. Vina says Jerry tells the truth. Millicent says Vina lies. Raymond says Millicent lies. Does Raymond tell the truth?\nA: Yes\n\nQ: Question: Kristian lies. Millie says Kristian lies. Maybelle says Millie tells the truth. Fidel says Maybelle lies. Leda says Fidel lies. Does Leda tell the truth?\nA: Yes\n\nQ: Question: Kristian tells the truth. Michaela says Kristian lies. Raymond says Michaela tells the truth. Osvaldo says Raymond tells the truth. Jamey says Osvaldo tells the truth. Does Jamey tell the truth?\nA: No\n\nQ: Question: Tamika lies. Conception says Tamika tells the truth. Kristian says Conception lies. Alejandro says Kristian tells the truth. Shaunda says Alejandro lies. Does Shaunda tell the truth?\nA:",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T13:48:24.948307",
+        "action": {
+          "type": "get message",
+          "content": "Let's trace the truth values step-by-step:\n\n1.  **Tamika lies.** (Given: Tamika = False)\n2.  **Conception says Tamika tells the truth.**\n    *   Since Tamika actually lies, Conception's statement is false.\n    *   Therefore, **Conception lies.** (Conception = False)\n3.  **Kristian says Conception lies.**\n    *   Since Conception actually lies, Kristian's statement is true.\n    *   Therefore, **Kristian tells the truth.** (Kristian = True)\n4.  **Alejandro says Kristian tells the truth.**\n    *   Since Kristian actually tells the truth, Alejandro's statement is true.\n    *   Therefore, **Alejandro tells the truth.** (Alejandro = True)\n5.  **Shaunda says Alejandro lies.**\n    *   Since Alejandro actually tells the truth, Shaunda's statement is false.\n    *   Therefore, **Shaunda lies.** (Shaunda = False)\n\nThe question asks: Does Shaunda tell the truth?\nThe answer is No.\n\nA: No",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T13:48:24.948330",
+        "action": {
+          "type": "metadata",
+          "content": "Target: No"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T13:48:24.948342",
+        "action": {
+          "type": "wrong answer",
+          "content": "game_result = LOSE"
+        }
+      }
+    ]
+  ],
+  "Aborted": 0,
+  "Lose": 1,
+  "Success": 0,
+  "Request Count": 1,
+  "Parsed Request Count": 1,
+  "Violated Request Count": 0
+}

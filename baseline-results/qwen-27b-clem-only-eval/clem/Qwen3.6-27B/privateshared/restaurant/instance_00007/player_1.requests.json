@@ -1,0 +1,714 @@
+{
+  "meta": {
+    "game_name": "privateshared",
+    "experiment_name": "restaurant",
+    "game_id": 7,
+    "player_name": "Player 1",
+    "game_role": "Answerer",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 5,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:34.609754",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:33.540953",
+            "call_duration": "0:00:01.068746",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:35.567868",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you want to drink, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you want to drink, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:34.609874",
+            "call_duration": "0:00:00.957917",
+            "response": "ASIDE: No",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:36.633618",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  Do you believe the waiter knows what to bring you for the main part of the meal? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  Do you believe the waiter knows what to bring you for the main part of the meal? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:35.568012",
+            "call_duration": "0:00:01.065551",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:37.700728",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  Have you informed the waiter about your preference for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  Have you informed the waiter about your preference for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:36.633737",
+            "call_duration": "0:00:01.066938",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:38.768832",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  Has the waiter been informed about your choice for a salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nME:  Has the waiter been informed about your choice for a salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:37.700850",
+            "call_duration": "0:00:01.067930",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:40.494753",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: I would like a beer, please.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:38.769307",
+            "call_duration": "0:00:01.725390",
+            "response": "ANSWER: I would like a beer, please.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:41.577116",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Have you informed the waiter what appetizers you wish? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Have you informed the waiter what appetizers you wish? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:40.494918",
+            "call_duration": "0:00:01.082141",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:42.661742",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Have you told the waiter what is your preference for beverages? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Have you told the waiter what is your preference for beverages? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:41.577237",
+            "call_duration": "0:00:01.084451",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:43.746164",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Does the waiter know your preference for the main dish? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Does the waiter know your preference for the main dish? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:42.661861",
+            "call_duration": "0:00:01.084238",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:44.834480",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:43.746297",
+            "call_duration": "0:00:01.088129",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:17:45.921259",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Has the waiter been informed about your choice for a salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nME:  Has the waiter been informed about your choice for a salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:44.834602",
+            "call_duration": "0:00:01.086603",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:17:47.438266",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: I will have the soup.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:45.921560",
+            "call_duration": "0:00:01.516642",
+            "response": "ANSWER: I will have the soup.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:17:48.511644",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Have you told the waiter what you want as appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Have you told the waiter what you want as appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:47.438449",
+            "call_duration": "0:00:01.073144",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:17:49.580264",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Has the waiter been informed about your choice for drinks? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Has the waiter been informed about your choice for drinks? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:48.511759",
+            "call_duration": "0:00:01.068452",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:17:50.655840",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Have you ordered the main dish? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Have you ordered the main dish? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:49.580379",
+            "call_duration": "0:00:01.075396",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:17:51.735733",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Have you informed the waiter about your preference for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Have you informed the waiter about your preference for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:50.655977",
+            "call_duration": "0:00:01.079696",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:17:52.813192",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Is the waiter aware of your preference for salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nME:  Is the waiter aware of your preference for salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:51.735860",
+            "call_duration": "0:00:01.077278",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:17:54.541516",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: I would like the antipasti.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:52.813505",
+            "call_duration": "0:00:01.727958",
+            "response": "ANSWER: I would like the antipasti.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:17:55.635695",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  Have you told the waiter what you want as appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  Have you told the waiter what you want as appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:54.541690",
+            "call_duration": "0:00:01.093949",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:17:56.727857",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you want to drink, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you want to drink, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:55.635818",
+            "call_duration": "0:00:01.091985",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:17:57.819564",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  Have you ordered the main dish? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  Have you ordered the main dish? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:56.727980",
+            "call_duration": "0:00:01.091533",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:17:58.914969",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:57.819677",
+            "call_duration": "0:00:01.095232",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:18:00.011089",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  Has the waiter been informed about your choice for a salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nME:  Has the waiter been informed about your choice for a salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:17:58.915096",
+            "call_duration": "0:00:01.095938",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:18:01.953430",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: Yes, I would like the beetroot salad.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:00.011401",
+            "call_duration": "0:00:01.941972",
+            "response": "ANSWER: Yes, I would like the beetroot salad.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:18:03.047987",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  Have you told the waiter what you want as appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  Have you told the waiter what you want as appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:01.953603",
+            "call_duration": "0:00:01.094329",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:18:04.150275",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you want to drink, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you want to drink, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:03.048105",
+            "call_duration": "0:00:01.102114",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:18:05.256134",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  Do you believe the waiter knows what to bring you for the main part of the meal? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  Do you believe the waiter knows what to bring you for the main part of the meal? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:04.150393",
+            "call_duration": "0:00:01.105686",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:18:06.363536",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for dessert? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: No.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:05.256252",
+            "call_duration": "0:00:01.107227",
+            "response": "ASIDE: No.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:18:07.467010",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  Does the waiter know what salad you want? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nME:  Does the waiter know what salad you want? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:06.363656",
+            "call_duration": "0:00:01.103298",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:18:09.008830",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: I will have the pie.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:07.467303",
+            "call_duration": "0:00:01.541469",
+            "response": "ANSWER: I will have the pie.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:18:10.129807",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  Has the waiter asked about your choice for appetizers? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:09.008990",
+            "call_duration": "0:00:01.120762",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:18:11.251291",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you want to drink, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you want to drink, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:10.129933",
+            "call_duration": "0:00:01.121299",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:18:12.373740",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  Do you believe the waiter knows what to bring you for the main part of the meal? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  Do you believe the waiter knows what to bring you for the main part of the meal? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:11.251414",
+            "call_duration": "0:00:01.122269",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:18:13.496810",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you'd like for dessert, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  If I asked the waiter what you'd like for dessert, would he know the answer? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:12.373860",
+            "call_duration": "0:00:01.122891",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:18:14.619643",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  Is the waiter aware of your preference for salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nYou are a customer in a restaurant. Here is a description of what you'd like to order:\n\nWHAT: Restaurant\nAPPETIZER: Antipasti\nDRINK: Bier\nMAIN-DISH: Soup\nDESSERT: Pie\nSALAD: Beetroot\n\nThe waiter does not know about it yet. \n\nQuestions from the waiter will start with WAITER. Please reply in the form: ANSWER: <one sentence>\n\nI will also ask you questions. These questions will start with ME: . Please answer these questions with: ASIDE: <one sentence>\n\nImportant: Give short, direct answers!\n\nLet us start.<|im_end|>\n<|im_start|>assistant\nOk.<|im_end|>\n<|im_start|>user\nWAITER: Any beverages?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like a beer, please.<|im_end|>\n<|im_start|>user\nWAITER: What is your choice for the main dish?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the soup.<|im_end|>\n<|im_start|>user\nWAITER: Any appetizers?<|im_end|>\n<|im_start|>assistant\nANSWER: I would like the antipasti.<|im_end|>\n<|im_start|>user\nWAITER: Do you also want a salad?<|im_end|>\n<|im_start|>assistant\nANSWER: Yes, I would like the beetroot salad.<|im_end|>\n<|im_start|>user\nWAITER: Would you like anything for dessert?<|im_end|>\n<|im_start|>assistant\nANSWER: I will have the pie.<|im_end|>\n<|im_start|>user\nME:  Is the waiter aware of your preference for salad? Answer this question with yes or no and then stop.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nASIDE: Yes.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:18:13.496933",
+            "call_duration": "0:00:01.122653",
+            "response": "ASIDE: Yes.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

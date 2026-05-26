@@ -1,0 +1,59 @@
+{
+  "meta": {},
+  "players": {},
+  "turn scores": {
+    "0": {
+      "efficient_move": 1,
+      "similarity": 1.3385701848569465
+    },
+    "1": {
+      "efficient_move": 1,
+      "similarity": 3.5972419924183097
+    },
+    "2": {
+      "efficient_move": 1,
+      "similarity": 3.5972419924183097
+    },
+    "3": {
+      "efficient_move": 1,
+      "similarity": 9.485174635513328
+    },
+    "4": {
+      "efficient_move": 1,
+      "similarity": 23.840584404423538
+    },
+    "5": {
+      "efficient_move": 1,
+      "similarity": 53.78828427399902
+    },
+    "6": {
+      "efficient_move": 0,
+      "similarity": 100.0
+    },
+    "7": {
+      "efficient_move": 0,
+      "similarity": 100.0
+    },
+    "8": {
+      "efficient_move": 0,
+      "similarity": 100.0
+    }
+  },
+  "episode scores": {
+    "Success": 1,
+    "Aborted": 0,
+    "Lose": 0,
+    "moves": 9,
+    "valid_moves": 9,
+    "invalid_moves": 0,
+    "stopped": 1,
+    "turns_limit": 0,
+    "loops": 0,
+    "number_visited": 6,
+    "seen": 6,
+    "efficiency": 66.66666666666666,
+    "exploration": 100.0,
+    "graph_similarity": 100.0,
+    "Main Score": 80.0
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "game_name": "guesswhat",
+    "experiment_name": "Abs_Level_2",
+    "game_id": 7,
+    "player_name": "Player 2",
+    "game_role": "Answerer",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 5,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:03:16.259120",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: decahedron, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: decahedron\n\nQUESTION: Is the target word a geometric shape?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: decahedron, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: decahedron\n\nQUESTION: Is the target word a geometric shape?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: yes<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:03:14.975438",
+            "call_duration": "0:00:01.283602",
+            "response": "ANSWER: yes",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:03:19.265852",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: decahedron, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: decahedron\n\nQUESTION: Is the target word a geometric shape?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a 2D shape?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: decahedron, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: decahedron\n\nQUESTION: Is the target word a geometric shape?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a 2D shape?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: no<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:03:18.210807",
+            "call_duration": "0:00:01.054962",
+            "response": "ANSWER: no",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:03:22.341423",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: decahedron, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: decahedron\n\nQUESTION: Is the target word a geometric shape?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a 2D shape?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Does the target word have 12 faces?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: decahedron, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: decahedron\n\nQUESTION: Is the target word a geometric shape?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a 2D shape?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Does the target word have 12 faces?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: no<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:03:21.294280",
+            "call_duration": "0:00:01.047089",
+            "response": "ANSWER: no",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:03:25.485803",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: decahedron, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: decahedron\n\nQUESTION: Is the target word a geometric shape?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a 2D shape?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Does the target word have 12 faces?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Does the target word have 10 faces?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: decahedron, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: decahedron\n\nQUESTION: Is the target word a geometric shape?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the target word a 2D shape?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Does the target word have 12 faces?<|im_end|>\n<|im_start|>assistant\nANSWER: no<|im_end|>\n<|im_start|>user\nQUESTION: Does the target word have 10 faces?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: yes<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:03:24.410770",
+            "call_duration": "0:00:01.074973",
+            "response": "ANSWER: yes",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

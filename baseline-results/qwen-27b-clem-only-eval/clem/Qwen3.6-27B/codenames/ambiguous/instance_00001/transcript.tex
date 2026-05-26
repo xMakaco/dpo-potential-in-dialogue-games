@@ -1,0 +1,1272 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\centering \large Interaction Transcript for game `codenames', experiment `ambiguous', episode 1 with Qwen3.6{-}27B.
+\vspace{24pt}
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+    \# & $\;$A & \multicolumn{4}{c}{Game Master} & $\;\:$B\\
+    \hline
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['sheet', 'match', 'dab', 'jet', 'pump', 'flock', 'rake', 'lime', 'cock'], 'innocent': ['stalk', 'hatch', 'steer', 'darn', 'stir', 'pipe', 'counter'], 'opponent': ['peck', 'vault', 'squash', 'bust', 'wax', 'scale', 'rally', 'jam'], 'assassin': ['scarf']}, 'revealed': {'team': {'team': [], 'innocent': [], 'opponent': [], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': [], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{Provide one single{-}word clue that relates to some of your team's words from the list below. You can choose to how many and to which words your clue relates to.} \\
+\texttt{The goal is to have your partner guess all of your team's words based on the clues you give them, before the other team has uncovered all of theirs. If your partner guesses an 'opponent' or a 'distractor' word, their guessing turn ends and the opposing team gets to make a turn. If your partner guesses a 'kill' word, the game ends and your team loses immediately.} \\
+\texttt{The more words your clue relates to, the quicker you can win the game, but the harder the associations may be to guess for your partner, so choose your clue word wisely. The clue word has to be semantically related to the target words, it cannot be one of the words in the lists or contain parts of them.} \\
+\\ 
+\texttt{Always give your single{-}word clue and your comma{-}separated list of related target words in the following format and make your answers as short as possible, never include any other text than is required in this form:} \\
+\\ 
+\texttt{CLUE: <WORD>} \\
+\texttt{TARGETS: <TARGETS>} \\
+\\ 
+\texttt{Your team words are: sheet, match, dab, jet, pump, flock, rake, lime, cock.} \\
+\texttt{Your opponent's team words are: peck, vault, squash, bust, wax, scale, rally, jam.} \\
+\texttt{Distractor words are: stalk, hatch, steer, darn, stir, pipe, counter.} \\
+\texttt{The kill words are: scarf.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: bird} \\
+\texttt{TARGETS: flock, cock, peck} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{bird} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['flock', 'cock', 'peck']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'flock', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'cock', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'peck', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{Provide a comma{-}separated list of up to 3 words from the following list that best relate or are most closely associated with the word 'bird'. Always start your list of guess(es) with 'GUESS: ' and do not include any other text in your answer.} \\
+\\ 
+\texttt{pump, match, pipe, steer, squash, counter, stalk, stir, darn, jam, sheet, lime, peck, rally, cock, rake, scarf, vault, scale, bust, hatch, wax, jet, flock, dab} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: peck, cock, flock} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['peck', 'cock', 'flock']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'peck', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'peck', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{peck} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'vault', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['sheet', 'match', 'dab', 'jet', 'pump', 'flock', 'rake', 'lime', 'cock'], 'innocent': ['stalk', 'hatch', 'steer', 'darn', 'stir', 'pipe', 'counter'], 'opponent': ['squash', 'bust', 'wax', 'scale', 'rally', 'jam'], 'assassin': ['scarf']}, 'revealed': {'team': {'team': [], 'innocent': [], 'opponent': ['peck'], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['vault'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The word peck was guessed but is an opponent word. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: sheet, match, dab, jet, pump, flock, rake, lime, cock.} \\
+\texttt{Remaining words for your opponent are: vault, squash, bust, wax, scale, rally, jam.} \\
+\texttt{Remaining distractor words are: stalk, hatch, steer, darn, stir, pipe, counter.} \\
+\texttt{Remaining kill words are: scarf.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: fire} \\
+\texttt{TARGETS: match, jet, lime} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{fire} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['match', 'jet', 'lime']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'match', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'jet', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'lime', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{The word peck was guessed but is an opponent word. Your turn ended there.} \\
+\texttt{Now provide another comma{-}separated list of at least 1 and up to 3 words from the following list of words that best relate or are most closely associated with the word 'fire'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.} \\
+\\ 
+\texttt{pump, match, pipe, steer, squash, counter, stalk, stir, darn, jam, sheet, lime, rally, cock, rake, scarf, scale, bust, hatch, wax, jet, flock, dab} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: match, hatch, jet} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['match', 'hatch', 'jet']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'match', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'match', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'hatch', 'assignment': 'innocent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{hatch} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'wax', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['sheet', 'dab', 'jet', 'pump', 'flock', 'rake', 'lime', 'cock'], 'innocent': ['stalk', 'steer', 'darn', 'stir', 'pipe', 'counter'], 'opponent': ['squash', 'bust', 'scale', 'rally', 'jam'], 'assassin': ['scarf']}, 'revealed': {'team': {'team': ['match'], 'innocent': ['hatch'], 'opponent': ['peck'], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['vault', 'wax'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The word match was guessed correctly. The word hatch was guessed but is an innocent word. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: sheet, dab, jet, pump, flock, rake, lime, cock.} \\
+\texttt{Remaining words for your opponent are: squash, bust, wax, scale, rally, jam.} \\
+\texttt{Remaining distractor words are: stalk, steer, darn, stir, pipe, counter.} \\
+\texttt{Remaining kill words are: scarf.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: water} \\
+\texttt{TARGETS: sheet, jet, pump, flock} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{water} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['sheet', 'jet', 'pump', 'flock']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'sheet', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'jet', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'pump', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'flock', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{The word match was guessed correctly. The word hatch was guessed but is an innocent word. Your turn ended there.} \\
+\texttt{Now provide another comma{-}separated list of at least 1 and up to 4 words from the following list of words that best relate or are most closely associated with the word 'water'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.} \\
+\\ 
+\texttt{pump, pipe, steer, squash, counter, stalk, stir, darn, jam, sheet, lime, rally, cock, rake, scarf, scale, bust, jet, flock, dab} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: pump, pipe, jet} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['pump', 'pipe', 'jet']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'pump', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'pump', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'pipe', 'assignment': 'innocent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{pipe} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'scale', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['sheet', 'dab', 'jet', 'flock', 'rake', 'lime', 'cock'], 'innocent': ['stalk', 'steer', 'darn', 'stir', 'counter'], 'opponent': ['squash', 'bust', 'rally', 'jam'], 'assassin': ['scarf']}, 'revealed': {'team': {'team': ['match', 'pump'], 'innocent': ['hatch', 'pipe'], 'opponent': ['peck'], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['vault', 'wax', 'scale'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The word pump was guessed correctly. The word pipe was guessed but is an innocent word. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: sheet, dab, jet, flock, rake, lime, cock.} \\
+\texttt{Remaining words for your opponent are: squash, bust, scale, rally, jam.} \\
+\texttt{Remaining distractor words are: stalk, steer, darn, stir, counter.} \\
+\texttt{Remaining kill words are: scarf.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: green} \\
+\texttt{TARGETS: lime} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{green} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['lime']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'lime', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{The word pump was guessed correctly. The word pipe was guessed but is an innocent word. Your turn ended there.} \\
+\texttt{Now provide another comma{-}separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'green'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.} \\
+\\ 
+\texttt{steer, squash, counter, stalk, stir, darn, jam, sheet, lime, rally, cock, rake, scarf, bust, jet, flock, dab} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: lime} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['lime']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'lime', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'lime', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'rally', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['sheet', 'dab', 'jet', 'flock', 'rake', 'cock'], 'innocent': ['stalk', 'steer', 'darn', 'stir', 'counter'], 'opponent': ['squash', 'bust', 'jam'], 'assassin': ['scarf']}, 'revealed': {'team': {'team': ['match', 'pump', 'lime'], 'innocent': ['hatch', 'pipe'], 'opponent': ['peck'], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['vault', 'wax', 'scale', 'rally'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The word lime was guessed correctly. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: sheet, dab, jet, flock, rake, cock.} \\
+\texttt{Remaining words for your opponent are: squash, bust, rally, jam.} \\
+\texttt{Remaining distractor words are: stalk, steer, darn, stir, counter.} \\
+\texttt{Remaining kill words are: scarf.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: rooster} \\
+\texttt{TARGETS: cock} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{rooster} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['cock']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'cock', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{The word lime was guessed correctly. Your turn ended there.} \\
+\texttt{Now provide another comma{-}separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'rooster'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.} \\
+\\ 
+\texttt{steer, squash, counter, stalk, stir, darn, jam, sheet, cock, rake, scarf, bust, jet, flock, dab} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: cock} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['cock']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'cock', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'cock', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'squash', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['sheet', 'dab', 'jet', 'flock', 'rake'], 'innocent': ['stalk', 'steer', 'darn', 'stir', 'counter'], 'opponent': ['bust', 'jam'], 'assassin': ['scarf']}, 'revealed': {'team': {'team': ['match', 'pump', 'lime', 'cock'], 'innocent': ['hatch', 'pipe'], 'opponent': ['peck'], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['vault', 'wax', 'scale', 'rally', 'squash'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The word cock was guessed correctly. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: sheet, dab, jet, flock, rake.} \\
+\texttt{Remaining words for your opponent are: squash, bust, jam.} \\
+\texttt{Remaining distractor words are: stalk, steer, darn, stir, counter.} \\
+\texttt{Remaining kill words are: scarf.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: garden} \\
+\texttt{TARGETS: sheet, rake} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{garden} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['sheet', 'rake']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'sheet', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'rake', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{The word cock was guessed correctly. Your turn ended there.} \\
+\texttt{Now provide another comma{-}separated list of at least 1 and up to 2 words from the following list of words that best relate or are most closely associated with the word 'garden'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.} \\
+\\ 
+\texttt{steer, counter, stalk, stir, darn, jam, sheet, rake, scarf, bust, jet, flock, dab} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: rake, stalk} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['rake', 'stalk']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'rake', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'rake', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'stalk', 'assignment': 'innocent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{stalk} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'jam', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['sheet', 'dab', 'jet', 'flock'], 'innocent': ['steer', 'darn', 'stir', 'counter'], 'opponent': ['bust'], 'assassin': ['scarf']}, 'revealed': {'team': {'team': ['match', 'pump', 'lime', 'cock', 'rake'], 'innocent': ['hatch', 'pipe', 'stalk'], 'opponent': ['peck'], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['vault', 'wax', 'scale', 'rally', 'squash', 'jam'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The word rake was guessed correctly. The word stalk was guessed but is an innocent word. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: sheet, dab, jet, flock.} \\
+\texttt{Remaining words for your opponent are: bust, jam.} \\
+\texttt{Remaining distractor words are: steer, darn, stir, counter.} \\
+\texttt{Remaining kill words are: scarf.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: group} \\
+\texttt{TARGETS: flock} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{group} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['flock']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'flock', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\rangle$P2]}}
+                \texttt{The word rake was guessed correctly. The word stalk was guessed but is an innocent word. Your turn ended there.} \\
+\texttt{Now provide another comma{-}separated list of at least 1 and up to 1 words from the following list of words that best relate or are most closely associated with the word 'group'. Remember to start your answer with 'GUESS: '. Notice: some words have been removed from the list compared to previous requests.} \\
+\\ 
+\texttt{steer, counter, stir, darn, sheet, scarf, bust, jet, flock, dab} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$\langle$P2]}}
+                \texttt{GUESS: flock} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['flock']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'flock', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'flock', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'bust', 'assignment': 'opponent'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'hidden': {'team': ['sheet', 'dab', 'jet'], 'innocent': ['steer', 'darn', 'stir', 'counter'], 'opponent': [], 'assassin': ['scarf']}, 'revealed': {'team': {'team': ['match', 'pump', 'lime', 'cock', 'rake', 'flock'], 'innocent': ['hatch', 'pipe', 'stalk'], 'opponent': ['peck'], 'assassin': []}, 'opponent': {'team': [], 'innocent': [], 'opponent': ['vault', 'wax', 'scale', 'rally', 'squash', 'jam', 'bust'], 'assassin': []}}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{The word flock was guessed correctly. Your teammate's turn ended there.} \\
+\texttt{Now provide another clue relating to some of your remaining team words and a list of the related target words. Remember to start your clue with 'CLUE: ', put a new line, and start your comma{-}separated list of target words with 'TARGETS: '. Notice: some words have been removed from the lists compared to previous requests.} \\
+\\ 
+\texttt{Your remaining team words are: sheet, dab, jet.} \\
+\texttt{Remaining words for your opponent are: bust.} \\
+\texttt{Remaining distractor words are: steer, darn, stir, counter.} \\
+\texttt{Remaining kill words are: scarf.} \\
+            }
+        }
+    }
+    & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{CLUE: plane} \\
+\texttt{TARGETS: jet} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{plane} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                ['jet']
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'word': 'jet', 'assignment': 'team'}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{opponent has won} \\
+            }
+        }
+    }
+    & & \\ \\
+
+\end{supertabular}
+}
+
+\end{document}

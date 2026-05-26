@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "game_name": "ifeval",
+    "experiment_name": "ifeval",
+    "game_id": 114,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 1,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 1280
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "InstructionFollower",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T14:25:17.358258",
+        "action": {
+          "type": "send message",
+          "content": "I really love the album called Lilith. I want to introduce it to my friend Luheng. Draft an email for it. Add a postscript to your response that starts with P.S.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:25:17.358282",
+        "action": {
+          "type": "get message",
+          "content": "Subject: You have to listen to this album: Lilith 🎧\n\nHi Luheng,\n\nI hope you’re doing well!\n\nI was listening to some music recently and immediately thought of you. I’ve been absolutely obsessed with the album *Lilith* lately, and I really think it’s your kind of vibe.\n\nThere’s something so captivating about the atmosphere and the production—it’s moody, intricate, and just really sticks with you. I feel like you’d appreciate the depth and the unique soundscapes they’ve created. It’s been on repeat for me for days now.\n\nLet me know if you give it a spin! I’d love to hear what you think, especially about [insert specific track name if you have one, e.g., the opening track].\n\nBest,\n\n[Your Name]\n\nP.S. If you end up liking it, we should definitely have a listening party soon!",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:25:17.358317",
+        "action": {
+          "type": "target",
+          "content": {
+            "detectable_content:postscript": {
+              "postscript_marker": "P.S."
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T14:25:17.358696",
+        "action": {
+          "type": "followed all instructions",
+          "content": "game_result = WIN"
+        }
+      }
+    ]
+  ],
+  "Aborted": 0,
+  "Lose": 0,
+  "Success": 1,
+  "Request Count": 1,
+  "Parsed Request Count": 1,
+  "Violated Request Count": 0
+}

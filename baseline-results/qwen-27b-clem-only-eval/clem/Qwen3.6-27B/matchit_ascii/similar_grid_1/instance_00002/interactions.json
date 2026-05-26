@@ -1,0 +1,558 @@
+{
+  "meta": {
+    "game_name": "matchit_ascii",
+    "experiment_name": "similar_grid_1",
+    "game_id": 2,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 5,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 300
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "MatchItPlayer",
+      "model_name": "Qwen3.6-27B"
+    },
+    "Player 2": {
+      "game_role": "MatchItPlayer",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:33.308687",
+        "action": {
+          "type": "send message",
+          "content": "You are participating in a collaborative guessing game.\nThe goal is to find out whether this grid and another picture only I can see, are the same.\nPlease describe your grid first. Then, I will provide my description and we can ask each other questions about the grids to figure out whether they are the same. Now start your short grid description with \"DESCRIPTION:\" followed by the description. Do not add anything else. This is your grid:\nX ▢ ▢ ▢ X\nX X ▢ X X\nX ▢ X ▢ X\nX ▢ ▢ ▢ X\nX ▢ ▢ ▢ X",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:33.308705",
+        "action": {
+          "type": "get message",
+          "content": "DESCRIPTION: A 5x5 grid where the first and last columns are entirely filled with X's. The second row has X's in the first, second, fourth, and fifth columns. The third row has X's in the first, third, and fifth columns. The fourth and fifth rows have X's only in the first and fifth columns. All other cells are empty squares.",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:33.308740",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:26:42.067624",
+        "action": {
+          "type": "send message",
+          "content": "You are participating in a collaborative guessing game.\nThe goal is to find out whether this grid and another picture only I can see, are the same.\nPlease describe your grid first. Then, I will provide my description and we can ask each other questions about the grids to figure out whether they are the same. Now start your short grid description with \"DESCRIPTION:\" followed by the description. Do not add anything else. This is your grid:\nX ▢ ▢ ▢ X\nX ▢ ▢ ▢ X\nX ▢ X ▢ X\nX X ▢ X X\nX ▢ ▢ ▢ X",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:42.067643",
+        "action": {
+          "type": "get message",
+          "content": "DESCRIPTION: A 5x5 grid where the border is entirely filled with X's, except for the center cell of the bottom row which is empty. The interior 3x3 area has X's at the center of the left column, the center of the right column, and the center of the bottom row of the interior, with all other interior cells being empty.",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:42.067678",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:26:45.304310",
+        "action": {
+          "type": "send message",
+          "content": "This is my DESCRIPTION: A 5x5 grid where the first and last columns are entirely filled with X's. The second row has X's in the first, second, fourth, and fifth columns. The third row has X's in the first, third, and fifth columns. The fourth and fifth rows have X's only in the first and fifth columns. All other cells are empty squares.\nNow ask a question in order to find out new aspects of my grid that may be different to your grid. Start with \"QUESTION:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:45.304327",
+        "action": {
+          "type": "get message",
+          "content": "QUESTION: In your grid, is the cell at row 2, column 2 an X or an empty square?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:45.304357",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:46.319557",
+        "action": {
+          "type": "send message",
+          "content": "This is my DESCRIPTION: A 5x5 grid where the border is entirely filled with X's, except for the center cell of the bottom row which is empty. The interior 3x3 area has X's at the center of the left column, the center of the right column, and the center of the bottom row of the interior, with all other interior cells being empty.\nQUESTION: In your grid, is the cell at row 2, column 2 an X or an empty square? Start your answer with \"ANSWER:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:46.319574",
+        "action": {
+          "type": "get message",
+          "content": "ANSWER: X",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:46.319602",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:49.558367",
+        "action": {
+          "type": "send message",
+          "content": "Now ask a question in order to find out new aspects of my grid that may be different to your grid. Start with \"QUESTION:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:49.558385",
+        "action": {
+          "type": "get message",
+          "content": "QUESTION: In your grid, is the cell at row 2, column 3 an X or an empty square?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:49.558414",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:26:50.709178",
+        "action": {
+          "type": "send message",
+          "content": "ANSWER: X\nQUESTION: In your grid, is the cell at row 2, column 3 an X or an empty square? Start your answer with \"ANSWER:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:50.709195",
+        "action": {
+          "type": "get message",
+          "content": "ANSWER: ▢",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:50.709222",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:26:53.968410",
+        "action": {
+          "type": "send message",
+          "content": "Now ask a question in order to find out new aspects of my grid that may be different to your grid. Start with \"QUESTION:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:53.968428",
+        "action": {
+          "type": "get message",
+          "content": "QUESTION: In your grid, is the cell at row 4, column 2 an X or an empty square?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:53.968460",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:55.135687",
+        "action": {
+          "type": "send message",
+          "content": "ANSWER: ▢\nQUESTION: In your grid, is the cell at row 4, column 2 an X or an empty square? Start your answer with \"ANSWER:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:55.135704",
+        "action": {
+          "type": "get message",
+          "content": "ANSWER: ▢",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:55.135731",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:58.413878",
+        "action": {
+          "type": "send message",
+          "content": "Now ask a question in order to find out new aspects of my grid that may be different to your grid. Start with \"QUESTION:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:58.413903",
+        "action": {
+          "type": "get message",
+          "content": "QUESTION: In your grid, is the cell at row 2, column 4 an X or an empty square?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:58.413938",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:26:59.599319",
+        "action": {
+          "type": "send message",
+          "content": "ANSWER: ▢\nQUESTION: In your grid, is the cell at row 2, column 4 an X or an empty square? Start your answer with \"ANSWER:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:59.599336",
+        "action": {
+          "type": "get message",
+          "content": "ANSWER: ▢",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:59.599365",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:27:02.890380",
+        "action": {
+          "type": "send message",
+          "content": "Now ask a question in order to find out new aspects of my grid that may be different to your grid. Start with \"QUESTION:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:02.890396",
+        "action": {
+          "type": "get message",
+          "content": "QUESTION: In your grid, is the cell at row 4, column 3 an X or an empty square?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:02.890426",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:27:04.095271",
+        "action": {
+          "type": "send message",
+          "content": "ANSWER: ▢\nQUESTION: In your grid, is the cell at row 4, column 3 an X or an empty square? Start your answer with \"ANSWER:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:04.095288",
+        "action": {
+          "type": "get message",
+          "content": "ANSWER: ▢",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:04.095316",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:27:07.410738",
+        "action": {
+          "type": "send message",
+          "content": "Now ask a question in order to find out new aspects of my grid that may be different to your grid. Start with \"QUESTION:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:07.410755",
+        "action": {
+          "type": "get message",
+          "content": "QUESTION: In your grid, is the cell at row 3, column 2 an X or an empty square?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:07.410785",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:27:08.635752",
+        "action": {
+          "type": "send message",
+          "content": "ANSWER: ▢\nQUESTION: In your grid, is the cell at row 3, column 2 an X or an empty square? Start your answer with \"ANSWER:\" and do not add anything else.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:08.635769",
+        "action": {
+          "type": "get message",
+          "content": "ANSWER: ▢",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:08.635797",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T12:27:09.879906",
+        "action": {
+          "type": "send message",
+          "content": "Now come to a decision. What do you think: are your grid and the other grid described the same?  Write \"DECISION: same grid\" if you think they are the same grid or \"DECISION: different grids\" if you think they are different grids. Do not add anything else.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:09.879923",
+        "action": {
+          "type": "get message",
+          "content": "DECISION: different grids",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:09.879950",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:09.879967",
+        "action": {
+          "type": "Decision Player B",
+          "content": "success"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:27:11.125978",
+        "action": {
+          "type": "send message",
+          "content": "ANSWER: ▢\nNow come to a decision. What do you think: are your grid and the other grid described the same?  Write \"DECISION: same grid\" if you think they are the same grid or \"DECISION: different grids\" if you think they are different grids. Do not add anything else.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:11.125995",
+        "action": {
+          "type": "get message",
+          "content": "DECISION: different grids",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:11.126022",
+        "action": {
+          "type": "valid format",
+          "content": "continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:27:11.126039",
+        "action": {
+          "type": "Decision Player A",
+          "content": "success"
+        }
+      }
+    ]
+  ]
+}

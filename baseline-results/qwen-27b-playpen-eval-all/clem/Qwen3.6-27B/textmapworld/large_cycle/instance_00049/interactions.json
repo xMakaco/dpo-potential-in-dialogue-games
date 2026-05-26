@@ -1,0 +1,427 @@
+{
+  "meta": {
+    "game_name": "textmapworld",
+    "experiment_name": "large_cycle",
+    "game_id": 49,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 5,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 300
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "PathGuesser",
+      "model_name": "Qwen3.6-27B"
+    },
+    "Player 2": {
+      "game_role": "PathDescriber",
+      "model_name": "programmatic"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T11:57:37.731477",
+        "action": {
+          "type": "send message",
+          "content": "Please help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Sunroom. Currently available directions: north, south, west. What is your next instruction?",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:37.731494",
+        "action": {
+          "type": "get message",
+          "content": "GO: north",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:37.731555",
+        "action": {
+          "type": "Valid format",
+          "content": "Continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:37.731576",
+        "action": {
+          "type": "parse",
+          "content": "GO: north"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T11:57:37.731729",
+        "action": {
+          "type": "send message",
+          "content": "GO: north",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:37.731743",
+        "action": {
+          "type": "get message",
+          "content": "You have made a step and entered Wine cellar. Currently available directions: south, west. What is your next instruction?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:37.731759",
+        "action": {
+          "type": "Valid format",
+          "content": "Continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:37.731802",
+        "action": {
+          "type": "move",
+          "content": "{\"old\": \"Sunroom\", \"new\": \"Wine cellar\"}"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T11:57:38.704833",
+        "action": {
+          "type": "send message",
+          "content": "You have made a step and entered Wine cellar. Currently available directions: south, west. What is your next instruction?",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:38.704852",
+        "action": {
+          "type": "get message",
+          "content": "GO: west",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:38.704915",
+        "action": {
+          "type": "Valid format",
+          "content": "Continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:38.704936",
+        "action": {
+          "type": "parse",
+          "content": "GO: west"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T11:57:38.705093",
+        "action": {
+          "type": "send message",
+          "content": "GO: west",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:38.705106",
+        "action": {
+          "type": "get message",
+          "content": "You have made a step and entered Closet. Currently available directions: south, east. What is your next instruction?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:38.705123",
+        "action": {
+          "type": "Valid format",
+          "content": "Continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:38.705167",
+        "action": {
+          "type": "move",
+          "content": "{\"old\": \"Wine cellar\", \"new\": \"Closet\"}"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T11:57:39.695123",
+        "action": {
+          "type": "send message",
+          "content": "You have made a step and entered Closet. Currently available directions: south, east. What is your next instruction?",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:39.695141",
+        "action": {
+          "type": "get message",
+          "content": "GO: south",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:39.695206",
+        "action": {
+          "type": "Valid format",
+          "content": "Continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:39.695227",
+        "action": {
+          "type": "parse",
+          "content": "GO: south"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T11:57:39.695385",
+        "action": {
+          "type": "send message",
+          "content": "GO: south",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:39.695399",
+        "action": {
+          "type": "get message",
+          "content": "You have made a step and entered Utility room. Currently available directions: south, north, west, east. What is your next instruction?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:39.695415",
+        "action": {
+          "type": "Valid format",
+          "content": "Continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:39.695459",
+        "action": {
+          "type": "move",
+          "content": "{\"old\": \"Closet\", \"new\": \"Utility room\"}"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T11:57:40.739569",
+        "action": {
+          "type": "send message",
+          "content": "You have made a step and entered Utility room. Currently available directions: south, north, west, east. What is your next instruction?",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:40.739586",
+        "action": {
+          "type": "get message",
+          "content": "GO: east",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:40.739651",
+        "action": {
+          "type": "Valid format",
+          "content": "Continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:40.739672",
+        "action": {
+          "type": "parse",
+          "content": "GO: east"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "Player 2",
+        "timestamp": "2026-05-17T11:57:40.739834",
+        "action": {
+          "type": "send message",
+          "content": "GO: east",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 2",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:40.739848",
+        "action": {
+          "type": "get message",
+          "content": "You have made a step and entered Sunroom. Currently available directions: north, south, west. What is your next instruction?",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:40.739864",
+        "action": {
+          "type": "Valid format",
+          "content": "Continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:40.739908",
+        "action": {
+          "type": "move",
+          "content": "{\"old\": \"Utility room\", \"new\": \"Sunroom\"}"
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T11:57:41.530073",
+        "action": {
+          "type": "send message",
+          "content": "You have made a step and entered Sunroom. Currently available directions: north, south, west. What is your next instruction?",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:41.530091",
+        "action": {
+          "type": "get message",
+          "content": "DONE",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:41.530152",
+        "action": {
+          "type": "Valid format",
+          "content": "Continue"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:41.530171",
+        "action": {
+          "type": "parse",
+          "content": "DONE"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T11:57:41.530185",
+        "action": {
+          "type": "stop",
+          "content": "The guesser decided to stop the game"
+        }
+      }
+    ]
+  ]
+}

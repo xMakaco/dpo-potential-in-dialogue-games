@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "game_name": "guesswhat",
+    "experiment_name": "Abs_Level_3",
+    "game_id": 8,
+    "player_name": "Player 2",
+    "game_role": "Answerer",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 5,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:32:35.252511",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: canoeing, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: canoeing\n\nQUESTION: Is the activity primarily performed in water?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: canoeing, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: canoeing\n\nQUESTION: Is the activity primarily performed in water?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: yes<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:32:34.323177",
+            "call_duration": "0:00:00.929285",
+            "response": "ANSWER: yes",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:32:37.834417",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: canoeing, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: canoeing\n\nQUESTION: Is the activity primarily performed in water?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Does the activity involve using a paddle?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: canoeing, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: canoeing\n\nQUESTION: Is the activity primarily performed in water?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Does the activity involve using a paddle?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: yes<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:32:36.886663",
+            "call_duration": "0:00:00.947704",
+            "response": "ANSWER: yes",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:32:41.528664",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: canoeing, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: canoeing\n\nQUESTION: Is the activity primarily performed in water?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Does the activity involve using a paddle?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the vessel open-topped and typically propelled by a single person sitting with legs forward?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: canoeing, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: canoeing\n\nQUESTION: Is the activity primarily performed in water?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Does the activity involve using a paddle?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the vessel open-topped and typically propelled by a single person sitting with legs forward?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: yes<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:32:40.580026",
+            "call_duration": "0:00:00.948587",
+            "response": "ANSWER: yes",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:32:44.603196",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: canoeing, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: canoeing\n\nQUESTION: Is the activity primarily performed in water?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Does the activity involve using a paddle?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the vessel open-topped and typically propelled by a single person sitting with legs forward?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the vessel typically wider and more stable than a kayak?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet’s play a guessing game! Your task is to answer the other player's questions. Based on your knowledge of the word: canoeing, respond to the following questions or guesses. Limit your response to only 'yes' or 'no' with no explanation or other words. Never reveal the answer in your response.\n\nYou must reply using the format below and DO NOT ADD ANY TEXT OTHER THAN THIS:\n\nANSWER: <some text>\n\nTarget Word: canoeing\n\nQUESTION: Is the activity primarily performed in water?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Does the activity involve using a paddle?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the vessel open-topped and typically propelled by a single person sitting with legs forward?<|im_end|>\n<|im_start|>assistant\nANSWER: yes<|im_end|>\n<|im_start|>user\nQUESTION: Is the vessel typically wider and more stable than a kayak?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER: yes<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:32:43.626463",
+            "call_duration": "0:00:00.976672",
+            "response": "ANSWER: yes",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

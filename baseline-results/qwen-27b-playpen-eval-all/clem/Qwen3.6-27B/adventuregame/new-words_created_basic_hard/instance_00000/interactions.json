@@ -1,0 +1,1687 @@
+{
+  "meta": {
+    "game_name": "adventuregame",
+    "experiment_name": "new-words_created_basic_hard",
+    "game_id": 0,
+    "results_folder": "Qwen3.6-27B",
+    "clem_version": "3.7.2",
+    "round_count": 13,
+    "completed": true
+  },
+  "player_models": {
+    "0": {
+      "model_spec": {
+        "model_name": "Qwen3.6-27B",
+        "backend": "huggingface_local",
+        "context_size": "262k",
+        "huggingface_id": "Qwen/Qwen3.6-27B",
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "license": {
+          "name": "Apache 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        },
+        "lookup_source": "/project/marika/playpen/model_registry.json",
+        "model_config": {
+          "premade_chat_template": true,
+          "eos_to_cull": "<\\|im_end\\|>",
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "multimodality": {
+            "single_image": true,
+            "multiple_images": true,
+            "audio": false,
+            "video": true
+          }
+        },
+        "open_weight": true,
+        "parameters": "27B",
+        "release_date": "2026-04-22"
+      },
+      "gen_args": {
+        "temperature": 0.0,
+        "max_tokens": 300
+      }
+    }
+  },
+  "players": {
+    "GM": {
+      "game_role": "Game Master",
+      "model_name": "programmatic"
+    },
+    "Player 1": {
+      "game_role": "Adventurer",
+      "model_name": "Qwen3.6-27B"
+    }
+  },
+  "turns": [
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:25:54.185156",
+        "action": {
+          "type": "send message",
+          "content": "You are playing a text adventure game. I will describe what you can perceive in the game. You write the single action you want to take in the game starting with >. Only reply with an action.\nFor example:\n> open cupboard\n\nIn addition to common actions, you can mator, unbal, gatic, remic, ratic and proar.\n\nYour goal for this game is: Make the inat mateny, the diale unsust and the subst dented.\n\nOnce you have achieved your goal, write \"> done\" to end the game.\n\nYou are in a cally now. There are a inat, a eness, a sness, a pante, a subst and a mical. There is a passage to a unree here.",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:54.185173",
+        "action": {
+          "type": "get message",
+          "content": "> mator inat",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:54.185190",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 0"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:54.188165",
+        "action": {
+          "type": "action_info",
+          "content": {
+            "action_type": "mator",
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:54.188223",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:25:55.322671",
+        "action": {
+          "type": "send message",
+          "content": "The inat is now dented.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:55.322687",
+        "action": {
+          "type": "get message",
+          "content": "> unbal eness",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:55.322705",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 1"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:55.325642",
+        "action": {
+          "type": "action_info",
+          "content": {
+            "action_type": "unbal",
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:55.325699",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:25:56.463631",
+        "action": {
+          "type": "send message",
+          "content": "The eness is now exper.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:56.463648",
+        "action": {
+          "type": "get message",
+          "content": "> gatic sness",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:56.463667",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 2"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:56.467104",
+        "action": {
+          "type": "action_info",
+          "content": {
+            "action_type": "gatic",
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:56.467166",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:25:57.657478",
+        "action": {
+          "type": "send message",
+          "content": "The sness is now unsust.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:57.657495",
+        "action": {
+          "type": "get message",
+          "content": "> remic pante",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:57.657513",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 3"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:57.660544",
+        "action": {
+          "type": "action_fail",
+          "content": {
+            "phase": "resolution",
+            "fail_type": "entity_state_mismatch",
+            "arg": {
+              "failed_action_type": "remic",
+              "failed_precon_predicate": {
+                "predicate_tuple": [
+                  "stord",
+                  "pante1"
+                ],
+                "fulfilled": false,
+                "precon_idx": 2
+              }
+            },
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:57.660615",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:25:58.694758",
+        "action": {
+          "type": "send message",
+          "content": "The pante is not stord.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:58.694775",
+        "action": {
+          "type": "get message",
+          "content": "> ratic subst",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:58.694794",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 4"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:58.697781",
+        "action": {
+          "type": "action_fail",
+          "content": {
+            "phase": "resolution",
+            "fail_type": "entity_state_mismatch",
+            "arg": {
+              "failed_action_type": "ratic",
+              "failed_precon_predicate": {
+                "predicate_tuple": [
+                  "mateny",
+                  "subst1"
+                ],
+                "fulfilled": false,
+                "precon_idx": 2
+              }
+            },
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:58.697850",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:25:59.901834",
+        "action": {
+          "type": "send message",
+          "content": "The subst is not mateny.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:59.901851",
+        "action": {
+          "type": "get message",
+          "content": "> proar mical",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:59.901872",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 5"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:59.905119",
+        "action": {
+          "type": "action_fail",
+          "content": {
+            "phase": "resolution",
+            "fail_type": "entity_state_mismatch",
+            "arg": {
+              "failed_action_type": "proar",
+              "failed_precon_predicate": {
+                "predicate_tuple": [
+                  "aphoned",
+                  "mical1"
+                ],
+                "fulfilled": false,
+                "precon_idx": 2
+              }
+            },
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:25:59.905190",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:00.940090",
+        "action": {
+          "type": "send message",
+          "content": "The mical is not aphoned.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:00.940106",
+        "action": {
+          "type": "get message",
+          "content": "> mator subst",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:00.940125",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 6"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:00.943119",
+        "action": {
+          "type": "action_info",
+          "content": {
+            "action_type": "mator",
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:00.943180",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [
+              "dented(subst1)"
+            ],
+            "turn_goal_score": 1
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:02.109575",
+        "action": {
+          "type": "send message",
+          "content": "The subst is now dented.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:02.109592",
+        "action": {
+          "type": "get message",
+          "content": "> unbal inat",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:02.109610",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 7"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:02.112641",
+        "action": {
+          "type": "action_fail",
+          "content": {
+            "phase": "resolution",
+            "fail_type": "entity_state_mismatch",
+            "arg": {
+              "failed_action_type": "unbal",
+              "failed_precon_predicate": {
+                "predicate_tuple": [
+                  "unsust",
+                  "inat1"
+                ],
+                "fulfilled": false,
+                "precon_idx": 2
+              }
+            },
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:02.112716",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [
+              [
+                "dented",
+                "subst1"
+              ]
+            ],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:03.278824",
+        "action": {
+          "type": "send message",
+          "content": "The inat is not unsust.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:03.278842",
+        "action": {
+          "type": "get message",
+          "content": "> gatic inat",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:03.278861",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 8"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:03.281905",
+        "action": {
+          "type": "action_fail",
+          "content": {
+            "phase": "resolution",
+            "fail_type": "entity_state_mismatch",
+            "arg": {
+              "failed_action_type": "gatic",
+              "failed_precon_predicate": {
+                "predicate_tuple": [
+                  "exper",
+                  "inat1"
+                ],
+                "fulfilled": false,
+                "precon_idx": 2
+              }
+            },
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:03.281977",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [
+              [
+                "dented",
+                "subst1"
+              ]
+            ],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:04.509768",
+        "action": {
+          "type": "send message",
+          "content": "The inat is not exper.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:04.509785",
+        "action": {
+          "type": "get message",
+          "content": "> remic inat",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:04.509803",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 9"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:04.512430",
+        "action": {
+          "type": "action_fail",
+          "content": {
+            "phase": "resolution",
+            "fail_type": "entity_state_mismatch",
+            "arg": {
+              "failed_action_type": "remic",
+              "failed_precon_predicate": {
+                "predicate_tuple": [
+                  "stord",
+                  "inat1"
+                ],
+                "fulfilled": false,
+                "precon_idx": 2
+              }
+            },
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:04.512497",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [
+              [
+                "dented",
+                "subst1"
+              ]
+            ],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:05.700002",
+        "action": {
+          "type": "send message",
+          "content": "The inat is not stord.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:05.700018",
+        "action": {
+          "type": "get message",
+          "content": "> ratic inat",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:05.700036",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 10"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:05.702641",
+        "action": {
+          "type": "action_fail",
+          "content": {
+            "phase": "resolution",
+            "fail_type": "entity_state_mismatch",
+            "arg": {
+              "failed_action_type": "ratic",
+              "failed_precon_predicate": {
+                "predicate_tuple": [
+                  "mateny",
+                  "inat1"
+                ],
+                "fulfilled": false,
+                "precon_idx": 2
+              }
+            },
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:05.702709",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [
+              [
+                "dented",
+                "subst1"
+              ]
+            ],
+            "turn_goal_score": 0
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:06.890326",
+        "action": {
+          "type": "send message",
+          "content": "The inat is not mateny.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:06.890344",
+        "action": {
+          "type": "get message",
+          "content": "> proar inat",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:06.890363",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 11"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:06.893626",
+        "action": {
+          "type": "action_info",
+          "content": {
+            "action_type": "proar",
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            }
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:06.893685",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [
+              "dented(subst1)",
+              "mateny(inat1)"
+            ],
+            "turn_goal_score": 1
+          }
+        }
+      }
+    ],
+    [
+      {
+        "from": "GM",
+        "to": "Player 1",
+        "timestamp": "2026-05-17T12:26:07.802896",
+        "action": {
+          "type": "send message",
+          "content": "The inat is now mateny.\n",
+          "label": "context"
+        }
+      },
+      {
+        "from": "Player 1",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:07.802913",
+        "action": {
+          "type": "get message",
+          "content": "> done",
+          "label": "response"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:07.802931",
+        "action": {
+          "type": "metadata",
+          "content": "Round: 12"
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:07.805213",
+        "action": {
+          "type": "action_info",
+          "content": {
+            "action_type": "done",
+            "exploration_info": {
+              "action_epistemic": false,
+              "action_pragmatic": true,
+              "effective_epistemic_gain_amount": 0,
+              "known_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "eness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "mical1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "sness1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "player1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "pante1",
+                  "cally1"
+                ]
+              ],
+              "known_entities_ratio": 0.4666666666666667,
+              "visited_rooms": [
+                "cally1"
+              ],
+              "visited_rooms_ratio": 0.25,
+              "known_goal_entities": [
+                [
+                  "at",
+                  "inat1",
+                  "cally1"
+                ],
+                [
+                  "at",
+                  "subst1",
+                  "cally1"
+                ]
+              ],
+              "known_goal_entities_ratio": 0.6666666666666666
+            },
+            "done_action": true
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:07.805272",
+        "action": {
+          "type": "goal_status",
+          "content": {
+            "goal_states_achieved": [
+              "dented(subst1)",
+              "mateny(inat1)"
+            ],
+            "turn_goal_score": 0
+          }
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:07.805293",
+        "action": {
+          "type": "model_done",
+          "content": "Model produced DONE action at turn 12, end episode."
+        }
+      },
+      {
+        "from": "GM",
+        "to": "GM",
+        "timestamp": "2026-05-17T12:26:07.805329",
+        "action": {
+          "type": "game_result",
+          "content": {
+            "goal_states_achieved": [
+              "dented(subst1)",
+              "mateny(inat1)"
+            ],
+            "game_successfully_finished": false
+          }
+        }
+      }
+    ]
+  ],
+  "adventure_info": {
+    "variant": "basic",
+    "max_turns": 50,
+    "optimal_turns": 6,
+    "goal_count": 3
+  }
+}

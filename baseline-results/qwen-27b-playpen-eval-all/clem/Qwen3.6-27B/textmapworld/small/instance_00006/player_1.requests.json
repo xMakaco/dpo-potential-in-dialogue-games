@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "game_name": "textmapworld",
+    "experiment_name": "small",
+    "game_id": 6,
+    "player_name": "Player 1",
+    "game_role": "PathGuesser",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 7,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T11:57:13.977846",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nGO: east<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 11:57:13.007714",
+            "call_duration": "0:00:00.970081",
+            "response": "GO: east",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T11:57:14.959239",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nGO: south<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 11:57:13.978566",
+            "call_duration": "0:00:00.980621",
+            "response": "GO: south",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T11:57:15.931062",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nGO: east<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 11:57:14.959670",
+            "call_duration": "0:00:00.971345",
+            "response": "GO: east",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T11:57:16.928296",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Music room. Currently available directions: west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Music room. Currently available directions: west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nGO: west<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 11:57:15.931478",
+            "call_duration": "0:00:00.996761",
+            "response": "GO: west",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T11:57:17.946577",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Music room. Currently available directions: west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: west<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Music room. Currently available directions: west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: west<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nGO: north<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 11:57:16.928748",
+            "call_duration": "0:00:01.017779",
+            "response": "GO: north",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 5,
+      "call": {
+        "timestamp": "2026-05-17T11:57:18.899855",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Music room. Currently available directions: west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: west<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: north<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Music room. Currently available directions: west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: west<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: north<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nGO: west<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 11:57:17.946987",
+            "call_duration": "0:00:00.952816",
+            "response": "GO: west",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 6,
+      "call": {
+        "timestamp": "2026-05-17T11:57:19.711071",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Music room. Currently available directions: west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: west<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: north<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: west<|im_end|>\n<|im_start|>user\nYou have made a step and entered Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nPlease help me with the following task. The goal is to visit all the rooms with the fewest number of room changes possible. In each room, you need to decide the direction to go in. Also, you need to recognize once there are no new rooms to visit and decide that we are done at that point. Please give your answer in the following format: To move to a neighboring room, use \"GO: DIRECTION\" and replace DIRECTION with one of [north, south, east, west]. To stop the exploration, answer with \"DONE\" instead. Omit any other text.\nHere is an example:\nYou are in the Kitchen. Currently available directions: south, west. What is your next instruction?\nGO: west\nYou have made a step and entered a Lobby. Currently available directions: east, north. What is your next instruction?\nGO: north\n...\nYou have made a step and entered a Bedroom. Currently available directions: south. What is your next instruction?\nDONE\nLet us start. You are in the Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: south<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: east<|im_end|>\n<|im_start|>user\nYou have made a step and entered Music room. Currently available directions: west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: west<|im_end|>\n<|im_start|>user\nYou have made a step and entered Playroom. Currently available directions: north, east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: north<|im_end|>\n<|im_start|>user\nYou have made a step and entered Exercise room. Currently available directions: south, west. What is your next instruction?<|im_end|>\n<|im_start|>assistant\nGO: west<|im_end|>\n<|im_start|>user\nYou have made a step and entered Media room. Currently available directions: east. What is your next instruction?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nDONE<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 11:57:18.900290",
+            "call_duration": "0:00:00.810730",
+            "response": "DONE",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

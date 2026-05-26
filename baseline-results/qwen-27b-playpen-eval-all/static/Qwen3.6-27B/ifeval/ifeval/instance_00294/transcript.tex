@@ -1,0 +1,80 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\centering \large Interaction Transcript for game `ifeval', experiment `ifeval', episode 294 with Qwen3.6{-}27B.
+\vspace{24pt}
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+    \# & \multicolumn{2}{c}{Player} && \multicolumn{2}{c}{Game Master} \\
+    \hline
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{Write an email to your friend about what triggers you. Make sure to wrap the entire email in double quotation marks.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{"Subject: Catching up / A bit of a vent} \\
+\\ 
+\texttt{Hey Alex,} \\
+\\ 
+\texttt{Hope you’re doing well! I’ve been meaning to reach out for a while, but life has been a bit chaotic lately. I wanted to share something that’s been on my mind, mostly because I trust you to listen without judgment.} \\
+\\ 
+\texttt{Lately, I’ve realized that certain things really trigger my anxiety. It’s mostly the constant pinging of notifications on my phone—it makes me feel like I’m never truly offline or present. Also, when people interrupt me while I’m speaking, it tends to make me shut down completely. I know it’s not a huge deal to most people, but it’s something I’m working on managing better.} \\
+\\ 
+\texttt{Anyway, I just wanted to get that off my chest. Let’s grab coffee soon? I’d love to hear how you’ve been.} \\
+\\ 
+\texttt{Best,} \\
+\\ 
+\texttt{Jordan"} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'startend:quotation': {}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{game\_result = WIN} \\
+            }
+        }
+    }
+    & & \\ \\
+
+\end{supertabular}
+}
+
+\end{document}

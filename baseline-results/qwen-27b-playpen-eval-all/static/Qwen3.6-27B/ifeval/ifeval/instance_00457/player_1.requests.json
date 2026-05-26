@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "game_name": "ifeval",
+    "experiment_name": "ifeval",
+    "game_id": 457,
+    "player_name": "Player 1",
+    "game_role": "InstructionFollower",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 1,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T14:44:09.325319",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\ncreate a job description for a clifford blu employee who works at the cash register, and also monitors the shelves for stock level. Use the keyword 'people' and 'skills'. use only lowercase letters.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 1280,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\ncreate a job description for a clifford blu employee who works at the cash register, and also monitors the shelves for stock level. Use the keyword 'people' and 'skills'. use only lowercase letters.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\njob title: retail associate at clifford blu\n\nwe are looking for a dedicated individual to join our team at clifford blu. in this role, you will serve as the face of our store, greeting customers and processing transactions at the cash register with efficiency and warmth. your primary responsibility is to ensure that every interaction with people is positive and memorable, reflecting our brand's commitment to excellent service.\n\nin addition to handling payments, you will actively monitor the sales floor to maintain optimal stock levels. this involves regularly checking shelves, identifying low inventory, and restocking items to ensure customers can easily find what they need. you will collaborate with team members to keep the store organized and visually appealing.\n\nwe are seeking candidates who possess strong communication skills and attention to detail. your ability to multitask between customer service and inventory management is crucial. if you are passionate about helping people and eager to develop your retail skills, we encourage you to apply.<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 14:43:47.287754",
+            "call_duration": "0:00:22.037496",
+            "response": "job title: retail associate at clifford blu\n\nwe are looking for a dedicated individual to join our team at clifford blu. in this role, you will serve as the face of our store, greeting customers and processing transactions at the cash register with efficiency and warmth. your primary responsibility is to ensure that every interaction with people is positive and memorable, reflecting our brand's commitment to excellent service.\n\nin addition to handling payments, you will actively monitor the sales floor to maintain optimal stock levels. this involves regularly checking shelves, identifying low inventory, and restocking items to ensure customers can easily find what they need. you will collaborate with team members to keep the store organized and visually appealing.\n\nwe are seeking candidates who possess strong communication skills and attention to detail. your ability to multitask between customer service and inventory management is crucial. if you are passionate about helping people and eager to develop your retail skills, we encourage you to apply.",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

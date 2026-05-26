@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "game_name": "guesswhat",
+    "experiment_name": "Level_1",
+    "game_id": 2,
+    "player_name": "Player 1",
+    "game_role": "Guesser",
+    "model_name": "Qwen3.6-27B",
+    "round_count": 6,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:31:17.078724",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word a living organism?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:15.416934",
+            "call_duration": "0:00:01.661724",
+            "response": "QUESTION: Is the target word a living organism?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:31:19.791660",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word a type of fungus?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:18.021411",
+            "call_duration": "0:00:01.770190",
+            "response": "QUESTION: Is the target word a type of fungus?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:31:22.516823",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of fungus?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of fungus?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word a type of plant?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:20.753342",
+            "call_duration": "0:00:01.763424",
+            "response": "QUESTION: Is the target word a type of plant?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:31:25.043028",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of fungus?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of plant?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of fungus?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of plant?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word \"Bush\"?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:23.476334",
+            "call_duration": "0:00:01.566637",
+            "response": "QUESTION: Is the target word \"Bush\"?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:31:27.566778",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of fungus?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of plant?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word \"Bush\"?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of fungus?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of plant?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word \"Bush\"?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nQUESTION: Is the target word \"Plant\"?<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:26.001726",
+            "call_duration": "0:00:01.564982",
+            "response": "QUESTION: Is the target word \"Plant\"?",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    },
+    {
+      "round": 5,
+      "call": {
+        "timestamp": "2026-05-17T12:31:29.685629",
+        "manipulated_prompt_obj": {
+          "inputs": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of fungus?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of plant?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word \"Bush\"?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word \"Plant\"?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+          "max_new_tokens": 300,
+          "temperature": 0.0
+        },
+        "raw_response_obj": {
+          "response": "<|im_start|>user\nLet's play a guessing game. Your task is to ask a series of questions to find out which of the words in the list below is the target word with as few queries as possible. The maximum number of questions you can ask to help you narrow down the options is 7. Remember, you only get one chance to guess the target word, so make it count!\n\nThe rules of the game are: \n\n1. Only ask one question per turn. DO NOT ASK MORE THAN ONE QUESTION.\n\n2. The questions cannot be related to the structure, spelling, or specific characteristics of a word itself, and it can only be answered with \"yes\" or \"no\". \n\n3. Use the following format for asking questions and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nQUESTION: <your question>\n\n4. You have only one opportunity to guess the target word. To make your guess, use the following format and DO NOT ADD ANY TEXT OTHER THAN THIS: \n\nGUESS: <target word>\n\nRemember you cannot ask for a hint. Make your question brief. Let’s start!\n\nList of candidate words: ['Documents', 'Self', 'Bush', 'Plant', 'Mushrooms', 'PCP', 'President', 'Mayor']<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a living organism?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of fungus?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word a type of plant?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word \"Bush\"?<|im_end|>\n<|im_start|>user\nANSWER: no<|im_end|>\n<|im_start|>assistant\nQUESTION: Is the target word \"Plant\"?<|im_end|>\n<|im_start|>user\nANSWER: yes<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nGUESS: Plant<|im_end|>",
+          "clem_player": {
+            "call_start": "2026-05-17 12:31:28.545866",
+            "call_duration": "0:00:01.139706",
+            "response": "GUESS: Plant",
+            "model_name": "Qwen3.6-27B"
+          }
+        }
+      }
+    }
+  ]
+}

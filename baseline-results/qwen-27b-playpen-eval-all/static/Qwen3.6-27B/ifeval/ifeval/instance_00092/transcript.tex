@@ -1,0 +1,92 @@
+
+\documentclass{article}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{supertabular}
+
+\begin{document}
+
+\newcounter{utterance}
+
+\centering \large Interaction Transcript for game `ifeval', experiment `ifeval', episode 92 with Qwen3.6{-}27B.
+\vspace{24pt}
+
+{ \footnotesize  \setcounter{utterance}{1}
+\setlength{\tabcolsep}{0pt}
+\begin{supertabular}{c@{$\;$}|p{.15\linewidth}@{}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}p{.15\linewidth}}
+    \# & \multicolumn{2}{c}{Player} && \multicolumn{2}{c}{Game Master} \\
+    \hline
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\langle$GM]}}
+                \texttt{Generate a forum thread about several people waiting to hear the latest local news. All sentences should be short. Refrain from using any commas. Use placeholders to represent different usernames. Use square brackets for placeholders, like {[}username1{]}, {[}username2{]}. Please include at least 20 placeholders in the thread.} \\
+            }
+        }
+    }
+     \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & \multicolumn{4}{p{0.6\linewidth}}{
+        \cellcolor[rgb]{0.561,0.737,0.561}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[P1$\rangle$GM]}}
+                \texttt{{[}username1{]} The news is late.} \\
+\texttt{{[}username2{]} I am waiting too.} \\
+\texttt{{[}username3{]} Check the radio.} \\
+\texttt{{[}username4{]} It is silent.} \\
+\texttt{{[}username5{]} Why the delay?} \\
+\texttt{{[}username6{]} Maybe a storm.} \\
+\texttt{{[}username7{]} Look outside now.} \\
+\texttt{{[}username8{]} The sky is dark.} \\
+\texttt{{[}username9{]} I feel uneasy.} \\
+\texttt{{[}username10{]} Stay calm everyone.} \\
+\texttt{{[}username11{]} The signal is weak.} \\
+\texttt{{[}username12{]} Try the app.} \\
+\texttt{{[}username13{]} It is loading.} \\
+\texttt{{[}username14{]} Please hurry up.} \\
+\texttt{{[}username15{]} I need answers.} \\
+\texttt{{[}username16{]} Patience is key.} \\
+\texttt{{[}username17{]} My phone died.} \\
+\texttt{{[}username18{]} Charge it fast.} \\
+\texttt{{[}username19{]} Here is a link.} \\
+\texttt{{[}username20{]} Thanks for that.} \\
+\texttt{{[}username21{]} The page is blank.} \\
+\texttt{{[}username22{]} Refresh the page.} \\
+\texttt{{[}username23{]} Still no news.} \\
+\texttt{{[}username24{]} This is scary.} \\
+\texttt{{[}username25{]} Keep us posted.} \\
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                {'detectable_content:number_placeholders': {'num_placeholders': 20}, 'punctuation:no_comma': {}}
+            }
+        }
+    }
+    & & \\ \\
+
+    \theutterance \stepcounter{utterance}  
+    & & & \multicolumn{2}{p{0.3\linewidth}}{
+        \cellcolor[rgb]{0.9,0.9,0.9}{
+            \makecell[{{p{\linewidth}}}]{
+                \texttt{\tiny{[GM$|$GM]}}
+                \texttt{game\_result = WIN} \\
+            }
+        }
+    }
+    & & \\ \\
+
+\end{supertabular}
+}
+
+\end{document}

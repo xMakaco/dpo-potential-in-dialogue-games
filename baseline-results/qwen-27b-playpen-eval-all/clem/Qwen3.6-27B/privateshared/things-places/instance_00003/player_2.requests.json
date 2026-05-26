@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "game_name": "privateshared",
+    "experiment_name": "things-places",
+    "game_id": 3,
+    "player_name": "Player 2",
+    "game_role": "Questioner",
+    "model_name": "programmatic",
+    "round_count": 15,
+    "completed": true
+  },
+  "calls": [
+    {
+      "round": 0,
+      "call": {
+        "timestamp": "2026-05-17T12:10:44.174707",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is in the southeast?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "call": {
+        "timestamp": "2026-05-17T12:11:03.304162",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is in the southwest?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "call": {
+        "timestamp": "2026-05-17T12:11:22.187007",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is nowhere?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "call": {
+        "timestamp": "2026-05-17T12:11:41.043829",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is in the northwest?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "call": {
+        "timestamp": "2026-05-17T12:12:00.455527",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is on your left?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 5,
+      "call": {
+        "timestamp": "2026-05-17T12:12:19.732010",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is inside?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 6,
+      "call": {
+        "timestamp": "2026-05-17T12:12:39.193241",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is outside?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 7,
+      "call": {
+        "timestamp": "2026-05-17T12:12:58.894519",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is here?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 8,
+      "call": {
+        "timestamp": "2026-05-17T12:13:18.819937",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is on your right?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 9,
+      "call": {
+        "timestamp": "2026-05-17T12:13:38.857858",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is in the northeast?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 10,
+      "call": {
+        "timestamp": "2026-05-17T12:13:58.872277",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is everywhere?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 11,
+      "call": {
+        "timestamp": "2026-05-17T12:14:19.120528",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is there?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 12,
+      "call": {
+        "timestamp": "2026-05-17T12:14:39.291163",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is at the center?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 13,
+      "call": {
+        "timestamp": "2026-05-17T12:15:00.033789",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is at the bottom?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    },
+    {
+      "round": 14,
+      "call": {
+        "timestamp": "2026-05-17T12:15:20.762283",
+        "manipulated_prompt_obj": {
+          "role": "user",
+          "content": "What is the next request?"
+        },
+        "raw_response_obj": {
+          "clem_player": {
+            "response": "What is at the top?",
+            "model_name": "programmatic"
+          }
+        }
+      }
+    }
+  ]
+}
