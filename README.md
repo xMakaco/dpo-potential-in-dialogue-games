@@ -160,13 +160,15 @@ above. Score summaries for every reported run are in `eval_results/`
 
 ## Results so far
 
-| model | clemscore |
-|---|---|
-| Qwen3.5-9B SFT | 58.82 |
-| **Qwen3.5-9B SFT + anti-bleed DPO** | **70.21** |
-| Qwen3.5-9B SFT + aborted-corrections DPO | 60.96 |
-| Qwen3.5-9B chosen-only SFT | 65.36 |
-| Qwen3.5-2B SFT + anti-bleed DPO | 44.69 |
+| model | clemscore | statscore |
+|---|---|---|
+| Qwen3.5-9B SFT | 58.82 | 61.09 |
+| **Qwen3.5-9B SFT + anti-verbosity DPO** | **70.21** | 58.73 |
+| Qwen3.5-9B SFT + aborted-corrections DPO | 60.96 | 56.82 |
+| Qwen3.5-9B chosen-only SFT | 65.36 | 59.35 |
+| Qwen3.5-2B SFT | 38.05 | 42.88 |
+| Qwen3.5-2B SFT + anti-verbosity DPO | 44.69 | 37.38 |
+| Qwen3.5-2B SFT + aborted-corrections DPO | 54.28 | 42.11 |
 
 Full per-game breakdowns in `eval_results/`; the complete ablation grid (failed
 corrections and all combinations, plus the 2B scale point) is being finalised for the
