@@ -48,7 +48,10 @@ experiments/
 outputs/
 
 # Data (if you download large files)
-data/
+data/*
+!data/dpo_pairs/
+!eval_results/**/*.csv
+data_old/
 *.parquet
 *.csv
 *.jsonl
