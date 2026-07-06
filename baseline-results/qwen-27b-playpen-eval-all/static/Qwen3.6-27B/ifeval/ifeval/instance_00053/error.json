@@ -1,5 +1,0 @@
-{
-  "timestamp": "2026-05-17T14:20:12.801205",
-  "error": "LookupError",
-  "message": "\n**********************************************************************\n  Resource 'punkt_tab' not found.\n  Please use the NLTK Downloader to obtain the resource:\n\n  >>> import nltk\n  >>> nltk.download('punkt_tab')\n\n  For more information see: https://www.nltk.org/data.html\n\n  Attempted to load 'tokenizers/punkt_tab/english/'\n\n  Searched in:\n    - '/home/users/msarzotti/nltk_data'\n    - '/project/marika/playpen/venv/nltk_data'\n    - '/project/marika/playpen/venv/share/nltk_data'\n    - '/project/marika/playpen/venv/lib/nltk_data'\n    - '/usr/share/nltk_data'\n    - '/usr/local/share/nltk_data'\n    - '/usr/lib/nltk_data'\n    - '/usr/local/lib/nltk_data'\n**********************************************************************\n"
-}
