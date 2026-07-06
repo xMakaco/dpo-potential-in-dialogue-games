@@ -7,7 +7,7 @@ The results obtained point towards the direction of DPO being able to reliably r
 
 
 **Final model:** [`Makaco/lmps-challenge-qwen3.5-9b-dpo`](https://huggingface.co/Makaco/lmps-challenge-qwen3.5-9b-dpo). Consult the model card for more in-depth training details.
-**DPO pairs dataset:** [`Makaco/playpen-antibleed-dpo-qwen3.5-9b`](https://huggingface.co/datasets/Makaco/playpen-antibleed-dpo-qwen3.5-9b)
+**DPO pairs dataset used to fine-tune the final model:** [`Makaco/playpen-antibleed-dpo-qwen3.5-9b`](https://huggingface.co/datasets/Makaco/lmps-challenge-dpo-pairs)
 
 ## What's in the repo
 
