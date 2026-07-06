@@ -64,9 +64,9 @@ python sft.py --model Qwen/Qwen3.5-9B --grad_checkpointing \
 # 2. merge (also bakes in a correct generation_config - see note below)
 python merge_adapters.py --adapter checkpoints/sft/Qwen3.5-9B-all-linear
 
-# 3. anti-bleed DPO from the merged SFT model
+# 3. anti-verbosity (anti-bleed) DPO from the merged SFT model
 python dpo.py --model checkpoints/sft/Qwen3.5-9B-all-linear-merged \
-  --pairs_files ../data/dpo_pairs/onpolicy_antibleed.Qwen3.5-9B-sft-full-merged.json \
+  --pairs_files ../data/dpo_pairs/anti-verbosity.Qwen3.5-9B-sft.json \
   --output_dir checkpoints/dpo/Qwen3.5-9B-antibleed-only
 
 # 4. merge again -> final model
