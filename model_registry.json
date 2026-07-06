@@ -1,0 +1,290 @@
+[
+  {
+    "model_name": "Qwen3.5-9B",
+    "backend": "huggingface_local",
+    "huggingface_id": "Qwen/Qwen3.5-9B",
+    "release_date": "2026-02-24",
+    "open_weight": true,
+    "parameters": "9B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-9B-dpo-antibleed-verifstrat-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-9B-dpo-antibleed-verifstrat-merged",
+    "release_date": "2026-06-23",
+    "open_weight": true,
+    "parameters": "9B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-9B-dpo-antibleed-only-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "Makaco/lmps-challenge-qwen3.5-9b-dpo",
+    "release_date": "2026-06-22",
+    "open_weight": true,
+    "parameters": "9B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-9B-dpo-aborted-only-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-9B-dpo-aborted-only-merged",
+    "release_date": "2026-06-18",
+    "open_weight": true,
+    "parameters": "9B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-9B-sft-full-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/sft/Qwen3.5-9B-all-linear-merged",
+    "release_date": "2026-06-15",
+    "open_weight": true,
+    "parameters": "9B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B",
+    "backend": "huggingface_local",
+    "huggingface_id": "Qwen/Qwen3.5-2B",
+    "release_date": "2026-02-24",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-dpo-aborted-only-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-2B-dpo-aborted-only-merged",
+    "release_date": "2026-06-15",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-sft-full-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/sft/Qwen3.5-2B-all-linear-merged",
+    "release_date": "2026-06-11",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-9B-chosen-only-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/sft/Qwen3.5-9B-chosen-only-merged",
+    "release_date": "2026-07-01",
+    "open_weight": true,
+    "parameters": "9B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-antibleed-only-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-2B-antibleed-only-merged",
+    "release_date": "2026-07-01",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-chosen-only-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/sft/Qwen3.5-2B-chosen-only-merged",
+    "release_date": "2026-07-01",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-9B-dpo-failed-hidden-verifiable-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-9B-failed-hidden-verifiable-merged",
+    "release_date": "2026-07-06",
+    "open_weight": true,
+    "parameters": "9B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  }
+]
