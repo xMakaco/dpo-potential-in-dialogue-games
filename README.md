@@ -1,4 +1,4 @@
-# Reflections-Augmented SFT for Dialogue Games
+# Exploration of the Potential of DPO in Dialogue Games
 
 This repo presents an SFT + DPO post-training pipeline of Qwen3.5 models on [clembench](https://github.com/clp-research/clembench) / [Playpen](https://github.com/lm-playpen/playpen) dialogue-game benchmark. The best performing model which came out of this implementation was submitted to the [LM Playschool Challenge](https://lm-playschool.github.io).
 The main research interest behind this project revolves around whether DPO can induce novel strategic and rule-following skills in dialogue-games playing LLMs, or whether it is better suited to refining behaviors already established via SFT. In order to conduct this investigation, multiple training ablations were constructed, targeting three skills which can easily impact performance on dialogue games, namely rule-following, strategic game-playing and excessive verbosity and rambling, and various combinations of the three.
@@ -20,13 +20,13 @@ dpo_pairs_construction/   building the preference pairs
   collect_onpolicy_pairs.py       harvest rounds from scored rollouts (by outcome)
   generate_onpolicy_comments.py   LLM judge reflection comments on aborted/failed rounds
   distill_onpolicy_pairs.py       comments -> concrete (chosen, rejected) pairs.
-                                  Only the bare corrected moves, not the whole reflection, where kept in
+                                  Only the bare corrected moves, not the whole reflection, were kept in
                                   the final study 
   prompts.py                      the reflection prompts
   llm_wrapper.py                  LLM judges clients
 data/dpo_pairs/           the exact pair files used for every reported run
 eval_results/             scored summaries (clemscore/statscore) for every reported run (because of size
-                          limitations, the whole results set with game-playing interactions will be                                uploaded on HF)
+                          limitations, the whole results set with game-playing interactions will be uploaded on HF)
 model_registry.json       clem model configs for all models in the study
 game_registry.json        points clem at ../clembench
 ```
@@ -51,7 +51,7 @@ best model is ~4.3 GPU-hours (see model card).
 ## Reproducing the best model
 
 No API keys needed - the anti-verbosity path is fully self-contained (SFT data comes from
-the HF Hub, the DPO pairs are in this repo and also published at [Makaco/lmps-challenge-dpo-pairs](https://huggingface.co/datasets/Makaco/lmps-challenge-dpo-pairs). Defaults in the scripts are the exact
+the HF Hub, the DPO pairs are in this repo and also published at [Makaco/lmps-challenge-dpo-pairs](https://huggingface.co/datasets/Makaco/lmps-challenge-dpo-pairs)). Defaults in the scripts are the exact
 settings of the released model.
 
 ```bash
@@ -80,7 +80,7 @@ Or skip all of it and pull the released checkpoint from HF.
 In the clembench/playpen benchmarking environment, games are scored as aborted when the player model fails to adhere to specific formatting rules defined by a programmatic game master. On the other hand,
 rounds where the model is able to avoid formatting mistakes, but still is unable to win the game are scored as failed. Won rounds are scored as successful.
 This project aimed at constructing multiple sets of DPO pairs targeting three relevant skills for successfully conducting dialogue game rounds: rule-following, strategic game-playing and general rambling/excessive verbosity tendencies.
-Pairs tackling rule-following and strategic game-playing were consructed by prompting an LLM judge (gpt-5.2-chat via Azure) to identify the mistaken move, generate a
+Pairs tackling rule-following and strategic game-playing were constructed by prompting an LLM judge (gpt-5.2-chat via Azure) to identify the mistaken move, generate a
 reflection on what went wrong, and produce a corrected move. The corrected move
 alone becomes the chosen response. The anti-verbosity pairs come instead from successful rounds, where chosen is the player model's own clean move, while rejected is the same move with one of five synthetic
 verbose justifications appended.
@@ -103,10 +103,10 @@ The pair types are the ablation axis. Every reported condition is just a choice 
 
 | pairs | what they contain | on-policy? |
 |---|---|---|
-| `anti-verbosity.*` | chosen = the SFT model's own winning move; rejected = the *same* move with an appended verbose justification | fully |
+| `anti-verbosity.*` | chosen = the SFT model's own winning move; rejected = the same move with an appended verbose justification | fully |
 | `aborted-rounds-pairs.*` | chosen = LLM-corrected move fixing a rule violation; rejected = the violating move. In all correction pairs, `chosen` is the bare move in the game's required format - the judge's reflection comment never enters the pair, so no external prose can bleed into the model's outputs | rejected is, chosen isn't |
-| `failed-pairs-hidden-states.*` / `failed-pairs-no-hidden-states.*` | chosen = LLM judges's strategically better move in a lost round; rejected = the actual move (hidden-state games use a hindsight-guarded prompt - pass both files for the full "failed" condition) | rejected is, chosen isn't |
-| `chosen_only.*` | the anti-verbosity chosen moves alone, as SFT data (via `sft.py --data_file`) — isolates the imitation component of the DPO gain | fully |
+| `failed-pairs-hidden-states.*` / `failed-pairs-no-hidden-states.*` | chosen = LLM judge's strategically better move in a lost round; rejected = the actual move (hidden-state games use a hindsight-guarded prompt - pass both files for the full "failed" condition) | rejected is, chosen isn't |
+| `chosen_only.*` | the anti-verbosity chosen moves alone, as SFT data (via `sft.py --data_file`) - isolates the imitation component of the DPO gain | fully |
 
 Combinations = multiple `--pairs_files`. Example, aborted + failed:
 
@@ -124,14 +124,14 @@ OpenAI or DeepSeek key for the GPT passes:
 
 ```bash
 cd dpo_pairs_construction
-python collect_onpolicy_pairs.py --rollouts <scored-rollout-dir> --condition success   # anti-bleed
+python collect_onpolicy_pairs.py --rollouts <scored-rollout-dir> --condition success   # anti-verbosity
 python collect_onpolicy_pairs.py --rollouts <scored-rollout-dir> --condition aborted
 python generate_onpolicy_comments.py --condition aborted --input ../data/dpo_pairs/onpolicy_aborted.<model>.json --model_id <judge>
-python distill_onpolicy_pairs.py     --condition aborted --input ../data/dpo_pairs/onpolicy_commented.aborted.<model>.<judge>.json --model_id <judge>
+python distill_onpolicy_pairs.py --condition aborted --input ../data/dpo_pairs/onpolicy_commented.aborted.<model>.<judge>.json --model_id <judge>
 ```
 
-Evaluation instances are excluded from every harvest (`--exclude_eval`) - a
-contaminated variant inflated clemscore by ~9 points, so this matters.
+Evaluation instances are excluded from every harvest (`--exclude_eval`).
+The shipped files in data/dpo_pairs/ were renamed for clarity, the scripts emit onpolicy_* names
 
 ## Evaluation
 ### To evaluate on the full clembench benchmark
@@ -139,7 +139,7 @@ contaminated variant inflated clemscore by ~9 points, so this matters.
 clem run -g "{'benchmark':['2.0']}" -m <model_name>   # model_name from model_registry.json
 clem score
 ```
-### To evalute on Playpen's val set
+### To evaluate on Playpen's val set
 ```bash
 playpen eval <model_name> --suite all
 ```
@@ -169,7 +169,7 @@ technical report.
 
 Small Qwen3.5 releases ship without a `generation_config.json` and declare only
 `<|endoftext|>` as EOS, so after fine-tuning the model never stops at the chat-turn
-boundary (`<|im_end|>`) and hallucinates extra conversation turns, casuing clembench's programmatic game master to break.
+boundary (`<|im_end|>`) and hallucinates extra conversation turns, causing clembench's programmatic game master to break.
 `merge_adapters.py` reconstructs a correct config (`eos_token_id = [<|im_end|>,
 <|endoftext|>]`) in every merged checkpoint. If a base model ships a valid config
-(e.g. the 27B), it is preserved as-is. Details in
+(e.g. the 27B), it is preserved as-is.
