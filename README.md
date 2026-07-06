@@ -1,6 +1,6 @@
 # Exploration of the Potential of DPO in Dialogue Games
 
-This repo presents an SFT + DPO post-training pipeline of Qwen3.5 models on [clembench](https://github.com/clp-research/clembench) / [Playpen](https://github.com/lm-playpen/playpen) dialogue-game benchmark. The best performing model which came out of this implementation was submitted to the [LM Playschool Challenge](https://lm-playschool.github.io).
+This repo presents an SFT + DPO post-training pipeline of Qwen3.5 models on the [clembench](https://github.com/clp-research/clembench) / [Playpen](https://github.com/lm-playpen/playpen) dialogue-game benchmark. The best performing model which came out of this implementation was submitted to the [LM Playschool Challenge](https://lm-playschool.github.io).
 The main research interest behind this project revolves around whether DPO can induce novel strategic and rule-following skills in dialogue-games playing LLMs, or whether it is better suited to refining behaviors already established via SFT. In order to conduct this investigation, multiple training ablations were constructed, targeting three skills which can easily impact performance on dialogue games, namely rule-following, strategic game-playing and excessive verbosity and rambling, and various combinations of the three.
 The best performing model resulted from the training condition targeting only excessive verbosity, which took the supervised-fine-tuned Qwen3.5-9B model from 58.82 to **70.21 clemscore**. 
 The results obtained point towards the direction of DPO being able to reliably reinforce behaviour the model already learnt in previous training stages, while being less effective when it comes to teaching completely new behaviours and strategy.
@@ -79,7 +79,7 @@ Or skip all of it and pull the released checkpoint from HF.
 
 In the clembench/playpen benchmarking environment, games are scored as aborted when the player model fails to adhere to specific formatting rules defined by a programmatic game master. On the other hand,
 rounds where the model is able to avoid formatting mistakes, but still is unable to win the game are scored as failed. Won rounds are scored as successful.
-This project aimed at constructing multiple sets of DPO pairs targeting three relevant skills for successfully conducting dialogue game rounds: rule-following, strategic game-playing and general rambling/excessive verbosity tendencies.
+This project aimed to construct multiple sets of DPO pairs targeting three relevant skills for successfully conducting dialogue game rounds: rule-following, strategic game-playing and general rambling/excessive verbosity tendencies.
 Pairs tackling rule-following and strategic game-playing were constructed by prompting an LLM judge (gpt-5.2-chat via Azure) to identify the mistaken move, generate a
 reflection on what went wrong, and produce a corrected move. The corrected move
 alone becomes the chosen response. The anti-verbosity pairs come instead from successful rounds, where chosen is the player model's own clean move, while rejected is the same move with one of five synthetic
