@@ -77,15 +77,6 @@ Or skip all of it and pull the released checkpoint from HF.
 
 ### How the pairs were built
 
-Rounds are aborted when the model breaks the response format defined in the rules,
-and failed when it plays by the format but does not win. For both, an LLM judge
-(gpt-5.2-chat via Azure) was prompted to identify the mistaken move, generate a
-reflection on what went wrong, and produce a corrected move; the corrected move
-alone becomes the chosen response (see below on why the reflection text is kept
-out of it). The anti-bleed pairs come from successful rounds instead: chosen is
-the model's own clean move, rejected is the same move with one of five synthetic
-verbose justifications appended.
-
 In the clembench/playpen benchmarking environment, games are scored as aborted when the player model fails to adhere to specific formatting rules defined by a programmatic game master. On the other hand,
 rounds where the model is able to avoid formatting mistakes, but still is unable to win the game are scored as failed. Won rounds are scored as successful.
 This project aimed at constructing multiple sets of DPO pairs targeting three relevant skills for successfully conducting dialogue game rounds: rule-following, strategic game-playing and general rambling/excessive verbosity tendencies.
