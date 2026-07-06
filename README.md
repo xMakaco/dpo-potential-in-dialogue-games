@@ -1,4 +1,4 @@
-# Reflections-Augmented SFT for Dialogue Games
+# Exploration of the Potential of DPO in Dialogue Games
 
 This repo presents an SFT + DPO post-training pipeline of Qwen3.5 models on [clembench](https://github.com/clp-research/clembench) / [Playpen](https://github.com/lm-playpen/playpen) dialogue-game benchmark. The best performing model which came out of this implementation was submitted to the [LM Playschool Challenge](https://lm-playschool.github.io).
 The main research interest behind this project revolves around whether DPO can induce novel strategic and rule-following skills in dialogue-games playing LLMs, or whether it is better suited to refining behaviors already established via SFT. In order to conduct this investigation, multiple training ablations were constructed, targeting three skills which can easily impact performance on dialogue games, namely rule-following, strategic game-playing and excessive verbosity and rambling, and various combinations of the three.
@@ -36,8 +36,8 @@ game_registry.json        points clem at ../clembench
 ```bash
 # clembench (the games) must sit next to this repo - game_registry.json expects ../clembench
 git clone https://github.com/clp-research/clembench.git
-git clone https://github.com/xMakaco/Reflections-Augmented-SFT-for-Dialogue-Games.git
-cd Reflections-Augmented-SFT-for-Dialogue-Games
+git clone https://github.com/xMakaco/dpo-potential-in-dialogue-games.git
+cd dpo-potential-in-dialogue-games
 
 python3.10 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
