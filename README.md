@@ -1,19 +1,13 @@
 # Reflections-Augmented SFT for Dialogue Games
 
-SFT + DPO post-training of Qwen3.5 models for the clembench / LM Playpen dialogue-game
-benchmark. The headline result: a two-stage pipeline (SFT on successful game rounds,
-then DPO on content-controlled "anti-bleed" preference pairs) takes Qwen3.5-9B from
-58.82 to **70.21 clemscore** — and the ablations show *where* that gain actually comes
-from. DPO reliably reinforces behaviour the model already has (clean, parseable moves);
-it does not teach new strategy. The further the preference target moves off-policy
-(GPT-corrected moves for aborted or lost rounds), the worse the result gets.
+This repo presents an SFT + DPO post-training pipeline of Qwen3.5 models on [clembench](https://github.com/clp-research/clembench) / [Playpen](https://github.com/lm-playpen/playpen) dialogue-game benchmark. The best performing model which came out of this implementation was submitted to the [LM Playschool Challenge](https://lm-playschool.github.io).
+The main research interest behind this project revolves around whether DPO can induce novel strategic and rule-following skills in dialogue-games playing LLMs, or whether it is better suited to refining behaviors already established via SFT. In order to conduct this investigation, multiple training ablations were constructed, targeting three skills which can easily impact performance on dialogue games, namely rule-following, strategic game-playing and excessive verbosity and rambling, and various combinations of the three.
+The best performing model resulted from the training condition targeting only excessive verbosity, which took the supervised-fine-tuned Qwen3.5-9B model from 58.82 to **70.21 clemscore**. 
+The results obtained point towards the direction of DPO being able to reliably reinforce behaviour the model already learnt in previous training stages, while being less effective when it comes to teaching completely new behaviours and strategy.
 
-**Final model:** [`Makaco/lmps-challenge-qwen3.5-9b-dpo`](https://huggingface.co/Makaco/lmps-challenge-qwen3.5-9b-dpo)
+
+**Final model:** [`Makaco/lmps-challenge-qwen3.5-9b-dpo`](https://huggingface.co/Makaco/lmps-challenge-qwen3.5-9b-dpo). Consult the model card for more in-depth training details.
 **DPO pairs dataset:** [`Makaco/playpen-antibleed-dpo-qwen3.5-9b`](https://huggingface.co/datasets/Makaco/playpen-antibleed-dpo-qwen3.5-9b)
-**Full training details:** [TRAINING_CARD.md](TRAINING_CARD.md)
-
-The name of the repo is a leftover from the original idea (augmenting SFT data with
-reflection comments); the project evolved into the preference-pair study described here.
 
 ## What's in the repo
 
@@ -21,41 +15,43 @@ reflection comments); the project evolved into the preference-pair study describ
 fine_tuning/              training pipeline
   sft.py                  LoRA SFT on successful playpen rounds (assistant-only loss)
   dpo.py                  LoRA DPO on ready-made preference pairs (--pairs_files)
-  merge_adapters.py       merge any adapter into its base; fixes Qwen3.5 generation_config
+  merge_adapters.py       merge any adapter into its base. Fixes Qwen3.5 generation_config
 dpo_pairs_construction/   building the preference pairs
   collect_onpolicy_pairs.py       harvest rounds from scored rollouts (by outcome)
-  generate_onpolicy_comments.py   GPT reflection comments on aborted/failed rounds
-  distill_onpolicy_pairs.py       comments -> concrete (chosen, rejected) pairs
+  generate_onpolicy_comments.py   LLM judge reflection comments on aborted/failed rounds
+  distill_onpolicy_pairs.py       comments -> concrete (chosen, rejected) pairs.
+                                  Only the bare corrected moves, not the whole reflection, where kept in
+                                  the final study 
   prompts.py                      the reflection prompts
-  llm_wrapper.py                  Azure OpenAI / DeepSeek clients
+  llm_wrapper.py                  LLM judges clients
 data/dpo_pairs/           the exact pair files used for every reported run
-eval_results/             score summaries (clemscore/statscore) for every reported run
+eval_results/             scored summaries (clemscore/statscore) for every reported run (because of size
+                          limitations, the whole results set with game-playing interactions will be                                uploaded on HF)
 model_registry.json       clem model configs for all models in the study
 game_registry.json        points clem at ../clembench
-TRAINING_CARD.md          full hyperparameters, data, compute budget
 ```
 
 ## Setup
 
 ```bash
-# clembench (the games) must sit NEXT TO this repo — game_registry.json expects ../clembench
+# clembench (the games) must sit next to this repo - game_registry.json expects ../clembench
 git clone https://github.com/clp-research/clembench.git
 git clone https://github.com/xMakaco/Reflections-Augmented-SFT-for-Dialogue-Games.git
 cd Reflections-Augmented-SFT-for-Dialogue-Games
 
 python3.10 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
-# only needed for the static-benchmark evals (statscore):
+# needed to run evals on the val set of clembench games plus static benchmark (statscore):
 pip install git+https://github.com/lm-playpen/playpen.git
 ```
 
 Everything below was run on a single H100 in bf16; total training budget for the
-best model is ~4.3 GPU-hours (see the training card).
+best model is ~4.3 GPU-hours (see model card).
 
 ## Reproducing the best model
 
-No API keys needed — the anti-bleed path is fully self-contained (SFT data comes from
-the HF Hub, the DPO pairs are in this repo). Defaults in the scripts are the exact
+No API keys needed - the anti-verbosity path is fully self-contained (SFT data comes from
+the HF Hub, the DPO pairs are in this repo as well as on HF, linked in the model card). Defaults in the scripts are the exact
 settings of the released model.
 
 ```bash
@@ -65,7 +61,7 @@ cd fine_tuning
 python sft.py --model Qwen/Qwen3.5-9B --grad_checkpointing \
   --output_dir checkpoints/sft/Qwen3.5-9B-all-linear
 
-# 2. merge (also bakes in a correct generation_config — see note below)
+# 2. merge (also bakes in a correct generation_config - see note below)
 python merge_adapters.py --adapter checkpoints/sft/Qwen3.5-9B-all-linear
 
 # 3. anti-bleed DPO from the merged SFT model
@@ -79,6 +75,36 @@ python merge_adapters.py --adapter checkpoints/dpo/Qwen3.5-9B-antibleed-only
 
 Or skip all of it and pull the released checkpoint from HF.
 
+### How the pairs were built
+
+Rounds are aborted when the model breaks the response format defined in the rules,
+and failed when it plays by the format but does not win. For both, an LLM judge
+(gpt-5.2-chat via Azure) was prompted to identify the mistaken move, generate a
+reflection on what went wrong, and produce a corrected move; the corrected move
+alone becomes the chosen response (see below on why the reflection text is kept
+out of it). The anti-bleed pairs come from successful rounds instead: chosen is
+the model's own clean move, rejected is the same move with one of five synthetic
+verbose justifications appended.
+
+In the clembench/playpen benchmarking environment, games are scored as aborted when the player model fails to adhere to specific formatting rules defined by a programmatic game master. On the other hand,
+rounds where the model is able to avoid formatting mistakes, but still is unable to win the game are scored as failed. Won rounds are scored as successful.
+This project aimed at constructing multiple sets of DPO pairs targeting three relevant skills for successfully conducting dialogue game rounds: rule-following, strategic game-playing and general rambling/excessive verbosity tendencies.
+Pairs tackling rule-following and strategic game-playing were consructed by prompting an LLM judge (gpt-5.2-chat via Azure) to identify the mistaken move, generate a
+reflection on what went wrong, and produce a corrected move. The corrected move
+alone becomes the chosen response. The anti-verbosity pairs come instead from successful rounds, where chosen is the player model's own clean move, while rejected is the same move with one of five synthetic
+verbose justifications appended.
+
+Earlier pair designs put the reflection text inside the chosen response. However, the
+reflections bled into the model's output style, making every response even more
+verbose than usual and breaking clembench's strict parsers, with large clemscore drops.
+This is why all final designs keep chosen as the bare, parser-valid move.
+
+Across the ablations, DPO targeting strategic thinking was ineffective or
+harmful, rule-adherence pairs helped mainly the smaller models (which abort more
+often because of format violations), and the anti-verbosity condition alone gave the largest gain, consistent
+with preference optimization refining behaviours the SFT model already has
+rather than teaching new ones.
+
 ## The ablations
 
 The pair types are the ablation axis. Every reported condition is just a choice of
@@ -86,18 +112,18 @@ The pair types are the ablation axis. Every reported condition is just a choice 
 
 | pairs | what they contain | on-policy? |
 |---|---|---|
-| `onpolicy_antibleed.*` | chosen = the SFT model's own winning move; rejected = the *same* move with an appended justification | fully |
-| `onpolicy_pairs.aborted.*` | chosen = GPT-corrected move fixing a rule violation; rejected = the violating move | rejected is, chosen isn't |
-| `onpolicy_pairs.failed.*` | chosen = GPT's strategically better move in a lost round; rejected = the actual move (`hidden.clean` = hidden-state games with a hindsight-guarded prompt, `verifiable` = all other games — pass both for the full "failed" condition) | rejected is, chosen isn't |
-| `chosen_only.*` | the anti-bleed chosen moves alone, as SFT data (via `sft.py --data_file`) — isolates the imitation component of the DPO gain | fully |
+| `anti-verbosity.*` | chosen = the SFT model's own winning move; rejected = the *same* move with an appended verbose justification | fully |
+| `aborted-rounds-pairs.*` | chosen = LLM-corrected move fixing a rule violation; rejected = the violating move. In all correction pairs, `chosen` is the bare move in the game's required format - the judge's reflection comment never enters the pair, so no external prose can bleed into the model's outputs | rejected is, chosen isn't |
+| `failed-pairs-hidden-states.*` / `failed-pairs-no-hidden-states.*` | chosen = LLM judges's strategically better move in a lost round; rejected = the actual move (hidden-state games use a hindsight-guarded prompt - pass both files for the full "failed" condition) | rejected is, chosen isn't |
+| `chosen_only.*` | the anti-verbosity chosen moves alone, as SFT data (via `sft.py --data_file`) — isolates the imitation component of the DPO gain | fully |
 
 Combinations = multiple `--pairs_files`. Example, aborted + failed:
 
 ```bash
 python dpo.py --model checkpoints/sft/Qwen3.5-9B-all-linear-merged \
-  --pairs_files ../data/dpo_pairs/onpolicy_pairs.aborted.Qwen3.5-9B-sft-full-merged.gpt-5.2.json \
-                ../data/dpo_pairs/onpolicy_pairs.failed.Qwen3.5-9B-sft-full-merged.hidden.clean.json \
-                ../data/dpo_pairs/onpolicy_pairs.failed.Qwen3.5-9B-sft-full-merged.verifiable.gpt-5.2.json \
+  --pairs_files ../data/dpo_pairs/aborted-rounds-pairs.Qwen3.5-9B-sft.json \
+                ../data/dpo_pairs/failed-pairs-hidden-states.Qwen3.5-9B-sft.json \
+                ../data/dpo_pairs/failed-pairs-no-hidden-states.Qwen3.5-9B-sft.json \
   --output_dir checkpoints/dpo/Qwen3.5-9B-aborted-failed
 ```
 
@@ -113,20 +139,24 @@ python generate_onpolicy_comments.py --condition aborted --input ../data/dpo_pai
 python distill_onpolicy_pairs.py     --condition aborted --input ../data/dpo_pairs/onpolicy_commented.aborted.<model>.<judge>.json --model_id <judge>
 ```
 
-Evaluation instances are excluded from every harvest (`--exclude_eval`) — a
+Evaluation instances are excluded from every harvest (`--exclude_eval`) - a
 contaminated variant inflated clemscore by ~9 points, so this matters.
 
 ## Evaluation
-
+### To evaluate on the full clembench benchmark
 ```bash
 clem run -g "{'benchmark':['2.0']}" -m <model_name>   # model_name from model_registry.json
 clem score
+```
+### To evalute on Playpen's val set
+```bash
+playpen eval <model_name> --suite all
 ```
 
 Only the released model resolves from the HF Hub directly; all other registry entries
 point to `fine_tuning/checkpoints/...` and expect checkpoints produced by the pipeline
 above. Score summaries for every reported run are in `eval_results/`
-(clemscore = (%played / 100) × quality, on the clembench 2.0 instances).
+(clemscore = (%played / 100) × quality, on the clembench 2.0 instances part of Playpen's val set).
 
 ## Results so far
 
@@ -146,15 +176,7 @@ technical report.
 
 Small Qwen3.5 releases ship without a `generation_config.json` and declare only
 `<|endoftext|>` as EOS, so after fine-tuning the model never stops at the chat-turn
-boundary (`<|im_end|>`) and hallucinates extra conversation turns.
+boundary (`<|im_end|>`) and hallucinates extra conversation turns, casuing clembench's programmatic game master to break.
 `merge_adapters.py` reconstructs a correct config (`eos_token_id = [<|im_end|>,
 <|endoftext|>]`) in every merged checkpoint. If a base model ships a valid config
 (e.g. the 27B), it is preserved as-is. Details in
-[ISSUES_AND_FIXES.md](ISSUES_AND_FIXES.md).
-
-## Project notes
-
-[ISSUES_AND_FIXES.md](ISSUES_AND_FIXES.md) — technical issues hit during SFT training
-and clembench evaluation, and how they were resolved.
-[DPO_REPORT.md](DPO_REPORT.md) — the DPO phase in detail: pair-data construction, the
-pair-design iterations and their results, and the on-policy redesign.
