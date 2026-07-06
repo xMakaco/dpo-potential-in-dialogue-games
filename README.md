@@ -51,7 +51,7 @@ best model is ~4.3 GPU-hours (see model card).
 ## Reproducing the best model
 
 No API keys needed - the anti-verbosity path is fully self-contained (SFT data comes from
-the HF Hub, the DPO pairs are in this repo as well as on HF, linked in the model card). Defaults in the scripts are the exact
+the HF Hub, the DPO pairs are in this repo and also published at [Makaco/lmps-challenge-dpo-pairs](https://huggingface.co/datasets/Makaco/lmps-challenge-dpo-pairs). Defaults in the scripts are the exact
 settings of the released model.
 
 ```bash
