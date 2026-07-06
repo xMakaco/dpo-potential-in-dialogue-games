@@ -1,8 +1,27 @@
-datasets>=2.14.0
-transformers>=4.35.0
-torch>=2.0.0
-trl>=0.7.0
-peft>=0.6.0
-accelerate>=0.24.0
-wandb>=0.15.0
-anthropic>=0.7.0
+# Pinned to the environment the released model and all reported results were produced with
+# (Python 3.10, single NVIDIA H100, CUDA 12.x).
+
+# --- Training pipeline (fine_tuning/: sft.py, dpo.py, merge_adapters.py) ---
+torch==2.12.0
+transformers==5.12.1
+trl==0.29.1
+peft==0.19.1
+datasets==4.8.5          # also pulls the SFT data: colab-potsdam/playpen-data (HF Hub)
+accelerate==1.13.0
+bitsandbytes==0.45.3     # only needed for the optional --use_4bit path
+numpy==1.26.4
+
+# --- DPO pairs construction (dpo_pairs_construction/) ---
+# Only needed to re-run the GPT correction passes (generate_onpolicy_comments.py,
+# distill_onpolicy_pairs.py); requires Azure OpenAI / DeepSeek credentials.
+# The anti-bleed (best-model) pipeline does NOT need this.
+openai==2.36.0
+
+# --- Rollouts & evaluation (clembench / playpen) ---
+# clemcore provides the `clem` CLI used for rollouts and scoring:
+#   clem run -g "{'benchmark':['2.0']}" -m <model> && clem score
+clemcore==3.7.2
+# playpen provides the static-benchmark evaluation harness (statscore).
+# Not on PyPI at the version used; install from source:
+#   pip install git+https://github.com/lm-playpen/playpen.git
+# playpen==3.7.0

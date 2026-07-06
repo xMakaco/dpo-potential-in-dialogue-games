@@ -48,9 +48,12 @@ experiments/
 outputs/
 
 # Data (if you download large files)
-data/
+data/*
+!data/dpo_pairs/
+data_old/
 *.parquet
 *.csv
+!eval_results/**/*.csv
 *.jsonl
 
 # Notebooks
@@ -62,3 +65,4 @@ env/
 
 # Dataset
 data-prep/failures_data.json
+onpolicy-rollouts/
