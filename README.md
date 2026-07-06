@@ -36,7 +36,7 @@ game_registry.json        points clem at ../clembench
 ```bash
 # clembench (the games) must sit next to this repo - game_registry.json expects ../clembench
 git clone https://github.com/clp-research/clembench.git
-git clone https://github.com/xMakaco/Reflections-Augmented-SFT-for-Dialogue-Games.git
+git clone https://github.com/xMakaco/dpo-potential-in-dialogue-games.git
 cd Reflections-Augmented-SFT-for-Dialogue-Games
 
 python3.10 -m venv venv && source venv/bin/activate
