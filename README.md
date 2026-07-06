@@ -120,7 +120,7 @@ python dpo.py --model checkpoints/sft/Qwen3.5-9B-all-linear-merged \
 
 Regenerating the pairs from scratch (instead of using `data/dpo_pairs/`) requires
 rollouts (`clem run` + `clem score`) and, for the correction conditions, an Azure
-OpenAI or DeepSeek key for the GPT passes:
+OpenAI or DeepSeek key for the LLM judge passes:
 
 ```bash
 cd dpo_pairs_construction
