@@ -1,0 +1,2 @@
+,"-, clemscore","all, Average % Played","all, Average Quality Score","bbh, % Played","bbh, Quality Score","cladder, % Played","cladder, Quality Score","eqbench, % Played","eqbench, Quality Score","ifeval, % Played","ifeval, Quality Score","mmlu_pro, % Played","mmlu_pro, Quality Score"
+Qwen3.5-9B-sft-full-merged,61.09,99.41,61.45,100.0,52.34,100.0,55.45,97.06,68.85,100.0,72.22,100.0,58.41
