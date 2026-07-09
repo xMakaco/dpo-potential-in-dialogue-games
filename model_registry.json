@@ -358,5 +358,29 @@
         "enable_thinking": false
       }
     }
+  },
+  {
+    "model_name": "Qwen3.5-9B-dpo-all-clean-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-9B-all-clean-merged",
+    "release_date": "2026-07-08",
+    "open_weight": true,
+    "parameters": "9B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
   }
 ]
