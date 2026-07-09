@@ -15,7 +15,7 @@ from llm_wrapper import GptAzureClient, DeepseekClient
 from prompts import build_prompt
 
 _HERE = Path(__file__).parent
-OUT_DIR = _HERE.parent / "dpo_pairs"
+OUT_DIR = _HERE.parent / "data" / "dpo_pairs"
 
 OUTCOME = {"aborted": "aborted", "failed": "failed"}
 

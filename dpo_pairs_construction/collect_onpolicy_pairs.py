@@ -14,7 +14,7 @@ import random
 from pathlib import Path
 
 _HERE = Path(__file__).parent
-OUT_DIR = _HERE / "dpo_pairs"
+OUT_DIR = _HERE.parent / "data" / "dpo_pairs"
 
 # Event types that indicate a rule violation (for the aborted condition),
 # as per clembench's prorammatic game master.
