@@ -18,7 +18,7 @@ from pathlib import Path
 from llm_wrapper import GptAzureClient, DeepseekClient
 
 _HERE = Path(__file__).parent
-OUT_DIR = _HERE.parent / "dpo_pairs"
+OUT_DIR = _HERE.parent / "data" / "dpo_pairs"
 
 ABORTED_DISTILL = (
     "You are given a dialogue game round that was rejected by the game master, the player's "

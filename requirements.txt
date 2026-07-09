@@ -11,13 +11,13 @@ accelerate==1.13.0
 bitsandbytes==0.45.3     # only needed for the optional --use_4bit path
 numpy==1.26.4
 
-# --- DPO pairs construction (dpo_pairs_construction/) ---
+# DPO pairs construction (dpo_pairs_construction/)
 # Only needed to re-run the GPT correction passes (generate_onpolicy_comments.py,
 # distill_onpolicy_pairs.py); requires Azure OpenAI / DeepSeek credentials.
 # The anti-bleed (best-model) pipeline does NOT need this.
 openai==2.36.0
 
-# --- Rollouts & evaluation (clembench / playpen) ---
+# Rollouts & evaluation (clembench / playpen)
 # clemcore provides the `clem` CLI used for rollouts and scoring:
 #   clem run -g "{'benchmark':['2.0']}" -m <model> && clem score
 clemcore==3.7.2
