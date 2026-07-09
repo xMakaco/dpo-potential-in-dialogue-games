@@ -1,0 +1,2 @@
+,"-, clemscore","all, Average % Played","all, Average Quality Score","bbh, % Played","bbh, Quality Score","cladder, % Played","cladder, Quality Score","eqbench, % Played","eqbench, Quality Score","ifeval, % Played","ifeval, Quality Score","mmlu_pro, % Played","mmlu_pro, Quality Score"
+Qwen3.5-9B-dpo-failed-hidden-verifiable-merged,61.55,99.41,61.92,100.0,55.47,100.0,52.48,97.06,69.15,100.0,74.07,100.0,58.41
