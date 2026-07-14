@@ -382,5 +382,125 @@
         "enable_thinking": false
       }
     }
+  },
+  {
+    "model_name": "Qwen3.5-2B-dpo-failed-only-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-2B-failed-only-merged",
+    "release_date": "2026-07-10",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-dpo-aborted-failed-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-2B-aborted-failed-merged",
+    "release_date": "2026-07-10",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-dpo-antiverbosity-aborted-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-2B-antiverbosity-aborted-merged",
+    "release_date": "2026-07-10",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-dpo-antiverbosity-failed-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-2B-antiverbosity-failed-merged",
+    "release_date": "2026-07-10",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-dpo-all-merged",
+    "backend": "huggingface_local",
+    "huggingface_id": "fine_tuning/checkpoints/dpo/Qwen3.5-2B-all-merged",
+    "release_date": "2026-07-10",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "context_size": "262k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
   }
 ]
