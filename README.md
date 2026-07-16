@@ -1,7 +1,7 @@
-# Exploration of the Potential of DPO in Dialogue Games
+# Repository for the project "Teaching or Sharpening? An Exploraton of the Potential of DPO Post-Training for Dialogue Games"
 
 This repo presents an SFT + DPO post-training pipeline of Qwen3.5 models on the [clembench](https://github.com/clp-research/clembench) / [Playpen](https://github.com/lm-playpen/playpen) dialogue-game benchmark. The best performing model which came out of this implementation was submitted to the [LM Playschool Challenge](https://lm-playschool.github.io).
-The main research interest behind this project revolves around whether DPO can induce novel strategic and rule-following skills in dialogue-games playing LLMs, or whether it is better suited to refining behaviors already established via SFT. In order to conduct this investigation, multiple training ablations were constructed, targeting three skills which can easily impact performance on dialogue games, namely rule-following, strategic game-playing and excessive verbosity and rambling, and various combinations of the three.
+The main research interest behind this project revolves around whether DPO can induce novel strategic and rule-following skills in dialogue-games playing LLMs, or whether it is better suited to sharpening behaviors already established via SFT. In order to conduct this investigation, multiple training ablations were constructed, targeting three skills which can easily impact performance on dialogue games, namely rule-following, strategic game-playing and excessive verbosity and rambling, and various combinations of the three.
 The best performing model resulted from the training condition targeting only excessive verbosity, which took the supervised-fine-tuned Qwen3.5-9B model from 58.82 to **70.21 clemscore**. 
 The results obtained point towards the direction of DPO being able to reliably reinforce behaviour the model already learnt in previous training stages, while being less effective when it comes to teaching completely new behaviours and strategy.
 
@@ -149,21 +149,23 @@ point to `fine_tuning/checkpoints/...` and expect checkpoints produced by the pi
 above. Score summaries for every reported run are in `eval_results/`
 (clemscore = (%played / 100) × quality, on the clembench 2.0 instances part of Playpen's val set).
 
-## Results so far
+## Results for the different ablations
 
-| model | clemscore | statscore |
-|---|---|---|
-| Qwen3.5-9B SFT | 58.82 | 61.09 |
-| **Qwen3.5-9B SFT + anti-verbosity DPO** | **70.21** | 58.73 |
-| Qwen3.5-9B SFT + aborted-corrections DPO | 60.96 | 56.82 |
-| Qwen3.5-9B chosen-only SFT | 65.36 | 59.35 |
-| Qwen3.5-2B SFT | 38.05 | 42.88 |
-| Qwen3.5-2B SFT + anti-verbosity DPO | 44.69 | 37.38 |
-| Qwen3.5-2B SFT + aborted-corrections DPO | 54.28 | 42.11 |
+| Condition | 9B clem | 9B stat | 2B clem | 2B stat |
+|---|---:|---:|---:|---:|
+| Qwen3.5 (untuned) | 41.92 | 54.16 | 13.05 | 44.02 |
+| SFT baseline | 58.82 | 61.09 | 38.05 | 42.88 |
+| Anti-verbosity (AV) | **70.21** | 58.73 | 44.69 | 37.38 |
+| Chosen-only (ctrl.) | 65.36 | 59.35 | 46.41 | 44.82 |
+| Rule adher. (AB) | 60.96 | 56.82 | **54.28** | 42.11 |
+| Strategy (F) | 44.43 | 61.55 | 25.26 | 42.59 |
+| AV+AB | 63.69 | 60.28 | 42.50 | 40.79 |
+| AB+F | 43.45 | 61.58 | 28.81 | 39.81 |
+| AV+F | 42.71 | 58.54 | 24.94 | 39.57 |
+| All three | 26.92 | 43.55 | 29.45 | 33.02 |
 
-Full per-game breakdowns in `eval_results/`; the complete ablation grid (failed
-corrections and all combinations, plus the 2B scale point) is being finalised for the
-technical report.
+
+Summarised per-game breakdowns in `eval_results/` (results tables in .csv and .html). The complete results dataset, including per-game interactions, is available at [`Makaco/playpen-eval-ablations-results`](https://huggingface.co/datasets/Makaco/playpen-eval-ablations-results).
 
 ## The Qwen3.5 generation_config pitfall
 
